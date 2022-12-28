@@ -7,6 +7,8 @@ function switchModeFunction () {
     const switchLabel = document.querySelector(".form-check-label");
     // Select all cards.
     const cards = document.querySelectorAll(".card");
+    // Select CV Image.
+    const cvImage = document.querySelector(".user-image");
 
     // Listen for a click on the button
     btn.addEventListener("click", function() {
@@ -22,6 +24,7 @@ function switchModeFunction () {
             });
 
             switchLabel.textContent = 'Dark Mode';
+            cvImage.src = "./assets/images/CVImage.jpg";
         } else {
             // ... switch it to "light-theme.css"
             theme.href = "assets/css/minimalist-light-theme.css";
@@ -33,6 +36,7 @@ function switchModeFunction () {
             });
 
             switchLabel.textContent = 'Light Mode';
+            cvImage.src = "./assets/images/CVImage_2.jpg";
         }
     });
 }
