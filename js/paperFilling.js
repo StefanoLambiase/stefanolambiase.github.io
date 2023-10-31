@@ -14,47 +14,57 @@ fetch('jsons/papers.json') // Assicurati di utilizzare il percorso corretto del 
 
     papers.forEach((paper, index) => {
       const div = document.createElement('div');
-      div.classList.add('col-lg-8', 'pb-3');
+      div.classList.add('col-lg-8', 'pb-3', 'cards-list');
 
       div.innerHTML = `
         <div class="card">
             <div class="card-body">
-            <h4 class="card-title"><strong>${paper.title}</strong></h4>
-            <h5>${paper.source}</h5>
-            <div class="d-flex justify-content-between">
-                <div class="p-2 align-self-center">
-                <span class="badge bg-danger">
-                    ${paper.acronym_key}
-                </span>
-                <span class="badge bg-secondary">
-                    Human and Social Aspects<br>of Software Engineering
-                </span>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 align-self-center">
+                        <span class="badge bg-success">
+                            ${paper.type}
+                        </span>
+                        <span class="badge bg-danger">
+                            ${paper.acronym_key}
+                        </span>
+                        <span class="badge bg-secondary">
+                            ${paper.year}
+                        </span>
+                    </div>
                 </div>
-                <div class="p-2">
-                <button class="btn btn-publication btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_${index}" aria-expanded="false" aria-controls="collapse_${index}">
-                    Abstract
-                </button>
-                <button class="btn btn-publication btn-sm" type="button">
-                    <a class="download-pub" href="${paper.downloadLink}" download>Download</a>
-                </button>
+                <h5 class="card-title"><strong>${paper.title}</strong></h5>
+                <h6>${paper.source}</h6>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 align-self-center">
+                        <span class="badge bg-info">
+                            ${paper.topic_list}
+                        </span>
+                    </div>
+                    <div class="p-2">
+                        <button class="btn btn-publication btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_${index}" aria-expanded="false" aria-controls="collapse_${index}">
+                            Abstract
+                        </button>
+                        <button class="btn btn-publication btn-sm" type="button">
+                            <a class="download-pub" href="${paper.downloadLink}" download>Download</a>
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="collapse" id="collapse_${index}">
-                <div class="card card-body">
+                <div class="collapse" id="collapse_${index}">
+                    <div class="card card-body">
+                        <p class="card-text abstract-text">
+                            ${paper.abstract}
+                        </p>
+                    </div>
+                </div>
+
                 <p class="card-text">
-                    ${paper.abstract}
                 </p>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2"></div>
+                    <div class="p-2">${paper.authors}</div>
                 </div>
-            </div>
-
-            <p class="card-text">
-            </p>
-            <hr>
-            <div class="d-flex justify-content-between">
-                <div class="p-2"></div>
-                <div class="p-2"><strong>S. Lambiase</strong>, G. Catolino, D. A. Tamburri, A. Serebrenik, F. Palomba, F. Ferrucci</div>
-            </div>
             </div>
         </div>
       `;
