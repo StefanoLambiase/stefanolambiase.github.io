@@ -1,0 +1,43 @@
+[
+    {
+      "title": "An Empirical Investigation into the Influence of Software Communities’ Cultural and Geographical Dispersion on Productivity",
+      "source": "Journal of Systems and Software (JSS)",
+      "acronym_key": "JSS",
+      "year": "2023",
+      "abstract": "Estimating and understanding software development productivity represent crucial tasks for researchers and practitioners...",
+      "downloadLink": "/assets/papers/SLambiase_JSS_SEAA_Extension_Productivity_2023.pdf"
+    },
+    {
+      "title": "Community Smell Detection and Refactoring in SLACK: The CADOCS Project",
+      "source": "Proceedings of the 38th IEEE International Conference on Software Maintenance and Evolution (ICSME Tool Demo Track 2022)",
+      "acronym_key": "ICSME",
+      "year": "2022",
+      "abstract": "Software engineering is a human-centered activity involving various stakeholders with different backgrounds...",
+      "downloadLink": "/assets/papers/ICSME_CADOCS_2022.pdf"
+    },
+    {
+      "title": "\"There and Back Again?\" On the Influence of Software Community Dispersion Over Productivity",
+      "source": "Proceedings of the 25th Euromicro Conference on Software Engineering and Advanced Applications (SEAA 2022)",
+      "acronym_key": "SEAA",
+      "year": "2022",
+      "abstract": "Estimating and understanding productivity still represents a crucial task for researchers and practitioners...",
+      "downloadLink": "/assets/papers/There_and_Back_Again_Euromicro22.pdf"
+    },
+    {
+      "title": "Good Fences Make Good Neighbours? On the Impact of Cultural and Geographical Dispersion on Community Smells",
+      "source": "Proceedings of the 44th International Conference on Software Engineering - Software Engineering in Society (ICSE-SEIS 2022)",
+      "acronym_key": "ICSE-SEIS",
+      "year": "2022",
+      "abstract": "Software development is de facto a social activity that often involves people from all places to join forces globally...",
+      "downloadLink": "/assets/papers/Good_Fences_Make_Good_Neighbours.pdf"
+    },
+    {
+      "title": "Just-In-Time Test Smell Detection and Refactoring: The DARTS Project",
+      "source": "Proceedings of the 28th International Conference on Program Comprehension (ICPC)",
+      "acronym_key": "ICPC",
+      "year": "2021",
+      "abstract": "Test smells represent sub-optimal design or implementation solutions applied when developing test cases...",
+      "downloadLink": null
+    }
+  ]
+  
