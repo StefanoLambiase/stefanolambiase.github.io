@@ -52,6 +52,10 @@ p {
   color: white;
 }
 
+p.card-text {
+  color: black;
+}
+
 span {
   color: #CCD1D9
 }

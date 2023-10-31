@@ -24,7 +24,7 @@ function switchModeFunction () {
             });
 
             switchLabel.textContent = 'Dark Mode';
-            cvImage.src = "./assets/images/CVImage.jpg";
+            cvImage.src = "./assets/images/foto_della_distruzione.jpg";
         } else {
             // ... switch it to "light-theme.css"
             theme.href = "assets/css/minimalist-light-theme.css";
