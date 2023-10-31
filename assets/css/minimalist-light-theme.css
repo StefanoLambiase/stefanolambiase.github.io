@@ -72,8 +72,8 @@ a:hover {
 .user-image {
   width: 225px;
   height: 225px;
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
+  /*-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  /*filter: grayscale(0%); */
 }
 
 @media (max-width: 767px) {
