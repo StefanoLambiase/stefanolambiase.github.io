@@ -11,6 +11,28 @@
       "downloadLink": "/assets/papers/SLambiase_JSS_SEAA_Extension_Productivity_2023.pdf"
     },
     {
+      "title": "Security Testing in The Wild: An Interview Study",
+      "type": "Short Conference Paper",
+      "source": "Software Engineering and Advanced Applications",
+      "authors": "D. Di Dario, V. Pontillo, <strong>S. Lambiase</strong>, F. Ferrucci, F. Palomba",
+      "acronym_key": "SEAA",
+      "year": "2023",
+      "abstract": "Modern software systems are increasingly complex and the risk of falling into security concerns is high if these systems are not developed with a proper security mindset. Despite the empirical studies and security-oriented approaches proposed by researchers and tool vendors, we still point out a lack of knowledge on the security testing processes applied by companies to reduce risks connected to software security. In this paper, we aim to bridge this gap of knowledge by performing an interview-based study with 19 security experts to understand how companies arrange security testing and how the process of security testing is actually performed in practice. Our results highlight that some companies incorporated the figure of the security tester in the software life cycle, yet practitioners reported a lack of standardized guidelines for security testing. From a management perspective, our results suggest that the introduction of formal communication between development and security testing teams may lead to better performance.",
+      "topic_list": "Security Testing | Vulnerabilities",
+      "downloadLink": "/assets/papers/DiDario_SecurityTesting.pdf"
+    },
+    {
+      "title": "QuantuMoonLight: A Low-Code Platform to Experiment with Quantum Machine Learning",
+      "type": "Full Journal Paper",
+      "source": "SoftwareX",
+      "authors": "F. Amato et al.",
+      "acronym_key": "SoftwareX",
+      "year": "2023",
+      "abstract": "Nowadays, machine learning is being used to address multiple problems in various research fields, with software engineering researchers being among the most active users of machine learning mechanisms. Recent advances revolve around the use of quantum machine learning, which promises to revolutionize program computation and boost software systems’ problem-solving capabilities. However, using quantum computing technologies is not trivial and requires interdisciplinary skills and expertise. For such a reason, we propose QuantuMoonLight, a community-based low-code platform that allows researchers and practitioners to configure and experiment with quantum machine learning pipelines, compare them with classic machine learning algorithms, and share lessons learned and experience reports. We showcase the architecture and main features of QuantuMoonLight, other than discussing its envisioned impact on research and practice.",
+      "topic_list": "Quantum | Machine Learning | Web Application",
+      "downloadLink": "/assets/papers/SofwareX_QuantuMoonLight_2022_Definitivo.pdf"
+    },
+    {
       "title": "Community Smell Detection and Refactoring in SLACK: The CADOCS Project",
       "type": "Tool Demo Paper",
       "source": "Proceedings of the 38th IEEE International Conference on Software Maintenance and Evolution (ICSME Tool Demo Track 2022)",
