@@ -72,7 +72,8 @@
       <div class="d-flex justify-content-center">
         <div class="list-group list-group-horizontal-md" id="content-tabs" role="tablist">
           <a class="list-group-item small text-uppercase" id="list-about-me" data-toggle="list" href="#about-me" role="tab">About me</a>
-          <a class="list-group-item small text-uppercase active" id="list-experience-list" data-toggle="list" href="#experience" role="tab">Experience</a>
+          <a class="list-group-item small text-uppercase active" id="list-committee-list" data-toggle="list" href="#committee" role="tab">Committees</a>
+          <a class="list-group-item small text-uppercase" id="list-experience-list" data-toggle="list" href="#experience" role="tab">Experience</a>
           <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#publications" role="tab">Publications</a>
           <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#projects" role="tab">Projects</a>
         </div>
@@ -171,8 +172,24 @@
           </div>
         </div>
 
+        <!-- ./committee-panel-->
+        <div class="tab-pane fade show active" id="committee" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg">
+              <!-- Timeline -->
+              <div id="committee-container" class="timeline-container">
+
+                <!-- The panel is populated using a JSON -->
+
+              </div>
+              <!-- ./timeline -->
+            </div>
+          </div>
+        </div>
+        <!-- ./committee-panel-->
+
         <!-- ./experience-panel-->
-        <div class="tab-pane fade show active" id="experience" role="tabpanel">
+        <div class="tab-pane fade show" id="experience" role="tabpanel">
           <div class="row justify-content-lg-center">
             <div class="col-lg">
               <!-- Timeline -->
@@ -185,6 +202,7 @@
             </div>
           </div>
         </div>
+        <!-- ./experience-panel-->
 
         <!-- ./publications-panel-->
         <div class="tab-pane fade show" id="publications" role="tabpanel">
@@ -194,6 +212,7 @@
 
           </div>
         </div>
+        <!-- ./publications-panel-->
 
         <!-- ./projects-panel-->
         <div class="tab-pane fade show" id="projects" role="tabpanel">
@@ -275,6 +294,7 @@
     <script src="js/switchMode.js"></script>
     <!-- JavaScript for experience filling -->
     <script src="js/experienceFilling.js"></script>
+    <script src="js/committeeFilling.js"></script>
     <script src="js/paperFilling.js"></script>
     <!-- javascript for tooltips -->
     <script>
