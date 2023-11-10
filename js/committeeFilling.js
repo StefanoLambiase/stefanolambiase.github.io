@@ -1,7 +1,7 @@
 // script.js
 
 // Funzione per leggere il file JSON e generare i div delle esperienze
-fetch('jsons/experiences.json') // Cambia il nome del file se necessario
+fetch('jsons/committee.json') // Cambia il nome del file se necessario
 .then(response => {
   if (!response.ok) {
     throw new Error('Network response was not ok');
@@ -10,7 +10,7 @@ fetch('jsons/experiences.json') // Cambia il nome del file se necessario
 })
 .then(data => {
   const committeesContainer = document.getElementById('committee-container');
-  const experiences = data.experiences;
+  const experiences = data.committees;
 
   experiences.forEach(experience => {
     if (experience.token == 'Committee member') {
