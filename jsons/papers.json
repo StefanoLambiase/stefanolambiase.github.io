@@ -1,5 +1,16 @@
 [
   {
+    "title": "Dealing with Cultural Dispersion: a Novel Theoretical Framework for Software Engineering Research and Practice",
+    "type": "Full Research Paper",
+    "source": "Proceedings of the 46th International Conference on Software Engineering - Software Engineering in Society (ICSE-SEIS 2024)",
+    "authors": "<strong>S. Lambiase</strong>, G. Catolino, B. Della Piana, F. Ferrucci, F. Palomba",
+    "acronym_key": "ICSE-SEIS",
+    "year": "2024",
+    "abstract": "Software development is fundamentally a team-driven process; researchers in software engineering have identified various human and social factors that can significantly impact it. Culture emerged as a critical element, and the diversity deriving from cultural differences can be highly impactful both positively and negatively. Despite existing knowledge about how culture influences software development, limitations persist. Most importantly, it makes research on culture fragmented, leading to the continual definition of new concepts that do not allow the state of the art to advance significantly, and it reduces the ability of the research to be transferred to practitioners since there is no framework designed to be understood and used by them. To address the above-mentioned limitation, this work proposed a theoretical framework of “Dealing With Cultural Dispersion”, which focuses on challenges and benefits originating from cultural differences and strategies for dealing with them. Such a framework was developed through a qualitative study using an iterative research approach, including interviews and socio-technical grounded theory for data analysis. The proposed framework was designed to reveal the tangible effects of practitioners’ culture in software development, allowing software teams to (1) clearly understand the problem and (2) implement the correct strategy for addressing it. Additionally, researchers can use this framework as a foundation to (deductively) develop a more robust and comprehensive theory in this field.",
+    "topic_list": "Human Aspects | GSE | Culture | Grounded Theory",
+    "downloadLink": "/assets/papers/ICSE_SEIS_2024_DealingWithCulturalDispersion_SLambiase.pdf"
+  },
+  {
     "title": "An Empirical Investigation into the Influence of Software Communities’ Cultural and Geographical Dispersion on Productivity",
     "type": "Full Journal Paper",
     "source": "Journal of Systems and Software (JSS)",
