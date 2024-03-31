@@ -1,5 +1,16 @@
 [
   {
+    "title": "Investigating Cultural Dispersion: on the Role of Cultural Differences in Software Development Teams",
+    "type": "Short Conference Paper",
+    "source": "Proceedings of the 46th International Conference on Software Engineering - Doctoral Symposium",
+    "authors": "<strong>S. Lambiase</strong>",
+    "acronym_key": "ICSE-DS",
+    "year": "2024",
+    "abstract": "Software development, inherently a social activity, involves individuals across diverse geographical and cultural settings. Despite this nature, the existing Global Software Engineering research body encounters limitations, making the achieved results challenging to use by practitioners. This Ph.D. research project seeks to overcome these constraints by crafting a theoretical framework. The framework systematically captures cultural differences, exploring their impact on various aspects of software development and delving into practitioners' strategies for managing these influences. Additionally, the project aims to significantly contribute to the professional software development landscape by transferring research findings to practitioners through practical tools. This framework serves as an immediate application for professionals, fostering project success through heightened cultural awareness and adaptability, thereby enhancing developer well-being in inclusive and culturally diverse environments.",
+    "topic_list": "Human Aspects | GSE | Culture",
+    "downloadLink": "/assets/papers/SLambiase_ICSE_DS_2024_CulturalDispersion.pdf"
+  },
+  {
     "title": "Dealing with Cultural Dispersion: a Novel Theoretical Framework for Software Engineering Research and Practice",
     "type": "Full Research Paper",
     "source": "Proceedings of the 46th International Conference on Software Engineering - Software Engineering in Society (ICSE-SEIS 2024)",
