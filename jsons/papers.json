@@ -1,5 +1,16 @@
 [
   {
+    "title": "Cultural and Socio-Technical Aspects in Software Development",
+    "type": "Short Conference Paper",
+    "source": "Proceedings of the 28th International Conference on Evaluation and Assessment in Software Engineering",
+    "authors": "<strong>S. Lambiase</strong>",
+    "acronym_key": "EASE-DS",
+    "year": "2024",
+    "abstract": "Software development, inherently a social activity, involves individuals across diverse geographical and cultural settings. Despite this nature, the existing Global Software Engineering research body encounters limitations, making the achieved results challenging to use by practitioners. This Ph.D. research project seeks to overcome these constraints by crafting a theoretical framework. The framework systematically captures cultural differences, exploring their impact on various aspects of software development and delving into practitioners' strategies for managing these influences. Additionally, the project aims to significantly contribute to the professional software development landscape by transferring research findings to practitioners through practical tools. This framework serves as an immediate application for professionals, fostering project success through heightened cultural awareness and adaptability, thereby enhancing developer well-being in inclusive and culturally diverse environments.",
+    "topic_list": "Human Aspects | GSE | Culture",
+    "downloadLink": "/assets/papers/EASE_DoctoralSymposium_2024_Doctoral_Symposium.pdf"
+  },
+  {
     "title": "Investigating Cultural Dispersion: on the Role of Cultural Differences in Software Development Teams",
     "type": "Short Conference Paper",
     "source": "Proceedings of the 46th International Conference on Software Engineering - Doctoral Symposium",
