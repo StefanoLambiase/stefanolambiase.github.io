@@ -11,6 +11,17 @@
     "downloadLink": "/assets/papers/EASE_DoctoralSymposium_2024_Doctoral_Symposium.pdf"
   },
   {
+    "title": "SENEM: A software engineering-enabled educational metaverse",
+    "type": "Full Journal Paper",
+    "source": "Information and Software Technology",
+    "authors": "V. Pentangelo, D. Di Dario, <strong>S. Lambiase</strong>, F. Ferrucci, C. Gravino, F. Palomba",
+    "acronym_key": "IST",
+    "year": "2024",
+    "abstract": "Context: The term metaverse refers to a persistent, virtual, three-dimensional environment where individuals may communicate, engage, and collaborate. One of the most multifaceted and challenging use cases of the metaverse is education, where educators and learners may require multiple technical, social, psychological, and interaction instruments to accomplish their learning objectives. While the characteristics of the metaverse might nicely fit the problem’s needs, our research points out a noticeable lack of knowledge into (1) the specific requirements that an educational metaverse should actually fulfill to let educators and learners successfully interact towards their objectives and (2) how to design an appropriate educational metaverse for both educators and learners. Objective: In this paper, we aim to bridge this knowledge gap by proposing SENEM, a novel software engineering-enabled educational metaverse. We first elicit a set of functional requirements that an educational metaverse should fulfill. Method: In this respect, we conduct a literature survey to extract the currently available knowledge on the matter discussed by the research community, and afterward, we assess and complement such knowledge through semi-structured interviews with educators and learners. Upon completing the requirements elicitation stage, we then build our prototype implementation of SENEM, a metaverse that makes available to educators and learners the features identified in the previous stage. Finally, we evaluate the tool in terms of learnability, efficiency, and satisfaction through a Rapid Iterative Testing and Evaluation research approach, leading us to the iterative refinement of our prototype. Results: Through our survey strategy, we extracted nine requirements that guided the tool development that the study participants positively evaluated. Conclusion: Our study reveals that the target audience appreciates the elicited design strategy. Our work has the potential to form a solid contribution that other researchers can use as a basis for further improvements.",
+    "topic_list": "Virtual Reality | Metaverse | Education",
+    "downloadLink": "/assets/papers/SENEM_IST_2024.pdf"
+  },
+  {
     "title": "Investigating Cultural Dispersion: on the Role of Cultural Differences in Software Development Teams",
     "type": "Short Conference Paper",
     "source": "Proceedings of the 46th International Conference on Software Engineering - Doctoral Symposium",
@@ -38,7 +49,7 @@
     "source": "Journal of Systems and Software (JSS)",
     "authors": "<strong>S. Lambiase</strong>, G. Catolino, F. Pecorelli, D. A. Tamburri, F. Palomba, WJ. van den Heuvel, F. Ferrucci",
     "acronym_key": "JSS",
-    "year": "2023",
+    "year": "2024",
     "abstract": "Estimating and understanding software development productivity represent crucial tasks for researchers and practitioners. Although different works focused on evaluating the impact of human factors on productivity, a few explored the influence of cultural/geographical diversity in software development communities. More particularly, all previous treatise addresses cultural aspects as abstract concepts without providing a quantitative representation. Improved knowledge of these matters might help project managers to assemble more productive teams and tool vendors to design software analytics toolkits that may better estimate productivity. This paper has the goal of enlarging the existing body of knowledge on the factors affecting productivity by focusing on cultural and geographical dispersion of a development community—namely, how diverse a community is in terms of cultural attitudes and geographical collocation of the members who belong to it. To reach this goal, we performed a mixed-method empirical study. First, we built a statistical model relating dispersion metrics with the productivity of 25 open-source communities on Github. Then, we performed a confirmatory survey with 140 practitioners. The key results of our study indicate that cultural and geographical dispersion considerably impact productivity, thus encouraging managers and practitioners to consider such aspects during all the phases of the software development lifecycle. We conclude our paper by elaborating on the main insights from our analyses and instilling implications that may drive further research.",
     "topic_list": "Human Aspects | GSE | Culture",
     "downloadLink": "/assets/papers/SLambiase_JSS_SEAA_Extension_Productivity_2023.pdf"
