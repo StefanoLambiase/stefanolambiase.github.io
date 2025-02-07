@@ -22,15 +22,15 @@
     "downloadLink": "/assets/papers/SLambiase_ICSE_DS_2024_CulturalDispersion.pdf"
   },
   {
-    "title": "Dealing with Cultural Dispersion: a Novel Theoretical Framework for Software Engineering Research and Practice",
+    "title": "SERGE–Serious Game for the Education of Risk Management in Software Project Management",
     "type": "Full Research Paper",
-    "source": "Proceedings of the 46th International Conference on Software Engineering - Software Engineering in Society (ICSE-SEIS 2024)",
-    "authors": "<strong>S. Lambiase</strong>, G. Catolino, B. Della Piana, F. Ferrucci, F. Palomba",
-    "acronym_key": "ICSE-SEIS",
+    "source": "Proceedings of the 46th International Conference on Software Engineering",
+    "authors": "G. Annunziata, <strong>S. Lambiase</strong>, F. Palomba, F. Ferucci",
+    "acronym_key": "ICSE-SEET",
     "year": "2024",
-    "abstract": "Software development is fundamentally a team-driven process; researchers in software engineering have identified various human and social factors that can significantly impact it. Culture emerged as a critical element, and the diversity deriving from cultural differences can be highly impactful both positively and negatively. Despite existing knowledge about how culture influences software development, limitations persist. Most importantly, it makes research on culture fragmented, leading to the continual definition of new concepts that do not allow the state of the art to advance significantly, and it reduces the ability of the research to be transferred to practitioners since there is no framework designed to be understood and used by them. To address the above-mentioned limitation, this work proposed a theoretical framework of “Dealing With Cultural Dispersion”, which focuses on challenges and benefits originating from cultural differences and strategies for dealing with them. Such a framework was developed through a qualitative study using an iterative research approach, including interviews and socio-technical grounded theory for data analysis. The proposed framework was designed to reveal the tangible effects of practitioners’ culture in software development, allowing software teams to (1) clearly understand the problem and (2) implement the correct strategy for addressing it. Additionally, researchers can use this framework as a foundation to (deductively) develop a more robust and comprehensive theory in this field.",
-    "topic_list": "Human Aspects | GSE | Culture | Grounded Theory",
-    "downloadLink": "/assets/papers/ICSE_SEIS_2024_DealingWithCulturalDispersion_SLambiase.pdf"
+    "abstract": "Software Project Management is the systematic and disciplined approach for planning, executing, monitoring, controlling, and closing software development projects. Risk management is a key knowledge area that aims to react to the unpredictable events that often affect software projects. Teaching risk management is vital to equip individuals and organizations with the adapted skills to prevent and monitor challenges and potential issues. In this paper, we propose a serious game named SERGE, conceived to involve students in learning risk management and improve their skills through gamification and simulation of a real-world application context. The features for the design of SERGE were identified through a literature review. An iterative Game Design Phase was employed to build, test, and refine the design of SERGE. Finally, the proposed approach was assessed by conducting a controlled experiment to compare risk management skills acquired through a traditional lecture and using SERGE. The results show that adopting a serious game as SERGE, able to involve the students actively, can improve the acquisition of risk management skills.",
+    "topic_list": "Human Aspects",
+    "downloadLink": "/assets/papers/ICSE_SEET_2024_SERGE.pdf"
   },
   {
     "title": "An Empirical Investigation into the Influence of Software Communities’ Cultural and Geographical Dispersion on Productivity",
@@ -42,6 +42,28 @@
     "abstract": "Estimating and understanding software development productivity represent crucial tasks for researchers and practitioners. Although different works focused on evaluating the impact of human factors on productivity, a few explored the influence of cultural/geographical diversity in software development communities. More particularly, all previous treatise addresses cultural aspects as abstract concepts without providing a quantitative representation. Improved knowledge of these matters might help project managers to assemble more productive teams and tool vendors to design software analytics toolkits that may better estimate productivity. This paper has the goal of enlarging the existing body of knowledge on the factors affecting productivity by focusing on cultural and geographical dispersion of a development community—namely, how diverse a community is in terms of cultural attitudes and geographical collocation of the members who belong to it. To reach this goal, we performed a mixed-method empirical study. First, we built a statistical model relating dispersion metrics with the productivity of 25 open-source communities on Github. Then, we performed a confirmatory survey with 140 practitioners. The key results of our study indicate that cultural and geographical dispersion considerably impact productivity, thus encouraging managers and practitioners to consider such aspects during all the phases of the software development lifecycle. We conclude our paper by elaborating on the main insights from our analyses and instilling implications that may drive further research.",
     "topic_list": "Human Aspects | GSE | Culture",
     "downloadLink": "/assets/papers/SLambiase_JSS_SEAA_Extension_Productivity_2023.pdf"
+  },
+  {
+    "title": "Uncovering Community Smells in Machine Learning-Enabled Systems: Causes, Effects, and Mitigation Strategies",
+    "type": "Full Research Paper",
+    "source": "ACM Transaction on Software Engineering and Methodology (TOSEM)",
+    "authors": "G. Annunziata, <strong>S. Lambiase</strong>, D. A. Tamburri,  WJ. van den Heuvel, F. Palomba, G. Catolino, F. Ferrucci, A. De Lucia",
+    "acronym_key": "TOSEM",
+    "year": "2024",
+    "abstract": "Successful software development hinges on effective communication and collaboration, which are significantly influenced by human and social dynamics. Poor management of these elements can lead to the emergence of ‘community smells’, i.e., negative patterns in socio-technical interactions that gradually accumulate as ‘social debt’. This issue is particularly pertinent in machine learning-enabled systems, where diverse actors such as data engineers and software engineers interact at various levels. The unique collaboration context of these systems presents an ideal setting to investigate community smells and their impact on development communities. This paper addresses a gap in the literature by identifying the types, causes, effects, and potential mitigation strategies of community smells in machine learning-enabled systems. Using Partial Least Squares Structural Equation Modeling (PLS-SEM), we developed hypotheses based on existing literature and interviews, and conducted a questionnaire-based study to collect data. Our analysis resulted in the construction and validation of five models that represent the causes, effects, and strategies for five specific community smells. These models can help practitioners identify and address community smells within their organizations, while also providing valuable insights for future research on the socio-technical aspects of machine learning-enabled system communities.",
+    "topic_list": "Human Aspects",
+    "downloadLink": "/assets/papers/TOSEM_CommunitySmells_ML_Enabled.pdf"
+  },
+  {
+    "title": "Dealing with Cultural Dispersion: a Novel Theoretical Framework for Software Engineering Research and Practice",
+    "type": "Full Research Paper",
+    "source": "Proceedings of the 46th International Conference on Software Engineering - Software Engineering in Society (ICSE-SEIS 2024)",
+    "authors": "<strong>S. Lambiase</strong>, G. Catolino, B. Della Piana, F. Ferrucci, F. Palomba",
+    "acronym_key": "ICSE-SEIS",
+    "year": "2024",
+    "abstract": "Software development is fundamentally a team-driven process; researchers in software engineering have identified various human and social factors that can significantly impact it. Culture emerged as a critical element, and the diversity deriving from cultural differences can be highly impactful both positively and negatively. Despite existing knowledge about how culture influences software development, limitations persist. Most importantly, it makes research on culture fragmented, leading to the continual definition of new concepts that do not allow the state of the art to advance significantly, and it reduces the ability of the research to be transferred to practitioners since there is no framework designed to be understood and used by them. To address the above-mentioned limitation, this work proposed a theoretical framework of “Dealing With Cultural Dispersion”, which focuses on challenges and benefits originating from cultural differences and strategies for dealing with them. Such a framework was developed through a qualitative study using an iterative research approach, including interviews and socio-technical grounded theory for data analysis. The proposed framework was designed to reveal the tangible effects of practitioners’ culture in software development, allowing software teams to (1) clearly understand the problem and (2) implement the correct strategy for addressing it. Additionally, researchers can use this framework as a foundation to (deductively) develop a more robust and comprehensive theory in this field.",
+    "topic_list": "Human Aspects | GSE | Culture | Grounded Theory",
+    "downloadLink": "/assets/papers/ICSE_SEIS_2024_DealingWithCulturalDispersion_SLambiase.pdf"
   },
   {
     "title": "Security Testing in The Wild: An Interview Study",
