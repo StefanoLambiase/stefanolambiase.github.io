@@ -1,5 +1,16 @@
 [
   {
+    "title": "Accelerating 3D Scene Development for the Metaverse: Lessons from Photogrammetry and Manual Modeling",
+    "type": "Full Research Paper",
+    "source": "Proceedings of the 2nd International Conference on Intelligent Metaverse Technologies & Applications",
+    "authors": "V. Pentangelo, D. Di Dario, V. De Martino, M. Dello Buono, <strong>S. Lambiase</strong>",
+    "acronym_key": "iMeta",
+    "year": "2024",
+    "abstract": "The metaverse, a 3D immersive digital environment, is gaining significant interest due to its ability to connect people globally engaging and immersively, thanks to recent technological advancements. Developing high-quality 3D models is crucial for achieving realism and immersivity in the metaverse. However, this process is complex and resource-intensive, demanding specialized skills and substantial time. The emergence of novel automation tools and technologies, such as photogrammetry, which uses computer vision algorithms to reconstruct 3D models from 2D images, is beginning to address such challenges. Our research focused on analyzing the current state of such technologies in automating 3D scenes for the metaverse, comparing them to traditional manual modeling techniques. We conducted an experiment in which we built the same 3D scene using two techniques: a manual approach with Blender and a photogrammetry approach exploiting the Polycam tool on a mobile device. Our results have provided insights into the main strengths and limitations of using 3D automation techniques. The photogrammetry approach has significantly sped up the entire process, producing textures and models that accurately replicate real objects. However, it cannot wholly replace manual modeling approaches, without which it is impossible to obtain complete and efficient models. Lessons learned will serve as a foundation to guide developers in developing 3D scenes for the metaverse.",
+    "topic_list": "Virtual Reality | Metaverse",
+    "downloadLink": "/assets/papers/iMeta_Metaverse_Scene_Generation.pdf"
+  },
+  {
     "title": "Motivations, Challenges, Best Practices, and Benefits for Bots and Conversational Agents in Software Engineering: A Multivocal Literature Review",
     "type": "Full Journal Paper",
     "source": "ACM Computing Surveys",
