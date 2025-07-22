@@ -1,4 +1,26 @@
 [
+    {
+    "title": "Socio-Technical Well-Being of Quantum Software Communities: An Overview on Community Smells",
+    "type": "Full Research Paper",
+    "source": "Proceedings of the 28th Euromicro Conference on Software Engineering and Advanced Applications (SEAA 2025)",
+    "authors": "<strong>S. Lambiase</strong>, M. De Stefano, F. Palomba, F. Ferrucci, A. De Lucia",
+    "acronym_key": "SEAA",
+    "year": "2025",
+    "abstract": "Quantum computing has gained significant attention due to its potential to solve computational problems beyond the capabilities of classical computers. With major corporations and academic institutions investing in quantum hardware and software, there has been a rise in the development of quantum-enabled systems, particularly within open-source communities. However, despite the promising nature of quantum technologies, these communities face critical socio-technical challenges, including the emergence of socio-technical anti-patterns known as community smells. These anti-patterns, prevalent in open-source environments, have the potential to negatively impact both product quality and community health by introducing technical debt and amplifying architectural and code smells. Despite the importance of these socio-technical factors, there remains a scarcity of research investigating their influence within quantum open-source communities. This work aims to address this gap by providing a first step in analyzing the socio-technical well-being of quantum communities through a cross-sectional study. By understanding the socio-technical dynamics at play, it is expected that foundational knowledge can be established to mitigate the risks associated with community smells and ensure the long-term sustainability of open-source quantum initiatives.",
+    "topic_list": "Human Aspects | Quantum",
+    "downloadLink": "/assets/papers/SEAA_2025_Socio_technical_well_being_of_Quantum_Communities.pdf"
+  },
+  {
+    "title": "Investigating the Role of Cultural Values in Adopting Large Language Models for Software Engineering",
+    "type": "Full Journal Paper",
+    "source": "ACM Transaction on Software Engineering and Methodology",
+    "authors": "<strong>S. Lambiase</strong>, G. Catolino, F. Palomba, F. Ferrucci, D. Russo",
+    "acronym_key": "TOSEM",
+    "year": "2024",
+    "abstract": "As a socio-technical activity, software development involves the close interconnection of people and technology. The integration of Large Language Models (LLMs) into this process exemplifies the socio-technical nature of software development. Although LLMs influence the development process, software development remains fundamentally human-centric, necessitating an investigation of the human factors in this adoption. Thus, with this study we explore the factors influencing the adoption of LLMs in software development, focusing on the role of professionals’ cultural values. Guided by the Unified Theory of Acceptance and Use of Technology (UTAUT2) and Hofstede’s cultural dimensions, we hypothesized that cultural values moderate the relationships within the UTAUT2 framework. Using Partial Least Squares-Structural Equation Modelling and data from 188 software engineers, we found that habit and performance expectancy are the primary drivers of LLM adoption, while cultural values do not significantly moderate this process. These findings suggest that, by highlighting how LLMs can boost performance and efficiency, organizations can encourage their use, no matter the cultural differences. Practical steps include offering training programs to demonstrate LLM benefits, creating a supportive environment for regular use, and continuously tracking and sharing performance improvements from using LLMs.",
+    "topic_list": "LLM | GSE | PLS-SEM",
+    "downloadLink": "/assets/papers/TOSEM_2024_Culture_and_LLMs.pdf"
+  },
   {
     "title": "Accelerating 3D Scene Development for the Metaverse: Lessons from Photogrammetry and Manual Modeling",
     "type": "Full Research Paper",
@@ -135,7 +157,7 @@
     "title": "\"There and Back Again?\" On the Influence of Software Community Dispersion Over Productivity",
     "type": "Full Research Paper",
     "source": "Proceedings of the 25th Euromicro Conference on Software Engineering and Advanced Applications (SEAA 2022)",
-    "authors": "<strong>S. Lambiase</strong>, G. Catolino, F. Palomba, D. A. Tamburri, F. Palomba, W. J. Van Den Heuvel, F. Ferrucci",
+    "authors": "<strong>S. Lambiase</strong>, G. Catolino, F. Palomba, D. A. Tamburri, W. J. Van Den Heuvel, F. Ferrucci",
     "acronym_key": "SEAA",
     "year": "2022",
     "abstract": "Estimating and understanding productivity still represents a crucial task for researchers and practitioners. Researchers spent significant effort identifying the factors that influence software developers' productivity, providing several approaches for analyzing and predicting such a metric. Although different works focused on evaluating the impact of human factors on productivity, little is known about the influence of cultural/geographical diversity in software development communities. Indeed, in previous studies, researchers treated cultural aspects like an abstract concept without providing a quantitative representation. This work provides an empirical assessment of the relationship between cultural and geographical dispersion of a development community—namely, how diverse a community is in terms of cultural attitudes and geographical collocation of the members who belong to it—and its productivity. To reach our aim, we built a statistical model that contained product and socio-technical factors as independent variables to assess the correlation with productivity, i.e., the number of commits performed in a given time. Then, we ran our model considering data of 25 open-source communities on GitHub. Results of our study indicate that cultural and geographical dispersion impact productivity, thus encouraging managers and practitioners to consider such aspects during all the phases of the software development lifecycle.",
