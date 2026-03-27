@@ -36,7 +36,7 @@ function switchModeFunction () {
             });
 
             switchLabel.textContent = 'Light Mode';
-            cvImage.src = "./assets/images/CVImage_2.jpg";
+            cvImage.src = "./assets/images/new_ste.JPG";
         }
     });
 }
