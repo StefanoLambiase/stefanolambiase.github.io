@@ -56,6 +56,10 @@ p.card-text {
   color: #CCD1D9;
 }
 
+.text-muted {
+  color: #a0a6b0 !important;
+}
+
 .card {
   background-color: #1e1e1e;
   border-color: #333;
