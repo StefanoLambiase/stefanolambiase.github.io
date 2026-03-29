@@ -180,6 +180,23 @@ a:hover {
   color: black;
 }
 
+/* Mission quote */
+.mission-quote {
+  border-left: 4px solid #c0392b;
+  padding: 12px 20px;
+  margin: 15px 0 20px 0;
+  font-style: italic;
+  font-size: 1.05em;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 0 4px 4px 0;
+}
+
+.mission-quote p {
+  margin: 0;
+  color: #333;
+}
+
 .btn-publication {
   color: white!important;
   background: black!important;
