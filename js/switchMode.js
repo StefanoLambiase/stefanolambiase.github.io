@@ -9,6 +9,8 @@ function switchModeFunction () {
     const cards = document.querySelectorAll(".card");
     // Select CV Image.
     const cvImage = document.querySelector(".user-image");
+    // Select photo balloon.
+    const photoBalloon = document.querySelector(".photo-balloon");
 
     // Listen for a click on the button
     btn.addEventListener("click", function() {
@@ -24,7 +26,8 @@ function switchModeFunction () {
             });
 
             switchLabel.textContent = 'Dark Mode';
-            cvImage.src = "./assets/images/foto_della_distruzione.jpg";
+            cvImage.src = "./assets/images/meme_pollo.jpeg";
+            photoBalloon.style.display = "block";
         } else {
             // ... switch it to "light-theme.css"
             theme.href = "assets/css/minimalist-light-theme.css";
@@ -37,6 +40,7 @@ function switchModeFunction () {
 
             switchLabel.textContent = 'Light Mode';
             cvImage.src = "./assets/images/new_ste.JPG";
+            photoBalloon.style.display = "none";
         }
     });
 }

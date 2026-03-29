@@ -103,6 +103,30 @@ a:hover {
   background: none;
 }
 
+/* Photo balloon */
+.photo-balloon {
+  position: relative;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #CCD1D9;
+  font-size: 0.85em;
+  font-style: italic;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.photo-balloon::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #333;
+}
+
 /* User Image */
 .user-image {
   width: 225px;
