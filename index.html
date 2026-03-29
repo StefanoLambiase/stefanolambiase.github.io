@@ -79,7 +79,8 @@
           <a class="list-group-item small text-uppercase active" id="list-about-me" data-toggle="list" href="#about-me" role="tab">About me</a>
           <a class="list-group-item small text-uppercase" id="list-committee-list" data-toggle="list" href="#committee" role="tab">Committees</a>
           <a class="list-group-item small text-uppercase" id="list-experience-list" data-toggle="list" href="#experience" role="tab">Experience</a>
-          <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#publications" role="tab">Publications</a>
+          <a class="list-group-item small text-uppercase" id="list-publications-list" data-toggle="list" href="#publications" role="tab">Publications</a>
+          <a class="list-group-item small text-uppercase" id="list-publications-wip-list" data-toggle="list" href="#publications-wip" role="tab">Papers WIP</a>
           <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#projects" role="tab">Projects</a>
         </div>
       </div>
@@ -222,6 +223,36 @@
         </div>
         <!-- ./publications-panel-->
 
+        <!-- ./publications-wip-panel-->
+        <div class="tab-pane fade show" id="publications-wip" role="tabpanel">
+
+          <!-- Filters -->
+          <div class="row justify-content-lg-center mb-3">
+            <div class="col-lg-4 pb-2">
+              <input type="text" id="filter-text" class="form-control form-control-sm" placeholder="Search title, venue, or authors...">
+            </div>
+            <div class="col-lg-2 pb-2">
+              <select id="filter-type" class="form-select form-select-sm">
+                <option value="">All types</option>
+                <option value="journal">Journal</option>
+                <option value="conference">Conference</option>
+              </select>
+            </div>
+          </div>
+          <div class="row justify-content-lg-center mb-4">
+            <div class="col-lg-8 pb-2" id="filter-years-container">
+              <!-- Year badges are populated by JS -->
+            </div>
+          </div>
+
+          <div class="row justify-content-lg-center" id="publications_wip_inner">
+
+              <!-- The panel is populated using a JSON -->
+
+          </div>
+        </div>
+        <!-- ./publications-wip-panel-->
+
         <!-- ./projects-panel-->
         <div class="tab-pane fade show" id="projects" role="tabpanel">
           <!-- TODO: Projects cards? Dunno. -->
@@ -304,6 +335,7 @@
     <script src="js/experienceFilling.js"></script>
     <script src="js/committeeFilling.js"></script>
     <script src="js/paperFilling.js"></script>
+    <script src="js/paperNewFilling.js"></script>
     <!-- javascript for tooltips -->
     <script>
       // Select all elements with data-toggle="tooltips" in the document

@@ -1,45 +1,64 @@
 {
   "experiences": [
     {
-      "title": "Program Committee Member of ICSE-SEET 2024",
-      "location": "Portugal, Lisbon",
+      "title": "Assistant Professor",
+      "location": "Aalborg University, Copenhagen (Denmark)",
+      "date": "1 August, 2025 - Present",
+      "description": "Assistant Professor at Aalborg University's Copenhagen campus. My research and teaching activities focus on software engineering and the human aspects of software development."
+    },
+    {
+      "title": "Invited Talk — Sustainability Education Week",
+      "location": "University of Salerno, Italy",
+      "date": "24-30 November, 2025",
+      "description": "Invited to give a talk titled <strong>&ldquo;The Double-Edged Sword of Digital Technologies: How AI Shapes Cognitive Load and Well-Being&rdquo;</strong> on the impact of Generative AI on mental wellbeing."
+    },
+    {
+      "title": "Distinguished Reviewer Award — ICSE-SEET 2024",
+      "location": "Lisbon, Portugal",
       "date": "14-20 April, 2024",
-      "description": "I was selected as a member of the Program Committee of <a href='https://conf.researchr.org/track/icse-2024/icse-2024-software-engineering-education-and-training-track'>ICSE-SEET 2024</a>.",
-      "token": "Committee member"
+      "description": "Received the <strong>Distinguished Reviewer Award</strong> at the 46th International Conference on Software Engineering — Software Engineering Education and Training (<a href='https://conf.researchr.org/track/icse-2024/icse-2024-software-engineering-education-and-training-track'>ICSE-SEET 2024</a>)."
     },
     {
-      "title": "Program Committee Member of SANER 2024",
-      "location": "Rovaniemi, Finland",
-      "date": "12-15 March, 2024",
-      "description": "I was selected as a member of the Program Committee of <a href='https://conf.researchr.org/home/saner-2024'>SANER 2024</a>.",
-      "token": "Committee member"
+      "title": "Postdoctoral Researcher",
+      "location": "University of Salerno, Italy",
+      "date": "2024 - 2025",
+      "description": "Postdoctoral Researcher on the project <strong>&ldquo;QUASAR: QUAntum software engineering for Secure, Affordable, and Reliable systems&rdquo;</strong> (grant 2022T2E39C), under the PRIN 2022 MUR program funded by the EU - NGEU. Coordinator: Andrea De Lucia."
     },
     {
-      "title": "Program Committee Member of ICSEA 2023",
-      "location": "Valencia, Spain",
-      "date": "13-17 November, 2023",
-      "description": "I was selected as a member of the Program Committee of the 18th International Conference on Software Engineering Advances <a href='https://www.iaria.org/conferences2023/ICSEA23.html'>(ICSEA 2023)</a>.",
-      "token": "Committee member"
+      "title": "EASE 2024 Local Arrangement",
+      "location": "Salerno, Italy",
+      "date": "2024",
+      "description": "Member of the local arrangement committee of the International Conference on Evaluation and Assessment in Software Engineering (<a href='https://conf.researchr.org/home/ease-2024'>EASE 2024</a>)."
     },
     {
-      "title": "Program Committee Member of MSR 2023",
-      "location": "Melbourne, Australia",
-      "date": "15-16 May, 2023",
-      "description": "I was selected as a member of the Program Committee on the <a href='https://conf.researchr.org/home/msr-2023'>MSR 2023</a>.",
-      "token": "Committee member"
+      "title": "ISSSE 2024 Organizing Team",
+      "location": "University of Salerno, Italy",
+      "date": "2024",
+      "description": "Member of the organizing team of the 17th International Summer School on Software Engineering University of Salerno (ISSSE 2024)."
     },
     {
-      "title": "Program Committee Member of SCAM-NIER 2023",
-      "location": "Bogotà, Colombia",
-      "date": "2-3 October, 2023",
-      "description": "I was selected as a member of the Program Committee of the 23rd IEEE International Working Conference on Source Code Analysis and Manipulation <a href='http://www.ieee-scam.org/2023/'>(SCAM-NIER 2023)</a>.",
-      "token": "Committee member"
+      "title": "Aalborg University Copenhagen — ERASMUS Visiting Period",
+      "location": "Aalborg University, Copenhagen (Denmark)",
+      "date": "2024",
+      "description": "Visiting student for three months at Aalborg University Copenhagen under the ERASMUS program. Studied the Structural Equation Modelling statistical method and applied it to a research project focusing on the role of individual cultural values in the adoption of large language models for software development purposes."
     },
     {
-      "title": "ICSME 2022 Conference",
-      "location": "Limassol, Cyprus",
-      "date": "2-7 October, 2022",
-      "description": "I presented an accepted paper at <a href='https://cyprusconferences.org/icsme2022/'>ICSME 2022</a> (Tool Demo Track) titled <i>Community Smells Detection and Refactoring in SLACK: The CADOCS Project</i>."
+      "title": "Mitacs Grant IT43497",
+      "location": "Dalhousie University, Canada",
+      "date": "2025",
+      "description": "Honored with an award for a grant research proposal in Canada supported by Mitacs. The research project is titled <strong>&ldquo;Identifying Critical Success Factors in Video Game Development: A Meta-Analysis Approach&rdquo;</strong>, supervised by Professor Paul Ralph (Dalhousie University) and Professor Fabio Palomba (University of Salerno)."
+    },
+    {
+      "title": "ISSSE 2023 Web Chair and Organizing Team",
+      "location": "University of Salerno, Italy",
+      "date": "2023",
+      "description": "Web chair of the 16th International Summer School on Software Engineering University of Salerno (ISSSE 2023). Also a member of the Software Engineering Laboratory Salerno team responsible for organizing the school, supporting all social and technical activities."
+    },
+    {
+      "title": "Copenhagen Symposium on Human-Centered Software Engineering AI",
+      "location": "Copenhagen, Denmark",
+      "date": "2023",
+      "description": "Certificate of attendance to the 1st Copenhagen Symposium on Human-Centered Software Engineering AI, organized by Prof. Daniel Russo."
     },
     {
       "title": "Best Paper Award at the 25th Euromicro Conference on Software Engineering and Advanced Application",
@@ -60,22 +79,16 @@
       "description": "Member of the <strong>GE@ICSE 2022</strong> social media and web chair, an <a href='https://conf.researchr.org/home/icse-2022'>ICSE 2022</a> workshop about the role, difficulties and opportunities concerning people of different gender in the field of software engineering, in research, education and industry. <ul class='list-inline social-icons'><li class='list-inline-item'><a href='https://geworkshop.github.io/index.html' target='_blank'><em class='fa fa-globe'></em></a></li></ul>"
     },
     {
-      "title": "Doctor of Philosophy in Computer Science Start",
+      "title": "Doctor of Philosophy in Computer Science",
       "location": "University of Salerno - Software Engineering Lab (SESA)",
-      "date": "1 November, 2019",
-      "description": "Started my Ph.D. in Computer Science at the University of Salerno at the Software Engineering Laboratory (SESA Lab). My doctoral project is titled <strong>&ldquo;Longitudinal Data-Driven Software Project Management&rdquo;</strong> and regards the social and human aspects of Software Development and Management."
+      "date": "November, 2021 - October, 2024",
+      "description": "Completed my Ph.D. in Computer Science at the University of Salerno (Excellent — Top Grade). Thesis: <strong>&ldquo;Investigating Cultural Dispersion: On the Role of Cultural Aspects in Socio-Technical Activities of Software Development Teams&rdquo;</strong>. Advisor: Filomena Ferrucci. Co-supervisors: Fabio Palomba, Gemma Catolino."
     },
     {
       "title": "Master's Degree in Computer Science",
       "location": "University of Salerno",
       "date": "21 September, 2019 - 30 September, 2021",
       "description": "Obtained the Master's Degree in Computer Science at University of Salerno with a research thesis about Social Aspects of Software Engineering called <strong>&ldquo;Cultural and Geographical Dispersion Impact on Communication and Collaboration of Software Development Teams&rdquo;</strong>."
-    },
-    {
-      "title": "MaLTeSQuE 2021",
-      "location": "Athens, Greece",
-      "date": "23 August, 2021",
-      "description": "Participated in the <strong>MaLTeSQuE 2021</strong> workshop, co-located with <strong>ESEC/FSE 2021</strong>, with a presentation abstract titled <strong>&lsquo;Evidence and Machine Learning based Task Allocation: A combined Approach&rsquo;</strong>. <ul class='list-inline social-icons'><li class='list-inline-item'><a href='https://maltesque2021.github.io/' target='_blank'><em class='fa fa-globe'></em></a></li></ul>"
     },
     {
       "title": "App Challenge 2021 - VII Edition Participant",

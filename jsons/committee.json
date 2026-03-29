@@ -1,40 +1,41 @@
 {
-    "committees": [
-      {
-        "title": "ICSE-SEET 2024",
-        "location": "Portugal, Lisbon",
-        "date": "14-20 April, 2024",
-        "description": "I was selected as a member of the Program Committee of the 46th International Conference on Software Engineering <a href='https://conf.researchr.org/track/icse-2024/icse-2024-software-engineering-education-and-training-track'>(ICSE-SEET 2024)</a>.",
-        "token": "Committee member"
-      },
-      {
-        "title": "SANER 2024",
-        "location": "Rovaniemi, Finland",
-        "date": "12-15 March, 2024",
-        "description": "I was selected as a member of the Program Committee of the IEEE International Conference on Software Analysis, Evolution and Reengineering <a href='https://conf.researchr.org/home/saner-2024'>(SANER 2024)</a>.",
-        "token": "Committee member"
-      },
-      {
-        "title": "ICSEA 2023",
-        "location": "Valencia, Spain",
-        "date": "13-17 November, 2023",
-        "description": "I was selected as a member of the Program Committee of the 18th International Conference on Software Engineering Advances <a href='https://www.iaria.org/conferences2023/ICSEA23.html'>(ICSEA 2023)</a>.",
-        "token": "Committee member"
-      },
-      {
-        "title": "MSR 2023",
-        "location": "Melbourne, Australia",
-        "date": "15-16 May, 2023",
-        "description": "I was selected as a member of the Program Committee of the 20th International Conference on Mining Software Repositories <a href='https://conf.researchr.org/home/msr-2023'>(MSR 2023)</a>.",
-        "token": "Committee member"
-      },
-      {
-        "title": "SCAM-NIER 2023",
-        "location": "Bogotà, Colombia",
-        "date": "2-3 October, 2023",
-        "description": "I was selected as a member of the Program Committee of the 23rd IEEE International Working Conference on Source Code Analysis and Manipulation <a href='http://www.ieee-scam.org/2023/'>(SCAM-NIER 2023)</a>.",
-        "token": "Committee member"
-      }
-    ]
-  }
-  
+  "committees": [
+    {
+      "year": "2026",
+      "conferences": [
+        { "name": "E-QSE 2026", "role": "Organizer" },
+        { "name": "MSR-RR 2026" },
+        { "name": "ICSE-SEET 2026" },
+        { "name": "ICPC 2026" }
+      ]
+    },
+    {
+      "year": "2025",
+      "conferences": [
+        { "name": "SANER 2025" },
+        { "name": "FSE-IVR 2025" },
+        { "name": "E-QSE 2025" },
+        { "name": "ICSME 2025" },
+        { "name": "EASE 2025" }
+      ]
+    },
+    {
+      "year": "2024",
+      "conferences": [
+        { "name": "SCAM-NIER 2024" },
+        { "name": "ICSME-NIER 2024" },
+        { "name": "ICSE-SEET 2024" },
+        { "name": "SANER 2024" }
+      ]
+    },
+    {
+      "year": "2023",
+      "conferences": [
+        { "name": "MENSURA 2023" },
+        { "name": "ICSEA 2023" },
+        { "name": "MSR 2023" },
+        { "name": "SCAM-NIER 2023" }
+      ]
+    }
+  ]
+}

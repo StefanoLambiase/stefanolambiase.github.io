@@ -1,0 +1,451 @@
+{
+  "author": "Stefano Lambiase",
+  "orcid": "0000-0002-9933-6203",
+  "dblp": "https://dblp.org/pid/274/3963",
+  "google_scholar": "https://scholar.google.com/citations?user=2fHPEdkAAAAJ",
+  "source": "DBLP (https://dblp.org/pid/274/3963), retrieved 2026-03-29",
+  "note": "Includes journal articles (j) and conference/workshop papers (c). Preprints (CoRR) excluded. Some entries near the end of the DBLP page may be missing due to page truncation — verify at https://dblp.org/pid/274/3963",
+  "publications": [
+    {
+      "dblp_key": "journals/tosem/LambiaseCPFR26",
+      "type": "journal",
+      "year": 2026,
+      "title": "Investigating the Role of Cultural Values in Adopting Large Language Models for Software Engineering.",
+      "authors": [
+        "Stefano Lambiase",
+        "Gemma Catolino",
+        "Fabio Palomba",
+        "Filomena Ferrucci",
+        "Daniel Russo"
+      ],
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "volume": "35",
+      "number": "1",
+      "pages": "23:1-23:43",
+      "doi": "10.1145/3725529",
+      "dblp_url": "https://dblp.org/rec/journals/tosem/LambiaseCPFR26",
+      "downloadLink": "/assets/papers/TOSEM_2024_Culture_and_LLMs.pdf"
+    },
+    {
+      "dblp_key": "journals/ese/LambiaseL26",
+      "type": "journal",
+      "year": 2026,
+      "title": "Quantifying adoption: A SEM study of quantum software technology in software development.",
+      "authors": [
+        "Stefano Lambiase",
+        "Andrea De Lucia"
+      ],
+      "venue": "Empirical Software Engineering",
+      "volume": "31",
+      "number": "3",
+      "pages": "69",
+      "doi": "10.1007/s10664-026-10805-7",
+      "dblp_url": "https://dblp.org/rec/journals/ese/LambiaseL26",
+      "downloadLink": null
+    },
+    {
+      "dblp_key": "journals/smr/PortaLCFP25",
+      "type": "journal",
+      "year": 2025,
+      "title": "A Novel, Tool-Supported Catalog of Community Smell Symptoms.",
+      "authors": [
+        "Antonio Della Porta",
+        "Stefano Lambiase",
+        "Gemma Catolino",
+        "Filomena Ferrucci",
+        "Fabio Palomba"
+      ],
+      "venue": "Journal of Software Evolution and Process",
+      "volume": "37",
+      "number": "11",
+      "doi": "10.1002/smr.70067",
+      "dblp_url": "https://dblp.org/rec/journals/smr/PortaLCFP25",
+      "downloadLink": null
+    },
+    {
+      "dblp_key": "conf/ease/PortaLP25",
+      "type": "conference",
+      "year": 2025,
+      "title": "Do Prompt Patterns Affect Code Quality? A First Empirical Assessment of ChatGPT-Generated Code.",
+      "authors": [
+        "Antonio Della Porta",
+        "Stefano Lambiase",
+        "Fabio Palomba"
+      ],
+      "venue": "EASE 2025",
+      "pages": "181-192",
+      "doi": "10.1145/3756681.3756938",
+      "dblp_url": "https://dblp.org/rec/conf/ease/PortaLP25",
+      "downloadLink": null
+    },
+    {
+      "dblp_key": "journals/tciaig/Lambiase25",
+      "type": "journal",
+      "year": 2025,
+      "title": "Exploring Emotional Intelligence Across Job Roles in Video Game Development Teams.",
+      "authors": [
+        "Stefano Lambiase"
+      ],
+      "venue": "IEEE Transactions on Games",
+      "volume": "17",
+      "number": "4",
+      "pages": "1035-1045",
+      "doi": "10.1109/TG.2025.3593423",
+      "dblp_url": "https://dblp.org/rec/journals/tciaig/Lambiase25",
+      "downloadLink": null
+    },
+    {
+      "dblp_key": "conf/ease/AnnunziataLPCF25",
+      "type": "conference",
+      "year": 2025,
+      "title": "How Do Communities of ML-Enabled Systems Smell? A Cross-Sectional Study on the Prevalence of Community Smells.",
+      "authors": [
+        "Giusy Annunziata",
+        "Stefano Lambiase",
+        "Fabio Palomba",
+        "Gemma Catolino",
+        "Filomena Ferrucci"
+      ],
+      "venue": "EASE 2025",
+      "pages": "272-282",
+      "doi": "10.1145/3756681.3756941",
+      "dblp_url": "https://dblp.org/rec/conf/ease/AnnunziataLPCF25",
+      "downloadLink": null
+    },
+    {
+      "dblp_key": "journals/csur/LambiaseCPF25",
+      "type": "journal",
+      "year": 2025,
+      "title": "Motivations, Challenges, Best Practices, and Benefits for Bots and Conversational Agents in Software Engineering: A Multivocal Literature Review.",
+      "authors": [
+        "Stefano Lambiase",
+        "Gemma Catolino",
+        "Fabio Palomba",
+        "Filomena Ferrucci"
+      ],
+      "venue": "ACM Computing Surveys",
+      "volume": "57",
+      "number": "4",
+      "pages": "93:1-93:37",
+      "doi": "10.1145/3704806",
+      "dblp_url": "https://dblp.org/rec/journals/csur/LambiaseCPF25",
+      "downloadLink": "/assets/papers/CSUR_2024_BotMLR.pdf"
+    },
+    {
+      "dblp_key": "journals/softx/PentangeloTLGP25",
+      "type": "journal",
+      "year": 2025,
+      "title": "SENEM-AI: Leveraging LLMs for student behavior simulation in virtual learning environments.",
+      "authors": [
+        "Viviana Pentangelo",
+        "Luigi Turco",
+        "Stefano Lambiase",
+        "Carmine Gravino",
+        "Fabio Palomba"
+      ],
+      "venue": "SoftwareX",
+      "volume": "31",
+      "pages": "102278",
+      "doi": "10.1016/j.softx.2025.102278",
+      "dblp_url": "https://dblp.org/rec/journals/softx/PentangeloTLGP25",
+      "downloadLink": null
+    },
+    {
+      "dblp_key": "conf/seaa/LambiaseSPFL25",
+      "type": "conference",
+      "year": 2025,
+      "title": "Socio-Technical Well-Being of Quantum Software Communities: An Overview on Community Smells.",
+      "authors": [
+        "Stefano Lambiase",
+        "Manuel De Stefano",
+        "Fabio Palomba",
+        "Filomena Ferrucci",
+        "Andrea De Lucia"
+      ],
+      "venue": "SEAA 2025",
+      "pages": "39-56",
+      "dblp_url": "https://dblp.org/rec/conf/seaa/LambiaseSPFL25",
+      "downloadLink": "/assets/papers/SEAA_2025_Socio_technical_well_being_of_Quantum_Communities.pdf"
+    },
+    {
+      "dblp_key": "conf/ectel/CardiaPLGPM25",
+      "type": "conference",
+      "year": 2025,
+      "title": "Toward Realistic AI-Generated Student Questions to Support Instructor Training.",
+      "authors": [
+        "F. Cardia",
+        "Viviana Pentangelo",
+        "Stefano Lambiase",
+        "Carmine Gravino",
+        "Fabio Palomba",
+        "M. Marras"
+      ],
+      "venue": "EC-TEL 2025",
+      "pages": "107-122",
+      "doi": "10.1007/978-3-032-03870-8_8",
+      "dblp_url": "https://dblp.org/rec/conf/ectel/CardiaPLGPM25",
+      "downloadLink": null
+    },
+    {
+      "dblp_key": "journals/tosem/AnnunziataLTHPCFL25",
+      "type": "journal",
+      "year": 2025,
+      "title": "Uncovering Community Smells in Machine Learning-Enabled Systems: Causes, Effects, and Mitigation Strategies.",
+      "authors": [
+        "Giusy Annunziata",
+        "Stefano Lambiase",
+        "Damian A. Tamburri",
+        "Willem-Jan van den Heuvel",
+        "Fabio Palomba",
+        "Gemma Catolino",
+        "Filomena Ferrucci",
+        "Andrea De Lucia"
+      ],
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "volume": "34",
+      "number": "6",
+      "pages": "176:1-176:48",
+      "doi": "10.1145/3712198",
+      "dblp_url": "https://dblp.org/rec/journals/tosem/AnnunziataLTHPCFL25",
+      "downloadLink": "/assets/papers/TOSEM_CommunitySmells_ML_Enabled.pdf"
+    },
+    {
+      "dblp_key": "conf/saner/PortaRLNP25",
+      "type": "conference",
+      "year": 2025,
+      "title": "Unlocking Code Simplicity: The Role of Prompt Patterns in Managing LLM Code Complexity.",
+      "authors": [
+        "Antonio Della Porta",
+        "Gilberto Recupito",
+        "Stefano Lambiase",
+        "Dario Di Nucci",
+        "Fabio Palomba"
+      ],
+      "venue": "SANER 2025 Companion",
+      "dblp_url": "https://dblp.org/db/conf/saner/saner2025c.html",
+      "downloadLink": null
+    },
+    {
+      "type": "conference",
+      "year": 2024,
+      "title": "Accelerating 3D Scene Development for the Metaverse: Lessons from Photogrammetry and Manual Modeling.",
+      "authors": [
+        "Viviana Pentangelo",
+        "Dario Di Dario",
+        "Vincenzo De Martino",
+        "Mario Dello Buono",
+        "Stefano Lambiase"
+      ],
+      "venue": "iMeta 2024",
+      "downloadLink": "/assets/papers/iMeta_Metaverse_Scene_Generation.pdf"
+    },
+    {
+      "dblp_key": "journals/jss/LambiaseCPTPHF24",
+      "type": "journal",
+      "year": 2024,
+      "title": "An Empirical Investigation Into the Influence of Software Communities' Cultural and Geographical Dispersion on Productivity.",
+      "authors": [
+        "Stefano Lambiase",
+        "Gemma Catolino",
+        "Fabiano Pecorelli",
+        "Damian A. Tamburri",
+        "Fabio Palomba",
+        "Willem-Jan van den Heuvel",
+        "Filomena Ferrucci"
+      ],
+      "venue": "Journal of Systems and Software",
+      "volume": "208",
+      "pages": "111878",
+      "doi": "10.1016/j.jss.2023.111878",
+      "dblp_url": "https://dblp.org/rec/journals/jss/LambiaseCPTPHF24",
+      "downloadLink": "/assets/papers/SLambiase_JSS_SEAA_Extension_Productivity_2023.pdf"
+    },
+    {
+      "type": "conference",
+      "year": 2024,
+      "title": "An Empirical Study on the Relation Between Programming Languages and the Emergence of Community Smells.",
+      "authors": [
+        "Giusy Annunziata",
+        "Carmine Ferrara",
+        "Stefano Lambiase",
+        "Fabio Palomba",
+        "Gemma Catolino",
+        "Filomena Ferrucci",
+        "Andrea De Lucia"
+      ],
+      "venue": "SEAA 2024",
+      "pages": "268-275",
+      "downloadLink": null
+    },
+    {
+      "type": "conference",
+      "year": 2024,
+      "title": "Cultural and Socio-Technical Aspects in Software Development.",
+      "authors": [
+        "Stefano Lambiase"
+      ],
+      "venue": "EASE 2024 (Doctoral Symposium)",
+      "doi": "10.1145/3661167.3661230",
+      "downloadLink": "/assets/papers/EASE_DoctoralSymposium_2024_Doctoral_Symposium.pdf"
+    },
+    {
+      "type": "conference",
+      "year": 2024,
+      "title": "Dealing With Cultural Dispersion: a Novel Theoretical Framework for Software Engineering Research and Practice.",
+      "authors": [
+        "Stefano Lambiase",
+        "Gemma Catolino",
+        "Bice Della Piana",
+        "Filomena Ferrucci",
+        "Fabio Palomba"
+      ],
+      "venue": "ICSE-SEIS 2024",
+      "downloadLink": "/assets/papers/ICSE_SEIS_2024_DealingWithCulturalDispersion_SLambiase.pdf"
+    },
+    {
+      "dblp_key": "journals/jss/RussoABBCCEFHHIKKLMMMPRSSSSTTV24",
+      "type": "journal",
+      "year": 2024,
+      "title": "Generative AI in Software Engineering Must Be Human-Centered: The Copenhagen Manifesto.",
+      "authors": [
+        "Daniel Russo",
+        "Sebastian Baltes",
+        "...",
+        "Stefano Lambiase",
+        "..."
+      ],
+      "note": "Many co-authors — see DBLP for full list",
+      "venue": "Journal of Systems and Software",
+      "volume": "216",
+      "pages": "112115",
+      "dblp_url": "https://dblp.org/db/journals/jss/",
+      "downloadLink": null
+    },
+    {
+      "type": "conference",
+      "year": 2024,
+      "title": "Investigating Cultural Dispersion: on the Role of Cultural Differences in Software Development Teams.",
+      "authors": [
+        "Stefano Lambiase"
+      ],
+      "venue": "ICSE 2024 (Doctoral Symposium)",
+      "downloadLink": "/assets/papers/SLambiase_ICSE_DS_2024_CulturalDispersion.pdf"
+    },
+    {
+      "type": "journal",
+      "year": 2024,
+      "title": "SENEM: A software engineering-enabled educational metaverse.",
+      "authors": [
+        "Viviana Pentangelo",
+        "Dario Di Dario",
+        "Stefano Lambiase",
+        "Filomena Ferrucci",
+        "Carmine Gravino",
+        "Fabio Palomba"
+      ],
+      "venue": "Information and Software Technology",
+      "downloadLink": "/assets/papers/SENEM_IST_2024.pdf"
+    },
+    {
+      "type": "conference",
+      "year": 2024,
+      "title": "SERGE - Serious Game for the Education of Risk Management in Software Project Management.",
+      "authors": [
+        "Giusy Annunziata",
+        "Stefano Lambiase",
+        "Fabio Palomba",
+        "Filomena Ferrucci"
+      ],
+      "venue": "ICSE-SEET 2024",
+      "downloadLink": "/assets/papers/ICSE_SEET_2024_SERGE.pdf"
+    },
+    {
+      "type": "journal",
+      "year": 2023,
+      "title": "QuantuMoonLight: A Low-Code Platform to Experiment with Quantum Machine Learning.",
+      "authors": [
+        "Francesco Amato et al."
+      ],
+      "venue": "SoftwareX",
+      "downloadLink": "/assets/papers/SofwareX_QuantuMoonLight_2022_Definitivo.pdf"
+    },
+    {
+      "type": "conference",
+      "year": 2023,
+      "title": "Security Testing in The Wild: An Interview Study.",
+      "authors": [
+        "Dario Di Dario",
+        "Valeria Pontillo",
+        "Stefano Lambiase",
+        "Filomena Ferrucci",
+        "Fabio Palomba"
+      ],
+      "venue": "SEAA 2023",
+      "pages": "191-198",
+      "downloadLink": "/assets/papers/DiDario_SecurityTesting.pdf"
+    },
+    {
+      "type": "conference",
+      "year": 2022,
+      "title": "\"There and Back Again?\" On the Influence of Software Community Dispersion Over Productivity.",
+      "authors": [
+        "Stefano Lambiase",
+        "Gemma Catolino",
+        "Fabiano Pecorelli",
+        "Damian A. Tamburri",
+        "Fabio Palomba",
+        "Willem-Jan van den Heuvel",
+        "Filomena Ferrucci"
+      ],
+      "venue": "SEAA 2022",
+      "pages": "177-184",
+      "downloadLink": "/assets/papers/SLambiase_JSS_SEAA_Extension_Productivity_2023.pdf"
+    },
+    {
+      "type": "conference",
+      "year": 2022,
+      "title": "Community Smell Detection and Refactoring in SLACK: The CADOCS Project.",
+      "authors": [
+        "Gianluca Voria",
+        "Viviana Pentangelo",
+        "Antonio Della Porta",
+        "Stefano Lambiase",
+        "Gemma Catolino",
+        "Fabio Palomba",
+        "Filomena Ferrucci"
+      ],
+      "venue": "ICSME 2022 (Tool Demo)",
+      "downloadLink": "/assets/papers/ICSME_CADOCS_2022.pdf"
+    },
+    {
+      "type": "conference",
+      "year": 2022,
+      "title": "Good Fences Make Good Neighbours? On the Impact of Cultural and Geographical Dispersion on Community Smells.",
+      "authors": [
+        "Stefano Lambiase",
+        "Gemma Catolino",
+        "Fabio Palomba",
+        "Filomena Ferrucci"
+      ],
+      "venue": "ICSE-SEIS 2022",
+      "downloadLink": "/assets/papers/Good_Fences_Make_Good_Neighbours.pdf"
+    },
+    {
+      "dblp_key": "conf/icpc/LambiaseCPLP20",
+      "type": "conference",
+      "year": 2020,
+      "title": "Just-In-Time Test Smell Detection and Refactoring: The DARTS Project.",
+      "authors": [
+        "Stefano Lambiase",
+        "Andrea Cupito",
+        "Fabiano Pecorelli",
+        "Andrea De Lucia",
+        "Fabio Palomba"
+      ],
+      "venue": "ICPC 2020",
+      "pages": "441-445",
+      "dblp_url": "https://dblp.org/rec/conf/icpc/LambiaseCPLP20",
+      "downloadLink": null
+    }
+  ]
+}

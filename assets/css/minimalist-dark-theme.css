@@ -53,7 +53,20 @@ p {
 }
 
 p.card-text {
-  color: black;
+  color: #CCD1D9;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+.card-title {
+  color: white;
+}
+
+h6 {
+  color: #CCD1D9;
 }
 
 span {
