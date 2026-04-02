@@ -262,6 +262,25 @@ a:hover {
   color: #CCD1D9;
 }
 
+/* Table (peer review) */
+.table {
+  color: #CCD1D9;
+  --bs-table-bg: transparent;
+  --bs-table-hover-bg: rgba(255, 255, 255, 0.05);
+  --bs-table-hover-color: white;
+  border-color: #333;
+}
+
+.table th {
+  color: white;
+  border-color: #444;
+}
+
+.table td {
+  color: #CCD1D9;
+  border-color: #333;
+}
+
 .btn-publication {
   color: white!important;
   background: black!important;

@@ -1,0 +1,38 @@
+{
+  "totalReviews": 63,
+  "totalPublications": 8,
+  "reviews": [
+    {
+      "journal": "ACM Transactions on Software Engineering and Methodology",
+      "count": 10
+    },
+    {
+      "journal": "Empirical Software Engineering",
+      "count": 2
+    },
+    {
+      "journal": "IEEE Transactions on Software Engineering",
+      "count": 10
+    },
+    {
+      "journal": "Information and Software Technology",
+      "count": 10
+    },
+    {
+      "journal": "Journal of Software",
+      "count": 3
+    },
+    {
+      "journal": "Science of Computer Programming",
+      "count": 14
+    },
+    {
+      "journal": "SoftwareX",
+      "count": 4
+    },
+    {
+      "journal": "The Journal of Systems and Software",
+      "count": 10
+    }
+  ]
+}

@@ -77,9 +77,10 @@
         <div class="list-group list-group-horizontal-md" id="content-tabs" role="tablist">
           <a class="list-group-item small text-uppercase active" id="list-about-me" data-toggle="list" href="#about-me" role="tab">About me</a>
           <a class="list-group-item small text-uppercase" id="list-committee-list" data-toggle="list" href="#committee" role="tab">Committees</a>
+          <a class="list-group-item small text-uppercase" id="list-peer-review-list" data-toggle="list" href="#peer-review" role="tab">Peer Review</a>
           <a class="list-group-item small text-uppercase" id="list-experience-list" data-toggle="list" href="#experience" role="tab">Experience</a>
-          <a class="list-group-item small text-uppercase" id="list-publications-list" data-toggle="list" href="#publications" role="tab">Publications</a>
-          <a class="list-group-item small text-uppercase" id="list-publications-wip-list" data-toggle="list" href="#publications-wip" role="tab">Papers WIP</a>
+          <a class="list-group-item small text-uppercase" id="list-publications-list" data-toggle="list" href="#publications" role="tab" style="display: none;">Publications</a>
+          <a class="list-group-item small text-uppercase" id="list-publications-wip-list" data-toggle="list" href="#publications-wip" role="tab">Papers</a>
           <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#projects" role="tab">Projects</a>
           <a class="list-group-item small text-uppercase" id="list-contact-list" data-toggle="list" href="#contact" role="tab">Get in touch</a>
         </div>
@@ -202,6 +203,21 @@
           </div>
         </div>
         <!-- ./committee-panel-->
+
+        <!-- ./peer-review-panel-->
+        <div class="tab-pane fade show" id="peer-review" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg-8">
+              <h3 class="text-inside-line text-center"><span>Peer Review Activity</span></h3>
+              <div id="peer-review-container" style="margin-top: 40px;">
+
+                <!-- The panel is populated using a JSON -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./peer-review-panel-->
 
         <!-- ./experience-panel-->
         <div class="tab-pane fade show" id="experience" role="tabpanel">
@@ -374,6 +390,7 @@
     <!-- JavaScript for experience filling -->
     <script src="js/experienceFilling.js"></script>
     <script src="js/committeeFilling.js"></script>
+    <script src="js/peerReviewFilling.js"></script>
     <script src="js/paperFilling.js"></script>
     <script src="js/paperNewFilling.js"></script>
     <!-- javascript for tooltips -->
