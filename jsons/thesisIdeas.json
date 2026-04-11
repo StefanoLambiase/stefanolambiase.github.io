@@ -20,6 +20,13 @@
       "tags": ["Video Game Development", "Generative AI", "Game Design"],
       "level": ["BSc", "MSc"],
       "downloadLink": "assets/downloads/thesis-ideas/adaptive-difficulty-video-games.pdf"
+    },
+    {
+      "title": "AI-Powered Tools for Supporting Software Engineers Across the Software Lifecycle",
+      "description": "Investigate the design, development, and evaluation of AI-powered tools that support software engineers across one or more phases of the SDLC, from requirements and design to testing, deployment, and maintenance.",
+      "tags": ["Software Engineering", "Generative AI", "AI4SE"],
+      "level": ["BSc", "MSc"],
+      "downloadLink": "assets/downloads/thesis-ideas/ai-tools-software-lifecycle.pdf"
     }
   ]
 }
