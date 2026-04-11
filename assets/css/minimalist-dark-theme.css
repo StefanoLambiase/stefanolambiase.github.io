@@ -141,6 +141,21 @@ a:hover {
   }
 }
 
+/* Content Switcher - two-column grid on mobile */
+@media (max-width: 767px) {
+  #content-tabs {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
+  }
+  #content-tabs .list-group-item {
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+}
+
 /* Content Switcher */
 .list-group-item {
   color: black!important;
