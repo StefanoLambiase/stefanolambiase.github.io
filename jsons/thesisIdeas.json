@@ -1,0 +1,18 @@
+{
+  "thesisIdeas": [
+    {
+      "title": "Integration of Generative AI for NPCs",
+      "description": "Investigate the integration of LLMs for NPCs in video games and advance the state of the art through the design of a prototype, experiment, or vision. Explores how LLM-powered NPCs can enable more complex characters, immersive experiences, and revolutionize video game testing.",
+      "tags": ["Video Game Development", "Generative AI", "NPC Design"],
+      "level": ["BSc", "MSc"],
+      "downloadLink": "assets/downloads/thesis-ideas/integration-genai-npcs.pdf"
+    },
+    {
+      "title": "Generative AI Agents for Real-Time Player Support in Video Games",
+      "description": "Design and develop a prototype of a local Generative AI agent capable of interacting with a player's game in real time. The agent may provide different forms of support, enhancing player enjoyment, improving performance, and reducing player churn.",
+      "tags": ["Video Game Development", "Generative AI", "AI Agents"],
+      "level": ["BSc", "MSc"],
+      "downloadLink": "assets/downloads/thesis-ideas/genai-agents-player-support.pdf"
+    }
+  ]
+}

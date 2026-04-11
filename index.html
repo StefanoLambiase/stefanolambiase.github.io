@@ -82,6 +82,7 @@
           <a class="list-group-item small text-uppercase" id="list-publications-list" data-toggle="list" href="#publications" role="tab" style="display: none;">Publications</a>
           <a class="list-group-item small text-uppercase" id="list-publications-wip-list" data-toggle="list" href="#publications-wip" role="tab">Papers</a>
           <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#projects" role="tab">Projects</a>
+          <a class="list-group-item small text-uppercase" id="list-thesis-ideas-list" data-toggle="list" href="#thesis-ideas" role="tab">Thesis Ideas</a>
           <a class="list-group-item small text-uppercase" id="list-contact-list" data-toggle="list" href="#contact" role="tab">Get in touch</a>
         </div>
       </div>
@@ -335,6 +336,24 @@
           </div>
         </div>
 
+        <!-- ./thesis-ideas-panel-->
+        <div class="tab-pane fade show" id="thesis-ideas" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg-8">
+              <h3 class="text-inside-line text-center"><span>Thesis Ideas</span></h3>
+              <p class="text-center text-muted mt-3 mb-4">
+                Below you can find a collection of thesis ideas I am available to supervise. Feel free to download the PDF for more details and reach out if any topic interests you.
+              </p>
+              <div class="row" id="thesis-ideas-container">
+
+                <!-- The panel is populated using a JSON -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./thesis-ideas-panel-->
+
         <!-- ./contact-panel-->
         <div class="tab-pane fade show" id="contact" role="tabpanel">
           <div class="row justify-content-lg-center">
@@ -393,6 +412,7 @@
     <script src="js/peerReviewFilling.js"></script>
     <script src="js/paperFilling.js"></script>
     <script src="js/paperNewFilling.js"></script>
+    <script src="js/thesisIdeasFilling.js"></script>
     <!-- javascript for tooltips -->
     <script>
       // Select all elements with data-toggle="tooltips" in the document
