@@ -23,8 +23,11 @@
 // The section is also hidden entirely in formal mode — see switchBio.js.
 
 const ABACUS_BASE = 'https://abacus.jasoncameron.dev';
-const LOCAL_STORAGE_PREFIX = 'unsolicited-voted-';
-const LOCAL_STORAGE_LOVE_PREFIX = 'unsolicited-postscript-loved-';
+// Prefixes are suffixed with '-v2-' (and future bumps) to reset all users'
+// localStorage state in sync with a namespace bump on Abacus. Keep these in
+// lockstep with the `namespace` field in jsons/unsolicitedOpinionsCounts.json.
+const LOCAL_STORAGE_PREFIX = 'unsolicited-voted-v2-';
+const LOCAL_STORAGE_LOVE_PREFIX = 'unsolicited-postscript-loved-v2-';
 
 // Kick off the two fetches in parallel.
 Promise.all([
