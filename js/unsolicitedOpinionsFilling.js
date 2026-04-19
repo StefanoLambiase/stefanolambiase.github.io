@@ -24,6 +24,7 @@
 
 const ABACUS_BASE = 'https://abacus.jasoncameron.dev';
 const LOCAL_STORAGE_PREFIX = 'unsolicited-voted-';
+const LOCAL_STORAGE_LOVE_PREFIX = 'unsolicited-postscript-loved-';
 
 // Kick off the two fetches in parallel.
 Promise.all([
@@ -67,6 +68,24 @@ function renderCard(container, opinion, index, namespace, baselineCounts) {
     ? `<span class="badge bg-secondary me-1 mb-2">${opinion.tag}</span>`
     : '';
 
+  // Optional postscript / linked comment styled as a small callout.
+  // If present it also gets its own "love" counter (positive-only heart).
+  const postscriptLoveBaseline = (baselineCounts && baselineCounts.postscriptLove) || 0;
+  const postscriptHtml = opinion.postscript
+    ? `
+      <aside class="unsolicited-postscript mt-3">
+        <div class="unsolicited-postscript-title"><strong>${opinion.postscript.title}</strong></div>
+        <div class="unsolicited-postscript-body">${opinion.postscript.body}</div>
+        <div class="unsolicited-postscript-love d-flex justify-content-end align-items-center mt-2">
+          <button type="button" class="btn btn-sm btn-outline-danger unsolicited-love-btn" data-role="postscript-love" aria-pressed="false" aria-label="Love this postscript">
+            <em class="fa-regular fa-heart me-1 unsolicited-love-icon"></em>
+            <span class="unsolicited-love-count">${postscriptLoveBaseline}</span>
+          </button>
+        </div>
+      </aside>
+    `
+    : '';
+
   // If the site is already in dark mode when this card is created, apply
   // the same Bootstrap classes that switchMode.js would add. Otherwise
   // the <li>, <strong>, <code>, <em> elements inside the body — which
@@ -97,6 +116,7 @@ function renderCard(container, opinion, index, namespace, baselineCounts) {
         <div class="card-body pt-0">
           <hr class="mt-0">
           ${opinion.body}
+          ${postscriptHtml}
           <div class="unsolicited-votes mt-3 d-flex align-items-center flex-wrap gap-2">
             <span class="text-muted small me-1">Agree?</span>
             <button type="button" class="btn btn-sm btn-outline-success unsolicited-vote-btn" data-direction="approve" aria-pressed="false">
@@ -211,6 +231,54 @@ function renderCard(container, opinion, index, namespace, baselineCounts) {
       });
     });
   });
+
+  // Postscript "love" heart button (positive-only counter). Only exists
+  // when the opinion has a postscript.
+  const loveBtn = col.querySelector('.unsolicited-love-btn');
+  if (loveBtn) {
+    const loveKey = `${opinion.id}-postscript-love`;
+    const loveCountEl = loveBtn.querySelector('.unsolicited-love-count');
+    const loveIcon = loveBtn.querySelector('.unsolicited-love-icon');
+
+    // Fetch the live count.
+    fetchCount(namespace, loveKey).then(n => {
+      if (typeof n === 'number') loveCountEl.textContent = n;
+    });
+
+    // Restore "already loved" state from localStorage.
+    if (localStorage.getItem(LOCAL_STORAGE_LOVE_PREFIX + opinion.id)) {
+      paintLoveState(loveBtn, loveIcon, true);
+    }
+
+    loveBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); // don't toggle the card collapse.
+      if (localStorage.getItem(LOCAL_STORAGE_LOVE_PREFIX + opinion.id)) return;
+
+      // Optimistic UI update.
+      const current = parseInt(loveCountEl.textContent, 10) || 0;
+      loveCountEl.textContent = current + 1;
+      localStorage.setItem(LOCAL_STORAGE_LOVE_PREFIX + opinion.id, '1');
+      paintLoveState(loveBtn, loveIcon, true);
+
+      hitCount(namespace, loveKey).then(n => {
+        if (typeof n === 'number') loveCountEl.textContent = n;
+      }).catch(err => {
+        console.warn('Abacus /hit failed for', loveKey, err);
+      });
+    });
+  }
+}
+
+// Paint the love button's active/inactive state. Positive-only, so once
+// active it stays active for the rest of the session.
+function paintLoveState(btn, icon, active) {
+  btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+  btn.classList.toggle('btn-danger', active);
+  btn.classList.toggle('btn-outline-danger', !active);
+  if (icon) {
+    icon.classList.toggle('fa-solid', active);
+    icon.classList.toggle('fa-regular', !active);
+  }
 }
 
 // Paint the vote buttons to reflect the user's current choice. Both

@@ -61,6 +61,40 @@
       .unsolicited-votes .unsolicited-vote-status {
         font-style: italic;
       }
+      .unsolicited-postscript {
+        border-left: 3px solid #c0392b;
+        padding: 0.5rem 0.9rem;
+        margin: 1rem 0;
+        background-color: rgba(192, 57, 43, 0.06);
+        border-radius: 0 4px 4px 0;
+      }
+      .unsolicited-postscript .unsolicited-postscript-title {
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 0.78rem;
+        color: #c0392b;
+        margin-bottom: 0.35rem;
+      }
+      .unsolicited-postscript .unsolicited-postscript-body p:last-child {
+        margin-bottom: 0;
+      }
+      .unsolicited-love-btn {
+        min-width: 60px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .unsolicited-love-btn .unsolicited-love-count {
+        font-variant-numeric: tabular-nums;
+      }
+      .unsolicited-love-btn[aria-pressed="true"] .unsolicited-love-icon {
+        animation: unsolicited-heart-pop 0.35s ease-out;
+      }
+      @keyframes unsolicited-heart-pop {
+        0%   { transform: scale(1); }
+        40%  { transform: scale(1.35); }
+        100% { transform: scale(1); }
+      }
     </style>
 
   </head>

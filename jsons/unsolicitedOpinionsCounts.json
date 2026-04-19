@@ -5,9 +5,14 @@
   "counts": {
     "em-dash": {
       "approve": 0,
-      "disapprove": 0
+      "disapprove": 0,
+      "postscriptLove": 0
     },
     "footnotes-after-punctuation": {
+      "approve": 0,
+      "disapprove": 0
+    },
+    "paragraphs": {
       "approve": 0,
       "disapprove": 0
     },
