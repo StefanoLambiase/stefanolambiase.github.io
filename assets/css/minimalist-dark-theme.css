@@ -277,6 +277,24 @@ a:hover {
   color: #CCD1D9;
 }
 
+/* Alert (e.g. the Scholar heads-up banner on the Papers tab) */
+.alert-info {
+  color: #CCD1D9;
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+
+.alert-info a {
+  color: #c0392b;
+  text-decoration: underline;
+}
+
+.alert-info a:hover {
+  color: #e74c3c;
+  background: none !important;
+  text-decoration: underline !important;
+}
+
 /* Table (peer review) */
 .table {
   color: #CCD1D9;

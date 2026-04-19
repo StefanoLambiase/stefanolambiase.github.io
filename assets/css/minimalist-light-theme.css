@@ -195,6 +195,18 @@ a:hover {
   color: black;
 }
 
+/* Alert (e.g. the Scholar heads-up banner on the Papers tab) */
+.alert-info a {
+  color: #c0392b;
+  text-decoration: underline;
+}
+
+.alert-info a:hover {
+  color: #a93226;
+  background: none !important;
+  text-decoration: underline !important;
+}
+
 /* Mission quote */
 .mission-quote {
   border-left: 4px solid #c0392b;
