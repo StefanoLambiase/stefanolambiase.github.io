@@ -75,10 +75,10 @@
       <!-- ./content-switch -->
       <div class="d-flex justify-content-center">
         <div class="list-group list-group-horizontal-md" id="content-tabs" role="tablist">
-          <a class="list-group-item small text-uppercase active" id="list-about-me" data-toggle="list" href="#about-me" role="tab">About me</a>
+          <a class="list-group-item small text-uppercase" id="list-about-me" data-toggle="list" href="#about-me" role="tab">About me</a>
           <a class="list-group-item small text-uppercase" id="list-committee-list" data-toggle="list" href="#committee" role="tab">Committees</a>
           <a class="list-group-item small text-uppercase" id="list-peer-review-list" data-toggle="list" href="#peer-review" role="tab">Peer Review</a>
-          <a class="list-group-item small text-uppercase" id="list-experience-list" data-toggle="list" href="#experience" role="tab">Experience</a>
+          <a class="list-group-item small text-uppercase active" id="list-experience-list" data-toggle="list" href="#experience" role="tab">Experience</a>
           <a class="list-group-item small text-uppercase" id="list-publications-list" data-toggle="list" href="#publications" role="tab" style="display: none;">Publications</a>
           <a class="list-group-item small text-uppercase" id="list-publications-wip-list" data-toggle="list" href="#publications-wip" role="tab">Papers</a>
           <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#projects" role="tab">Projects</a>
@@ -92,7 +92,7 @@
       <div class="container pt-5 tab-content">
 
         <!-- ./about-me-panel -->
-        <div class="tab-pane fade show active" id="about-me" role="tabpanel">
+        <div class="tab-pane fade show" id="about-me" role="tabpanel">
           <div class="row justify-content-lg-center">
             <div class="col-lg">
               <div>
@@ -221,7 +221,7 @@
         <!-- ./peer-review-panel-->
 
         <!-- ./experience-panel-->
-        <div class="tab-pane fade show" id="experience" role="tabpanel">
+        <div class="tab-pane fade show active" id="experience" role="tabpanel">
           <div class="row justify-content-lg-center">
             <div class="col-lg">
               <!-- Timeline -->
@@ -248,6 +248,16 @@
 
         <!-- ./publications-wip-panel-->
         <div class="tab-pane fade show" id="publications-wip" role="tabpanel">
+
+          <!-- Heads-up note -->
+          <div class="row justify-content-lg-center mb-3">
+            <div class="col-lg-10">
+              <div class="alert alert-info small mb-0" role="alert">
+                <em class="fa-solid fa-circle-info me-1"></em>
+                Heads up: for the fully up-to-date list, please head over to my <a href="https://scholar.google.com/citations?user=2fHPEdkAAAAJ&hl=it" target="_blank" rel="noopener noreferrer">Google Scholar</a> page. I'm not exactly the kind of person who rushes to update the website the moment a new paper comes out &mdash; Scholar does that for me, and I'm happy to let it do the heavy lifting.
+              </div>
+            </div>
+          </div>
 
           <!-- Filters -->
           <div class="row justify-content-lg-center mb-3">
