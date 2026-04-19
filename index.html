@@ -45,14 +45,27 @@
               </label>
             </div>
 
+            <!-- Switch for formal/informal bio -->
+            <div class="form-check form-switch d-flex justify-content-end" data-toggle="tooltip" data-placement="bottom" title="For when a committee — or my mother-in-law — is reading.">
+              <input class="switch-mode switch-bio form-check-input" type="checkbox" id="flexSwitchBioDefault" />
+              <label class="form-check-label bio-switch-label" for="flexSwitchBioDefault">
+                Formal Bio
+              </label>
+            </div>
+
             <h2>Stefano Lambiase</h2>
             <blockquote class="mission-quote">
               <p>My mission is to improve the quality of life for video game developers and designers, enabling them to create products that meaningfully enhance player experiences; it is my way of giving back to them whose work has shaped and inspired me.</p>
             </blockquote>
-            <p class="text-justify">
+            <p class="text-justify bio-informal">
               I am an Assistant Professor at Aalborg University in Copenhagen, Denmark. My research focuses on Software Engineering, with particular attention to Software Project Management, socio-technical aspects, Quantum Software Engineering, and Video Game Development.
               Beyond research, I am a passionate video game player (favourite game: Ratchet & Clank) and a great fan of cats. I truly enjoy teaching and conducting research that can make a positive impact on society—hopefully in the not-too-distant future.
               I am always interested in collaborating on research projects and open to new opportunities, so feel free to reach out!
+              <br><br>
+              <em class="text-muted small">Not formal enough? There's a switch for that right above — I promise I won't take it personally.</em>
+            </p>
+            <p class="text-justify bio-formal" style="display: none;">
+              Stefano Lambiase is an Assistant Professor at Aalborg University, Copenhagen, Denmark. His research lies in the field of Software Engineering, with a particular focus on Software Project Management, the socio-technical aspects of software development, Quantum Software Engineering, and Video Game Development. He is actively involved in teaching and in research projects aimed at producing a positive societal impact, and he welcomes collaborations on research initiatives as well as new academic and professional opportunities.
             </p>
           <div class="d-flex justify-content-end">
             <ul class="list-inline social-icons">
@@ -416,6 +429,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!-- javaScript for dark mode -->
     <script src="js/switchMode.js"></script>
+    <!-- javaScript for formal/informal bio -->
+    <script src="js/switchBio.js"></script>
     <!-- JavaScript for experience filling -->
     <script src="js/experienceFilling.js"></script>
     <script src="js/committeeFilling.js"></script>
