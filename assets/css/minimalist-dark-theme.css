@@ -280,17 +280,21 @@ a:hover {
 /* Alert (e.g. the Scholar heads-up banner on the Papers tab) */
 .alert-info {
   color: #CCD1D9;
-  background-color: #1e1e1e;
-  border-color: #444;
+  background-color: transparent;
+  border: 2px solid #c0392b;
+}
+
+.alert-info .fa-circle-info {
+  color: #c0392b;
 }
 
 .alert-info a {
-  color: #c0392b;
+  color: #e74c3c;
   text-decoration: underline;
 }
 
 .alert-info a:hover {
-  color: #e74c3c;
+  color: #f1948a;
   background: none !important;
   text-decoration: underline !important;
 }

@@ -196,6 +196,16 @@ a:hover {
 }
 
 /* Alert (e.g. the Scholar heads-up banner on the Papers tab) */
+.alert-info {
+  color: #333;
+  background-color: transparent;
+  border: 2px solid #c0392b;
+}
+
+.alert-info .fa-circle-info {
+  color: #c0392b;
+}
+
 .alert-info a {
   color: #c0392b;
   text-decoration: underline;
