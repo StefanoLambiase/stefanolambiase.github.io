@@ -4,7 +4,7 @@
   "dblp": "https://dblp.org/pid/274/3963",
   "google_scholar": "https://scholar.google.com/citations?user=2fHPEdkAAAAJ",
   "source": "DBLP (https://dblp.org/pid/274/3963), retrieved 2026-03-29",
-  "note": "Includes journal articles (j) and conference/workshop papers (c). Preprints (CoRR) excluded. Some entries near the end of the DBLP page may be missing due to page truncation — verify at https://dblp.org/pid/274/3963",
+  "note": "Includes journal articles (j) and conference/workshop papers (c). Preprints (CoRR) excluded. Some entries near the end of the DBLP page may be missing due to page truncation—verify at https://dblp.org/pid/274/3963",
   "publications": [
     {
       "dblp_key": "journals/tosem/LambiaseCPFR26",
@@ -314,7 +314,7 @@
         "Stefano Lambiase",
         "..."
       ],
-      "note": "Many co-authors — see DBLP for full list",
+      "note": "Many co-authors—see DBLP for full list",
       "venue": "Journal of Systems and Software",
       "volume": "216",
       "pages": "112115",

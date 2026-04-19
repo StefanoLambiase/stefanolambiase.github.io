@@ -15,7 +15,7 @@
       "downloadLink": "assets/downloads/thesis-ideas/genai-agents-player-support.pdf"
     },
     {
-      "title": "Git Gud — Adaptive Difficulty for Video Games",
+      "title": "Git Gud—Adaptive Difficulty for Video Games",
       "description": "Explore and compare different approaches for implementing dynamic difficulty adjustment (DDA) mechanisms, leveraging AI and LLMs to continuously adapt game difficulty in real time, sustaining player flow and engagement.",
       "tags": ["Video Game Development", "Generative AI", "Game Design"],
       "level": ["BSc", "MSc"],
