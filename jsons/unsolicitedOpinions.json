@@ -1,0 +1,25 @@
+{
+  "unsolicitedOpinions": [
+    {
+      "id": "em-dash",
+      "tag": "Typography",
+      "shortTitle": "The em dash is the king of punctuation",
+      "hotTake": "Hyphen, en dash, em dash: three different characters, three different jobs. Most people only know one of them.",
+      "body": "<p>There are (at least) three horizontal lines you can type, and they are <em>not</em> interchangeable:</p><ul><li><strong>Hyphen</strong> (<code>-</code>): glues words together. <em>state-of-the-art</em>, <em>well-known</em>.</li><li><strong>En dash</strong> (<code>&ndash;</code>): ranges and connections. <em>pages&nbsp;12&ndash;18</em>, <em>the Rome&ndash;Naples train</em>.</li><li><strong>Em dash</strong> (<code>&mdash;</code>): interrupts a sentence&mdash;like this&mdash;with more force than a comma and less than parentheses.</li></ul><p>I am a devout em-dash user. It is elegant, expressive, and&mdash;crucially for anyone writing proposals with a hard character limit&mdash;I use the canonical form <em>without spaces around it</em>, which saves two characters every single time. Small victories.</p><p>If you take nothing else from this rant: please stop typing a hyphen when you mean an em dash. Your sentences deserve better.</p>"
+    },
+    {
+      "id": "footnotes-after-punctuation",
+      "tag": "Academic writing",
+      "shortTitle": "Footnotes go AFTER punctuation",
+      "hotTake": "The superscript number belongs after the comma or period, not before it. Yes, even in that paper you're reading right now.",
+      "body": "<p>In English-language style guides (Chicago, APA, MLA, and essentially every major publisher), footnote and endnote markers are placed <strong>after</strong> the punctuation they follow, not before:</p><p class=\"ps-3\"><span class=\"text-muted\">Wrong:</span> &hellip;a well-established result<sup>3</sup>.<br><span class=\"text-muted\">Right:</span> &hellip;a well-established result.<sup>3</sup></p><p>And yet, you will find this error in a surprising number of published papers&mdash;including, occasionally, in venues that really should know better. It's not a matter of life and death, but it is a small, satisfying signal that the authors (or the typesetters) care about the details.</p><p><em>Caveat:</em> French typographic convention places the marker <em>before</em> the punctuation, so if you are writing in French you get a free pass. Everyone else: after the comma, after the period, always.</p>"
+    },
+    {
+      "id": "iso-dates",
+      "tag": "Dates",
+      "shortTitle": "ISO 8601 is the only correct date format",
+      "hotTake": "YYYY-MM-DD. It sorts lexicographically, it's unambiguous across continents, and it never asks whether 03/04/2026 is March or April.",
+      "body": "<p>Is <code>03/04/2026</code> the 3rd of April or the 4th of March? Depends which side of the Atlantic you're on. Is <code>2026-04-03</code> ambiguous? No. It is the 3rd of April, 2026, and it will still be the 3rd of April, 2026 if you email it to someone in Tokyo, Palo Alto, or Salerno.</p><p>The <strong>ISO 8601</strong> format (<code>YYYY-MM-DD</code>) has a stack of quiet superpowers:</p><ul><li>It is <em>globally unambiguous</em>. There is exactly one interpretation.</li><li>It sorts correctly as a plain string. <code>ls</code>, spreadsheets, and filenames all agree on the order.</li><li>It plays nicely with timestamps: append <code>T</code> and you're already most of the way to a full datetime.</li></ul><p>This is the hill. File names, folder names, changelogs, commit messages, shopping lists, archaeological records of my own life&mdash;all ISO 8601. If you catch me writing <code>04/19/26</code>, assume I have been replaced by an impostor.</p>"
+    }
+  ]
+}

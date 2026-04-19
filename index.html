@@ -24,6 +24,30 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/cat.jpg">
 
+    <!-- Styles for the Unsolicited Opinions section -->
+    <style>
+      .unsolicited-card .unsolicited-header {
+        cursor: pointer;
+        user-select: none;
+      }
+      .unsolicited-card .unsolicited-header:hover .unsolicited-hint-text {
+        text-decoration: underline;
+      }
+      .unsolicited-card .unsolicited-header:focus,
+      .unsolicited-card .unsolicited-header:focus-visible {
+        outline: none;
+        box-shadow: none;
+      }
+      .unsolicited-card .unsolicited-body p:last-child {
+        margin-bottom: 0;
+      }
+      .unsolicited-intro {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+
   </head>
   <body>
     <!-- User info -->
@@ -96,6 +120,7 @@
           <a class="list-group-item small text-uppercase" id="list-publications-wip-list" data-toggle="list" href="#publications-wip" role="tab">Papers</a>
           <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#projects" role="tab">Projects</a>
           <a class="list-group-item small text-uppercase" id="list-thesis-ideas-list" data-toggle="list" href="#thesis-ideas" role="tab">Thesis Ideas</a>
+          <a class="list-group-item small text-uppercase informal-only" id="list-unsolicited-opinions-list" data-toggle="list" href="#unsolicited-opinions" role="tab">Unsolicited Opinions</a>
           <a class="list-group-item small text-uppercase" id="list-contact-list" data-toggle="list" href="#contact" role="tab">Get in touch</a>
         </div>
       </div>
@@ -464,6 +489,26 @@
         </div>
         <!-- ./thesis-ideas-panel-->
 
+        <!-- ./unsolicited-opinions-panel-->
+        <div class="tab-pane fade show informal-only" id="unsolicited-opinions" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg-10">
+
+              <h3 class="text-inside-line text-center"><span>Unsolicited Opinions</span></h3>
+
+              <p class="text-center text-muted unsolicited-intro mb-4 mt-4">
+                A small, ever-growing collection of hills I'm willing to die on&mdash;mostly typographic, occasionally useful, never sponsored. Click a card for the full rant.
+              </p>
+
+              <div class="row" id="unsolicited-opinions-container">
+                <!-- Cards are injected here by js/unsolicitedOpinionsFilling.js -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- ./unsolicited-opinions-panel-->
+
         <!-- ./contact-panel-->
         <div class="tab-pane fade show" id="contact" role="tabpanel">
           <div class="row justify-content-lg-center">
@@ -528,6 +573,7 @@
     <script src="js/paperFilling.js"></script>
     <script src="js/paperNewFilling.js"></script>
     <script src="js/thesisIdeasFilling.js"></script>
+    <script src="js/unsolicitedOpinionsFilling.js"></script>
     <!-- javascript for tooltips -->
     <script>
       // Select all elements with data-toggle="tooltips" in the document
