@@ -5,8 +5,6 @@ function switchModeFunction () {
     const theme = document.querySelector("#theme-link");
     // Select the switch button label.
     const switchLabel = document.querySelector(".form-check-label");
-    // Select all cards.
-    const cards = document.querySelectorAll(".card");
     // Select CV Image.
     const cvImage = document.querySelector(".user-image");
     // Select photo balloon.
@@ -14,6 +12,11 @@ function switchModeFunction () {
 
     // Listen for a click on the button
     btn.addEventListener("click", function() {
+        // Re-query cards on each click so that dynamically-injected cards
+        // (e.g. from *Filling.js scripts that fetch JSON asynchronously)
+        // also pick up the theme classes.
+        const cards = document.querySelectorAll(".card");
+
         // If the current URL contains "ligh-theme.css"
         if (theme.getAttribute("href") == "assets/css/minimalist-light-theme.css") {
             // ... then switch it to "dark-theme.css"
