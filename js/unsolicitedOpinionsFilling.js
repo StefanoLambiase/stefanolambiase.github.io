@@ -40,7 +40,7 @@ Promise.all([
     return r.json();
   }).catch(err => {
     console.warn('Could not load counts baseline, defaulting to zeroes:', err);
-    return { namespace: 'stefanolambiase-unsolicited-opinions', counts: {} };
+    return { namespace: 'stefanolambiase-unsolicited-opinions-v2', counts: {} };
   })
 ])
   .then(([opinionsData, countsData]) => {

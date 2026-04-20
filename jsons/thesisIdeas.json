@@ -27,6 +27,13 @@
       "tags": ["Software Engineering", "Generative AI", "AI4SE"],
       "level": ["BSc", "MSc"],
       "downloadLink": "assets/downloads/thesis-ideas/ai-tools-software-lifecycle.pdf"
+    },
+    {
+      "title": "Code Health and Technical Debt Dashboard for Game Development",
+      "description": "Design, implement, and empirically evaluate a game-aware code-quality and technical-debt dashboard for Unity-style codebases. Starting from a requirements-engineering phase with practitioners, the prototype detects game-specific smells, visualises TD indicators longitudinally at studio scale, and can extend to post-release player-facing signals. Scope is intentionally broad—static-analysis engine, developer-experience layer, or integration with gameplay-derived signals. Possible collaborations with game studios in Denmark.",
+      "tags": ["Video Game Development", "Software Engineering", "Technical Debt", "Software Quality"],
+      "level": ["BSc", "MSc"],
+      "downloadLink": "assets/downloads/thesis-ideas/code-health-td-dashboard-gamedev.pdf"
     }
   ]
 }
