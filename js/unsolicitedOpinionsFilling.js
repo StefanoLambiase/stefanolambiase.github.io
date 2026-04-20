@@ -59,8 +59,37 @@ Promise.all([
     opinions.forEach((opinion, index) => {
       renderCard(container, opinion, index, namespace, baseline[opinion.id] || { approve: 0, disapprove: 0 });
     });
+
+    wireSearchFilter(container);
   })
   .catch(error => console.error('Error loading unsolicited opinions:', error));
+
+// Hook the search input up to a simple textContent-based filter. Runs on
+// every keystroke; case-insensitive substring match across the card's full
+// rendered text, which includes the tag, title, hot take, body, and the
+// (hidden) expanded content. That means a user can find "latex" or "boxes"
+// without expanding anything.
+function wireSearchFilter(container) {
+  const input = document.getElementById('unsolicited-opinions-search');
+  const noResults = document.getElementById('unsolicited-opinions-no-results');
+  if (!input || !container) return;
+
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    const cards = container.querySelectorAll(':scope > div');
+    let anyVisible = false;
+
+    cards.forEach(card => {
+      const match = q === '' || card.textContent.toLowerCase().includes(q);
+      card.style.display = match ? '' : 'none';
+      if (match) anyVisible = true;
+    });
+
+    if (noResults) {
+      noResults.style.display = (q === '' || anyVisible) ? 'none' : '';
+    }
+  });
+}
 
 function renderCard(container, opinion, index, namespace, baselineCounts) {
   const bodyId = `unsolicited-body-${opinion.id || index}`;
@@ -80,7 +109,7 @@ function renderCard(container, opinion, index, namespace, baselineCounts) {
         <div class="unsolicited-postscript-title"><strong>${opinion.postscript.title}</strong></div>
         <div class="unsolicited-postscript-body">${opinion.postscript.body}</div>
         <div class="unsolicited-postscript-love d-flex justify-content-end align-items-center mt-2">
-          <button type="button" class="btn btn-sm btn-outline-danger unsolicited-love-btn" data-role="postscript-love" aria-pressed="false" aria-label="Love this postscript">
+          <button type="button" class="btn btn-sm btn-outline-danger unsolicited-love-btn" data-love-suffix="postscript-love" aria-pressed="false" aria-label="Love this postscript">
             <em class="fa-regular fa-heart me-1 unsolicited-love-icon"></em>
             <span class="unsolicited-love-count">${postscriptLoveBaseline}</span>
           </button>
@@ -235,13 +264,26 @@ function renderCard(container, opinion, index, namespace, baselineCounts) {
     });
   });
 
-  // Postscript "love" heart button (positive-only counter). Only exists
-  // when the opinion has a postscript.
-  const loveBtn = col.querySelector('.unsolicited-love-btn');
-  if (loveBtn) {
-    const loveKey = `${opinion.id}-postscript-love`;
+  // "Love" heart buttons (positive-only counters). There can be more than
+  // one per card — e.g. the em-dash card has a postscript love button, the
+  // tables-and-boxes card has a "small ask" love button inside its intro
+  // aside. Each button identifies itself via data-love-suffix, which is
+  // appended to the opinion id to form the Abacus key and the localStorage
+  // key. The baseline count (if any) is read from
+  // baselineCounts[camelCase(suffix)].
+  const loveBtns = col.querySelectorAll('.unsolicited-love-btn');
+  loveBtns.forEach(loveBtn => {
+    const suffix = loveBtn.getAttribute('data-love-suffix') || 'postscript-love';
+    const loveKey = `${opinion.id}-${suffix}`;
+    const storageKey = `${LOCAL_STORAGE_LOVE_PREFIX}${opinion.id}-${suffix}`;
     const loveCountEl = loveBtn.querySelector('.unsolicited-love-count');
     const loveIcon = loveBtn.querySelector('.unsolicited-love-icon');
+
+    // Prime from baseline (camelCase-ified suffix field) before network hit.
+    const baselineField = suffix.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
+    if (baselineCounts && typeof baselineCounts[baselineField] === 'number') {
+      loveCountEl.textContent = baselineCounts[baselineField];
+    }
 
     // Fetch the live count.
     fetchCount(namespace, loveKey).then(n => {
@@ -249,18 +291,18 @@ function renderCard(container, opinion, index, namespace, baselineCounts) {
     });
 
     // Restore "already loved" state from localStorage.
-    if (localStorage.getItem(LOCAL_STORAGE_LOVE_PREFIX + opinion.id)) {
+    if (localStorage.getItem(storageKey)) {
       paintLoveState(loveBtn, loveIcon, true);
     }
 
     loveBtn.addEventListener('click', (e) => {
       e.stopPropagation(); // don't toggle the card collapse.
-      if (localStorage.getItem(LOCAL_STORAGE_LOVE_PREFIX + opinion.id)) return;
+      if (localStorage.getItem(storageKey)) return;
 
       // Optimistic UI update.
       const current = parseInt(loveCountEl.textContent, 10) || 0;
       loveCountEl.textContent = current + 1;
-      localStorage.setItem(LOCAL_STORAGE_LOVE_PREFIX + opinion.id, '1');
+      localStorage.setItem(storageKey, '1');
       paintLoveState(loveBtn, loveIcon, true);
 
       hitCount(namespace, loveKey).then(n => {
@@ -269,7 +311,7 @@ function renderCard(container, opinion, index, namespace, baselineCounts) {
         console.warn('Abacus /hit failed for', loveKey, err);
       });
     });
-  }
+  });
 }
 
 // Paint the love button's active/inactive state. Positive-only, so once

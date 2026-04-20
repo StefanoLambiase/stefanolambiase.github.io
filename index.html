@@ -46,6 +46,9 @@
         margin-left: auto;
         margin-right: auto;
       }
+      .unsolicited-search {
+        max-width: 420px;
+      }
       .unsolicited-votes .unsolicited-vote-btn {
         min-width: 70px;
         display: inline-flex;
@@ -94,6 +97,171 @@
         0%   { transform: scale(1); }
         40%  { transform: scale(1.35); }
         100% { transform: scale(1); }
+      }
+
+      /* Tables-and-boxes showcase: code on the left, preview on the right.
+         Previews are always rendered paper-style (light bg, black text) so
+         they read as "LaTeX output snippets" regardless of site theme. */
+      .ste-showcase-heading {
+        margin-top: 1.4rem;
+        margin-bottom: 0.35rem;
+        font-weight: 600;
+      }
+      .ste-variant-label {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #888;
+        margin-bottom: 4px;
+      }
+      .card.text-white .ste-variant-label {
+        color: #a0a6b0;
+      }
+      .ste-showcase {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin: 10px 0 18px;
+        align-items: start;
+      }
+      @media (max-width: 768px) {
+        .ste-showcase {
+          grid-template-columns: 1fr;
+        }
+      }
+      .ste-showcase-code {
+        margin: 0;
+        padding: 10px 12px;
+        background: #f4f4f2;
+        border-radius: 4px;
+        font-size: 0.76rem;
+        line-height: 1.35;
+        overflow-x: auto;
+        color: #1a1a1a;
+        white-space: pre;
+      }
+      .card.text-white .ste-showcase-code {
+        background: #262626;
+        color: #e6e6e6;
+      }
+      .ste-packages-code {
+        margin-bottom: 1rem !important;
+      }
+      .ste-preview {
+        background: #fcfcfa;
+        color: #111;
+        padding: 10px 12px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        font-size: 0.86rem;
+        line-height: 1.35;
+      }
+      .ste-preview p { color: inherit; margin: 0 0 0.5rem; }
+      .ste-preview p:last-child { margin-bottom: 0; }
+      .ste-preview strong, .ste-preview em { color: inherit; }
+
+      /* 1. Left-accent RQ box (stebox5) */
+      .ste-preview-rq {
+        border: none;
+        border-left: 3px solid #111;
+        background: #ececec;
+        border-radius: 0 5px 5px 0;
+      }
+
+      /* 2. Full-frame gray box (rqboxC) */
+      .ste-preview-rqboxC {
+        border: 1px solid #111;
+        background: #ececec;
+        border-radius: 3px;
+      }
+
+      /* 3. Summary-of-results box (steboxSummaryWhite). The LaTeX style has
+         roundcorner=5pt but in practice the top+bottom rules plus the
+         frametitle separator make the box render with visually square
+         corners, so keep the preview square for fidelity. */
+      .ste-preview-summary {
+        padding: 0;
+        border: none;
+        border-top: 1.5px solid #111;
+        border-bottom: 1.5px solid #111;
+        border-radius: 0;
+        background: transparent;
+      }
+      .ste-preview-summary-title {
+        background: #fff;
+        color: #111;
+        padding: 6px 12px;
+        border-bottom: 1px solid #111;
+      }
+      .ste-preview-summary-body {
+        background: #ececec;
+        color: #111;
+        padding: 8px 12px;
+      }
+
+      /* 4. Dark-titled RQ + answer card (rqsummary) */
+      .ste-preview-rqsummary {
+        padding: 0;
+        border: 1px solid #1c1c1c;
+        border-radius: 4px;
+        overflow: hidden;
+        background: transparent;
+      }
+      .ste-preview-rqsummary-title {
+        background: #1c1c1c;
+        color: #fff;
+        padding: 6px 12px;
+        font-weight: 600;
+        font-size: 0.85em;
+      }
+      .ste-preview-rqsummary-body {
+        background: #ececec;
+        color: #111;
+        padding: 8px 12px;
+      }
+
+      /* 5. Table pattern */
+      .ste-preview-table-wrap {
+        padding: 8px 10px;
+      }
+      .ste-preview-table-caption {
+        text-align: center;
+        font-size: 0.82rem;
+        margin-bottom: 6px;
+        color: #111;
+      }
+      .ste-preview-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.76rem;
+        color: #111;
+        margin: 0 auto;
+      }
+      .ste-preview-table thead th {
+        border-top: 1.5px solid #111;
+        border-bottom: 0.5px solid #111;
+        padding: 4px 8px;
+        text-align: center;
+        font-weight: 600;
+      }
+      .ste-preview-table thead th:first-child {
+        text-align: left;
+      }
+      .ste-preview-table tbody td {
+        padding: 3px 8px;
+        text-align: center;
+      }
+      .ste-preview-table tbody td:first-child {
+        text-align: left;
+      }
+      .ste-preview-table tbody tr:last-child td {
+        border-bottom: 1.5px solid #111;
+      }
+      .ste-preview-table-note {
+        font-size: 0.72rem;
+        color: #333;
+        margin-top: 4px;
+        text-align: left;
       }
     </style>
 
@@ -549,8 +717,22 @@
                 A small, ever-growing collection of hills I'm willing to die on&mdash;mostly typographic, occasionally useful, never sponsored. Click a card for the full rant.
               </p>
 
+              <div class="mb-4 d-flex justify-content-center">
+                <input
+                  type="search"
+                  id="unsolicited-opinions-search"
+                  class="form-control unsolicited-search"
+                  placeholder="Filter by topic, word, or tag&hellip;"
+                  aria-label="Filter unsolicited opinions"
+                />
+              </div>
+
               <div class="row" id="unsolicited-opinions-container">
                 <!-- Cards are injected here by js/unsolicitedOpinionsFilling.js -->
+              </div>
+
+              <div id="unsolicited-opinions-no-results" class="text-center text-muted py-4" style="display: none;">
+                No opinions match your filter.
               </div>
 
             </div>
