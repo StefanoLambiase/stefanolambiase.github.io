@@ -330,8 +330,7 @@
       <div class="d-flex justify-content-center">
         <div class="list-group list-group-horizontal-md" id="content-tabs" role="tablist">
           <a class="list-group-item small text-uppercase" id="list-about-me" data-toggle="list" href="#about-me" role="tab">About me</a>
-          <a class="list-group-item small text-uppercase" id="list-committee-list" data-toggle="list" href="#committee" role="tab">Committees</a>
-          <a class="list-group-item small text-uppercase" id="list-peer-review-list" data-toggle="list" href="#peer-review" role="tab">Peer Review</a>
+          <a class="list-group-item small text-uppercase" id="list-service-list" data-toggle="list" href="#service" role="tab">Academic Service</a>
           <a class="list-group-item small text-uppercase active" id="list-experience-list" data-toggle="list" href="#experience" role="tab">Experience</a>
           <a class="list-group-item small text-uppercase" id="list-publications-list" data-toggle="list" href="#publications" role="tab" style="display: none;">Publications</a>
           <a class="list-group-item small text-uppercase" id="list-publications-wip-list" data-toggle="list" href="#publications-wip" role="tab">Papers</a>
@@ -444,10 +443,13 @@
           </div>
         </div>
 
-        <!-- ./committee-panel-->
-        <div class="tab-pane fade show" id="committee" role="tabpanel">
+        <!-- ./service-panel (merged Committees + Peer Review) -->
+        <div class="tab-pane fade show" id="service" role="tabpanel">
+
+          <!-- Conference Committees subsection -->
           <div class="row justify-content-lg-center">
             <div class="col-lg">
+              <h3 class="text-inside-line text-center"><span>Conference Committees</span></h3>
               <!-- Timeline -->
               <div id="committee-container" class="timeline-container">
 
@@ -457,14 +459,11 @@
               <!-- ./timeline -->
             </div>
           </div>
-        </div>
-        <!-- ./committee-panel-->
 
-        <!-- ./peer-review-panel-->
-        <div class="tab-pane fade show" id="peer-review" role="tabpanel">
-          <div class="row justify-content-lg-center">
+          <!-- Peer Review subsection -->
+          <div class="row justify-content-lg-center" style="margin-top: 40px;">
             <div class="col-lg-8">
-              <h3 class="text-inside-line text-center"><span>Peer Review Activity</span></h3>
+              <h3 class="text-inside-line text-center"><span>Peer Review</span></h3>
               <div id="peer-review-container" style="margin-top: 40px;">
 
                 <!-- The panel is populated using a JSON -->
@@ -472,8 +471,9 @@
               </div>
             </div>
           </div>
+
         </div>
-        <!-- ./peer-review-panel-->
+        <!-- ./service-panel -->
 
         <!-- ./experience-panel-->
         <div class="tab-pane fade show active" id="experience" role="tabpanel">
