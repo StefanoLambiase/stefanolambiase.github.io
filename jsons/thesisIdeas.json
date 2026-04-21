@@ -34,6 +34,13 @@
       "tags": ["Video Game Development", "Software Engineering", "Technical Debt", "Software Quality"],
       "level": ["BSc", "MSc"],
       "downloadLink": "assets/downloads/thesis-ideas/code-health-td-dashboard-gamedev.pdf"
+    },
+    {
+      "title": "LLM-Powered Multi-Agent System for Tabletop RPGs",
+      "description": "Design and develop a multi-agent LLM-based system that acts as an intelligent companion for tabletop RPG game masters. Starting from a requirements-engineering phase with GMs, build a well-structured prototype that captures campaign knowledge, generates structured session summaries, maintains a consultable campaign wiki, and preserves narrative coherence across sessions. Empirically evaluate the system through user-centered studies assessing usefulness, usability, and impact on the game-mastering experience.",
+      "tags": ["Video Game Development", "Generative AI", "AI Agents", "TTRPG"],
+      "level": ["BSc", "MSc"],
+      "downloadLink": "assets/downloads/thesis-ideas/llm-agents-ttrpg-gm.pdf"
     }
   ]
 }
