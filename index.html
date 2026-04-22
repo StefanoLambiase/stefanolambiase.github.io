@@ -286,12 +286,18 @@
               </label>
             </div>
 
-            <!-- Switch for formal/informal bio -->
-            <div class="form-check form-switch d-flex justify-content-end" data-toggle="tooltip" data-placement="bottom" title="For when a committee—or my more formal students—are reading.">
-              <input class="switch-mode switch-bio form-check-input" type="checkbox" id="flexSwitchBioDefault" />
-              <label class="form-check-label bio-switch-label" for="flexSwitchBioDefault">
-                Formal Bio
-              </label>
+            <!-- Switch for formal/informal bio.
+                 The outer flex container handles right-alignment and spans
+                 the full row width; the inner .form-check (which carries the
+                 tooltip) is only as wide as the switch + label, so hovering
+                 anywhere *else* on the row no longer triggers the tooltip. -->
+            <div class="d-flex justify-content-end">
+              <div class="form-check form-switch" data-toggle="tooltip" data-placement="bottom" title="For when a committee—or my more formal students—are reading.">
+                <input class="switch-mode switch-bio form-check-input" type="checkbox" id="flexSwitchBioDefault" />
+                <label class="form-check-label bio-switch-label" for="flexSwitchBioDefault">
+                  Formal Bio
+                </label>
+              </div>
             </div>
 
             <h2>Stefano Lambiase</h2>
