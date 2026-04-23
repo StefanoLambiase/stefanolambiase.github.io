@@ -262,9 +262,7 @@
       "pages": "111878",
       "doi": "10.1016/j.jss.2023.111878",
       "dblp_url": "https://dblp.org/rec/journals/jss/LambiaseCPTPHF24",
-      "downloadLink": "/assets/papers/SLambiase_JSS_SEAA_Extension_Productivity_2023.pdf",
-      "featured": true,
-      "featuredNote": "My first grounded theory paper, built on Rashina Hoda's socio-technical grounded theory (STGT) for SE. It's where I fell in love with the method—I've been using it since."
+      "downloadLink": "/assets/papers/SLambiase_JSS_SEAA_Extension_Productivity_2023.pdf"
     },
     {
       "type": "conference",
@@ -306,7 +304,9 @@
         "Fabio Palomba"
       ],
       "venue": "ICSE-SEIS 2024",
-      "downloadLink": "/assets/papers/ICSE_SEIS_2024_DealingWithCulturalDispersion_SLambiase.pdf"
+      "downloadLink": "/assets/papers/ICSE_SEIS_2024_DealingWithCulturalDispersion_SLambiase.pdf",
+      "featured": true,
+      "featuredNote": "My first grounded theory paper, built on Rashina Hoda's socio-technical grounded theory (STGT) for SE. It's where I fell in love with the method—I've been using it since."
     },
     {
       "dblp_key": "journals/jss/RussoABBCCEFHHIKKLMMMPRSSSSTTV24",
