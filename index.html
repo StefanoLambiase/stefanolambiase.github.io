@@ -263,6 +263,29 @@
         margin-top: 4px;
         text-align: left;
       }
+
+      /* Featured papers in the Papers tab. Shares the red accent with the
+         unsolicited-postscript callouts for visual continuity across the site. */
+      .paper-featured {
+        border-left: 4px solid #c0392b;
+        background-color: rgba(192, 57, 43, 0.04);
+      }
+      .card.text-white .paper-featured {
+        background-color: rgba(192, 57, 43, 0.12);
+      }
+      .paper-featured-badge {
+        background-color: #c0392b;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.65rem;
+        padding: 0.28em 0.55em;
+      }
+      .paper-featured-note {
+        border-left: 2px solid rgba(192, 57, 43, 0.4);
+        padding-left: 0.6rem;
+        margin-top: 0.35rem;
+      }
     </style>
 
   </head>
@@ -301,7 +324,7 @@
             </div>
 
             <h2 class="mb-0">Stefano Lambiase</h2>
-            <p class="text-muted small mb-0 user-title">PhD, Assistant Professor, Aalborg University — Copenhagen</p>
+            <p class="text-muted small mb-0 user-title">PhD, Assistant Professor, Aalborg University&mdash;Copenhagen</p>
             <blockquote class="mission-quote">
               <p>My mission is to improve the quality of life for video game developers and designers, enabling them to create products that meaningfully enhance player experiences; it is my way of giving back to them whose work has shaped and inspired me.</p>
             </blockquote>
@@ -517,6 +540,27 @@
               <div class="alert alert-info small mb-0" role="alert">
                 <em class="fa-solid fa-circle-info me-1"></em>
                 Heads up: for the fully up-to-date list, please head over to my <a href="https://scholar.google.com/citations?user=2fHPEdkAAAAJ&hl=it" target="_blank" rel="noopener noreferrer">Google Scholar</a> page. I'm not exactly the kind of person who rushes to update the website the moment a new paper comes out&mdash;Scholar does that for me, and I'm happy to let it do the heavy lifting.
+              </div>
+            </div>
+          </div>
+
+          <!-- Selected Work (featured papers chosen manually via featured:true in papersNEW.json) -->
+          <div id="publications_featured_section" style="display: none;">
+            <div class="row justify-content-lg-center">
+              <div class="col-lg-10">
+                <h3 class="text-inside-line text-center"><span>Selected Work</span></h3>
+                <p class="text-center text-muted mb-4 mt-3">
+                  A small, personal selection&mdash;papers that mattered to me more than their citations or impact might suggest.
+                </p>
+              </div>
+            </div>
+            <div class="row justify-content-lg-center" id="publications_featured_inner">
+              <!-- Featured papers populated by JS -->
+            </div>
+            <hr class="mb-4 mt-2" style="opacity: 0.2;">
+            <div class="row justify-content-lg-center mb-2">
+              <div class="col-lg-10">
+                <h3 class="text-inside-line text-center"><span>All Papers</span></h3>
               </div>
             </div>
           </div>

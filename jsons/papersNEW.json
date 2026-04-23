@@ -92,7 +92,9 @@
       "pages": "1035-1045",
       "doi": "10.1109/TG.2025.3593423",
       "dblp_url": "https://dblp.org/rec/journals/tciaig/Lambiase25",
-      "downloadLink": null
+      "downloadLink": null,
+      "featured": true,
+      "featuredNote": "My first video-games paper at a top venue in the field—and also my first single-author paper. Video games are my lifelong passion, so this one sits close to the heart."
     },
     {
       "dblp_key": "conf/ease/AnnunziataLPCF25",
@@ -129,7 +131,9 @@
       "pages": "93:1-93:37",
       "doi": "10.1145/3704806",
       "dblp_url": "https://dblp.org/rec/journals/csur/LambiaseCPF25",
-      "downloadLink": "/assets/papers/CSUR_2024_BotMLR.pdf"
+      "downloadLink": "/assets/papers/CSUR_2024_BotMLR.pdf",
+      "featured": true,
+      "featuredNote": "My first literature review. It taught me the discipline of studying before writing, and how much I love that part of academic life."
     },
     {
       "dblp_key": "journals/softx/PentangeloTLGP25",
@@ -258,7 +262,9 @@
       "pages": "111878",
       "doi": "10.1016/j.jss.2023.111878",
       "dblp_url": "https://dblp.org/rec/journals/jss/LambiaseCPTPHF24",
-      "downloadLink": "/assets/papers/SLambiase_JSS_SEAA_Extension_Productivity_2023.pdf"
+      "downloadLink": "/assets/papers/SLambiase_JSS_SEAA_Extension_Productivity_2023.pdf",
+      "featured": true,
+      "featuredNote": "My first grounded theory paper, built on Rashina Hoda's socio-technical grounded theory (STGT) for SE. It's where I fell in love with the method—I've been using it since."
     },
     {
       "type": "conference",
