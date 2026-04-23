@@ -24,6 +24,10 @@
     "iso-dates": {
       "approve": 0,
       "disapprove": 0
+    },
+    "titan": {
+      "approve": 0,
+      "disapprove": 0
     }
   }
 }
