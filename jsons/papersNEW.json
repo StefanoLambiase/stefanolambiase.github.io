@@ -3,8 +3,8 @@
   "orcid": "0000-0002-9933-6203",
   "dblp": "https://dblp.org/pid/274/3963",
   "google_scholar": "https://scholar.google.com/citations?user=2fHPEdkAAAAJ",
-  "source": "DBLP (https://dblp.org/pid/274/3963), retrieved 2026-03-29",
-  "note": "Includes journal articles (j) and conference/workshop papers (c). Preprints (CoRR) excluded. Some entries near the end of the DBLP page may be missing due to page truncation—verify at https://dblp.org/pid/274/3963",
+  "source": "DBLP (https://dblp.org/pid/274/3963), retrieved 2026-04-24",
+  "note": "Includes journal articles (j) and conference/workshop papers (c). Preprints (CoRR) excluded. DOIs cross-checked against DBLP and Crossref on 2026-04-24.",
   "publications": [
     {
       "dblp_key": "journals/tosem/LambiaseCPFR26",
@@ -155,7 +155,7 @@
       "downloadLink": null
     },
     {
-      "dblp_key": "conf/seaa/LambiaseSPFL25",
+      "dblp_key": "conf/euromicro/LambiaseSPFL25",
       "type": "conference",
       "year": 2025,
       "title": "Socio-Technical Well-Being of Quantum Software Communities: An Overview on Community Smells.",
@@ -168,7 +168,8 @@
       ],
       "venue": "SEAA 2025",
       "pages": "39-56",
-      "dblp_url": "https://dblp.org/rec/conf/seaa/LambiaseSPFL25",
+      "doi": "10.1007/978-3-032-04207-1_4",
+      "dblp_url": "https://dblp.org/rec/conf/euromicro/LambiaseSPFL25",
       "downloadLink": "/assets/papers/SEAA_2025_Socio_technical_well_being_of_Quantum_Communities.pdf"
     },
     {
@@ -226,10 +227,13 @@
         "Fabio Palomba"
       ],
       "venue": "SANER 2025 Companion",
-      "dblp_url": "https://dblp.org/db/conf/saner/saner2025c.html",
+      "pages": "140-143",
+      "doi": "10.1109/SANER-C66551.2025.00028",
+      "dblp_url": "https://dblp.org/rec/conf/saner/PortaRLNP25",
       "downloadLink": null
     },
     {
+      "dblp_key": "conf/imeta/PentangeloDMBL24",
       "type": "conference",
       "year": 2024,
       "title": "Accelerating 3D Scene Development for the Metaverse: Lessons from Photogrammetry and Manual Modeling.",
@@ -237,10 +241,13 @@
         "Viviana Pentangelo",
         "Dario Di Dario",
         "Vincenzo De Martino",
-        "Mario Dello Buono",
+        "Marco Dello Buono",
         "Stefano Lambiase"
       ],
       "venue": "iMeta 2024",
+      "pages": "190-197",
+      "doi": "10.1109/iMETA62882.2024.10808008",
+      "dblp_url": "https://dblp.org/rec/conf/imeta/PentangeloDMBL24",
       "downloadLink": "/assets/papers/iMeta_Metaverse_Scene_Generation.pdf"
     },
     {
@@ -265,6 +272,7 @@
       "downloadLink": "/assets/papers/SLambiase_JSS_SEAA_Extension_Productivity_2023.pdf"
     },
     {
+      "dblp_key": "conf/euromicro/AnnunziataFLPCF24",
       "type": "conference",
       "year": 2024,
       "title": "An Empirical Study on the Relation Between Programming Languages and the Emergence of Community Smells.",
@@ -279,9 +287,12 @@
       ],
       "venue": "SEAA 2024",
       "pages": "268-275",
+      "doi": "10.1109/SEAA64295.2024.00049",
+      "dblp_url": "https://dblp.org/rec/conf/euromicro/AnnunziataFLPCF24",
       "downloadLink": null
     },
     {
+      "dblp_key": "conf/ease/Lambiase24",
       "type": "conference",
       "year": 2024,
       "title": "Cultural and Socio-Technical Aspects in Software Development.",
@@ -289,10 +300,13 @@
         "Stefano Lambiase"
       ],
       "venue": "EASE 2024 (Doctoral Symposium)",
+      "pages": "482-487",
       "doi": "10.1145/3661167.3661230",
+      "dblp_url": "https://dblp.org/rec/conf/ease/Lambiase24",
       "downloadLink": "/assets/papers/EASE_DoctoralSymposium_2024_Doctoral_Symposium.pdf"
     },
     {
+      "dblp_key": "conf/icse/LambiaseCPFP24",
       "type": "conference",
       "year": 2024,
       "title": "Dealing With Cultural Dispersion: a Novel Theoretical Framework for Software Engineering Research and Practice.",
@@ -304,12 +318,15 @@
         "Fabio Palomba"
       ],
       "venue": "ICSE-SEIS 2024",
+      "pages": "74-84",
+      "doi": "10.1145/3639475.3640105",
+      "dblp_url": "https://dblp.org/rec/conf/icse/LambiaseCPFP24",
       "downloadLink": "/assets/papers/ICSE_SEIS_2024_DealingWithCulturalDispersion_SLambiase.pdf",
       "featured": true,
       "featuredNote": "My first grounded theory paper, built on Rashina Hoda's socio-technical grounded theory (STGT) for SE. It's where I fell in love with the method—I've been using it since."
     },
     {
-      "dblp_key": "journals/jss/RussoABBCCEFHHIKKLMMMPRSSSSTTV24",
+      "dblp_key": "journals/jss/RussoBBACCCCEFHHIKKLLLMMMOPPPPRRSSS24",
       "type": "journal",
       "year": 2024,
       "title": "Generative AI in Software Engineering Must Be Human-Centered: The Copenhagen Manifesto.",
@@ -324,10 +341,12 @@
       "venue": "Journal of Systems and Software",
       "volume": "216",
       "pages": "112115",
-      "dblp_url": "https://dblp.org/db/journals/jss/",
+      "doi": "10.1016/j.jss.2024.112115",
+      "dblp_url": "https://dblp.org/rec/journals/jss/RussoBBACCCCEFHHIKKLLLMMMOPPPPRRSSS24",
       "downloadLink": null
     },
     {
+      "dblp_key": "conf/icse/Lambiase24",
       "type": "conference",
       "year": 2024,
       "title": "Investigating Cultural Dispersion: on the Role of Cultural Differences in Software Development Teams.",
@@ -335,9 +354,13 @@
         "Stefano Lambiase"
       ],
       "venue": "ICSE 2024 (Doctoral Symposium)",
+      "pages": "187-191",
+      "doi": "10.1145/3639478.3639799",
+      "dblp_url": "https://dblp.org/rec/conf/icse/Lambiase24",
       "downloadLink": "/assets/papers/SLambiase_ICSE_DS_2024_CulturalDispersion.pdf"
     },
     {
+      "dblp_key": "journals/infsof/PentangeloDLFGP24",
       "type": "journal",
       "year": 2024,
       "title": "SENEM: A software engineering-enabled educational metaverse.",
@@ -350,9 +373,14 @@
         "Fabio Palomba"
       ],
       "venue": "Information and Software Technology",
+      "volume": "174",
+      "pages": "107512",
+      "doi": "10.1016/j.infsof.2024.107512",
+      "dblp_url": "https://dblp.org/rec/journals/infsof/PentangeloDLFGP24",
       "downloadLink": "/assets/papers/SENEM_IST_2024.pdf"
     },
     {
+      "dblp_key": "conf/icse/AnnunziataLPF24",
       "type": "conference",
       "year": 2024,
       "title": "SERGE - Serious Game for the Education of Risk Management in Software Project Management.",
@@ -363,19 +391,29 @@
         "Filomena Ferrucci"
       ],
       "venue": "ICSE-SEET 2024",
+      "pages": "264-273",
+      "doi": "10.1145/3639474.3640085",
+      "dblp_url": "https://dblp.org/rec/conf/icse/AnnunziataLPF24",
       "downloadLink": "/assets/papers/ICSE_SEET_2024_SERGE.pdf"
     },
     {
+      "dblp_key": "journals/softx/AmatoCCCDMPTRVAVCGLPSFP23",
       "type": "journal",
       "year": 2023,
-      "title": "QuantuMoonLight: A Low-Code Platform to Experiment with Quantum Machine Learning.",
+      "title": "QuantuMoonLight: A low-code platform to experiment with quantum machine learning.",
       "authors": [
         "Francesco Amato et al."
       ],
+      "note": "Many co-authors—see DBLP for full list",
       "venue": "SoftwareX",
+      "volume": "22",
+      "pages": "101399",
+      "doi": "10.1016/j.softx.2023.101399",
+      "dblp_url": "https://dblp.org/rec/journals/softx/AmatoCCCDMPTRVAVCGLPSFP23",
       "downloadLink": "/assets/papers/SofwareX_QuantuMoonLight_2022_Definitivo.pdf"
     },
     {
+      "dblp_key": "conf/euromicro/DarioPLFP23",
       "type": "conference",
       "year": 2023,
       "title": "Security Testing in The Wild: An Interview Study.",
@@ -388,9 +426,12 @@
       ],
       "venue": "SEAA 2023",
       "pages": "191-198",
+      "doi": "10.1109/SEAA60479.2023.00037",
+      "dblp_url": "https://dblp.org/rec/conf/euromicro/DarioPLFP23",
       "downloadLink": "/assets/papers/DiDario_SecurityTesting.pdf"
     },
     {
+      "dblp_key": "conf/euromicro/LambiaseCPTPHF22",
       "type": "conference",
       "year": 2022,
       "title": "\"There and Back Again?\" On the Influence of Software Community Dispersion Over Productivity.",
@@ -405,14 +446,17 @@
       ],
       "venue": "SEAA 2022",
       "pages": "177-184",
+      "doi": "10.1109/SEAA56994.2022.00035",
+      "dblp_url": "https://dblp.org/rec/conf/euromicro/LambiaseCPTPHF22",
       "downloadLink": "/assets/papers/SLambiase_JSS_SEAA_Extension_Productivity_2023.pdf"
     },
     {
+      "dblp_key": "conf/icsm/VoriaPPLCPF22",
       "type": "conference",
       "year": 2022,
       "title": "Community Smell Detection and Refactoring in SLACK: The CADOCS Project.",
       "authors": [
-        "Gianluca Voria",
+        "Gianmario Voria",
         "Viviana Pentangelo",
         "Antonio Della Porta",
         "Stefano Lambiase",
@@ -421,23 +465,32 @@
         "Filomena Ferrucci"
       ],
       "venue": "ICSME 2022 (Tool Demo)",
+      "pages": "469-473",
+      "doi": "10.1109/ICSME55016.2022.00061",
+      "dblp_url": "https://dblp.org/rec/conf/icsm/VoriaPPLCPF22",
       "downloadLink": "/assets/papers/ICSME_CADOCS_2022.pdf"
     },
     {
+      "dblp_key": "conf/icse/LambiaseCTSPF22",
       "type": "conference",
       "year": 2022,
       "title": "Good Fences Make Good Neighbours? On the Impact of Cultural and Geographical Dispersion on Community Smells.",
       "authors": [
         "Stefano Lambiase",
         "Gemma Catolino",
+        "Damian A. Tamburri",
+        "Alexander Serebrenik",
         "Fabio Palomba",
         "Filomena Ferrucci"
       ],
       "venue": "ICSE-SEIS 2022",
+      "pages": "67-78",
+      "doi": "10.1145/3510458.3513015",
+      "dblp_url": "https://dblp.org/rec/conf/icse/LambiaseCTSPF22",
       "downloadLink": "/assets/papers/Good_Fences_Make_Good_Neighbours.pdf"
     },
     {
-      "dblp_key": "conf/icpc/LambiaseCPLP20",
+      "dblp_key": "conf/iwpc/LambiaseCPLP20",
       "type": "conference",
       "year": 2020,
       "title": "Just-In-Time Test Smell Detection and Refactoring: The DARTS Project.",
@@ -450,7 +503,8 @@
       ],
       "venue": "ICPC 2020",
       "pages": "441-445",
-      "dblp_url": "https://dblp.org/rec/conf/icpc/LambiaseCPLP20",
+      "doi": "10.1145/3387904.3389296",
+      "dblp_url": "https://dblp.org/rec/conf/iwpc/LambiaseCPLP20",
       "downloadLink": null
     }
   ]
