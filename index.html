@@ -366,6 +366,7 @@
           <a class="list-group-item small text-uppercase" id="list-publications-wip-list" data-toggle="list" href="#publications-wip" role="tab">Papers</a>
           <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#projects" role="tab">Projects</a>
           <a class="list-group-item small text-uppercase" id="list-thesis-ideas-list" data-toggle="list" href="#thesis-ideas" role="tab">Thesis Ideas</a>
+          <a class="list-group-item small text-uppercase" id="list-supervision-list" data-toggle="list" href="#supervision" role="tab">Supervision</a>
           <a class="list-group-item small text-uppercase informal-only" id="list-unsolicited-opinions-list" data-toggle="list" href="#unsolicited-opinions" role="tab">Unsolicited Opinions</a>
           <a class="list-group-item small text-uppercase" id="list-contact-list" data-toggle="list" href="#contact" role="tab">Get in touch</a>
         </div>
@@ -786,6 +787,27 @@
         </div>
         <!-- ./thesis-ideas-panel-->
 
+        <!-- ./supervision-panel-->
+        <div class="tab-pane fade show" id="supervision" role="tabpanel">
+
+          <!-- PhD Students subsection -->
+          <div class="row justify-content-lg-center">
+            <div class="col-lg-10">
+              <h3 class="text-inside-line text-center"><span>PhD Students</span></h3>
+              <p class="text-center text-muted mt-3 mb-4">
+                The PhD students I have the privilege of supervising or co-supervising.
+              </p>
+              <div class="row" id="phd-students-container">
+
+                <!-- The panel is populated using a JSON -->
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- ./supervision-panel-->
+
         <!-- ./unsolicited-opinions-panel-->
         <div class="tab-pane fade show informal-only" id="unsolicited-opinions" role="tabpanel">
           <div class="row justify-content-lg-center">
@@ -884,6 +906,7 @@
     <script src="js/paperFilling.js"></script>
     <script src="js/paperNewFilling.js"></script>
     <script src="js/thesisIdeasFilling.js"></script>
+    <script src="js/supervisionFilling.js"></script>
     <script src="js/unsolicitedOpinionsFilling.js"></script>
     <!-- javascript for tooltips -->
     <script>

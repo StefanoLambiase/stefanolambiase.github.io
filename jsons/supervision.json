@@ -1,0 +1,23 @@
+{
+  "phdStudents": [
+    {
+      "firstName": "Antonio",
+      "lastName": "Della Porta",
+      "affiliation": "University of Salerno",
+      "thesis": "Generative AI Agents and Software Engineering for AI (SE4AI).",
+      "website": "https://atdepo.github.io/",
+      "photo": "assets/images/supervision/antonio-della-porta.jpg",
+      "mainSupervisor": "Fabio Palomba",
+      "mainSupervisorUrl": "https://fpalomba.github.io/"
+    },
+    {
+      "firstName": "Theocharis",
+      "lastName": "Tavantzis",
+      "affiliation": "Aalborg University—Copenhagen",
+      "thesis": "Human-centered AI integration in software engineering, at the intersection of technology and psychology.",
+      "website": "https://vbn.aau.dk/en/persons/thta/",
+      "photo": "assets/images/supervision/theocharis-tavantzis.jpg",
+      "mainSupervisor": "Daniel Russo"
+    }
+  ]
+}
