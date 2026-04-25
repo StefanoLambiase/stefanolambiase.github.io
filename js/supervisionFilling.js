@@ -1,15 +1,28 @@
 // supervisionFilling.js
 
-// Renders PhD students from jsons/supervision.json.
+// Renders PhD students and close collaborators from jsons/supervision.json.
 // Shape:
 // {
-//   "phdStudents": [ { firstName, lastName, affiliation, thesis,
-//                      website, photo,
-//                      mainSupervisor?, mainSupervisorUrl? } ]
+//   "phdStudents":         [ { firstName, lastName, affiliation, thesis,
+//                              website, photo,
+//                              mainSupervisor?, mainSupervisorUrl?,
+//                              closeCollaboration? } ],
+//   "closeCollaborators":  [ { firstName, lastName, affiliation,
+//                              website, photo } ]
 // }
-// mainSupervisor is displayed as a small "Co-supervised with …" line
-// whenever present — i.e. Stefano is a co-supervisor and someone else
-// is the primary supervisor. Omit the field when Stefano is the main.
+//
+// In phdStudents:
+//   - by default, mainSupervisor renders as "Co-supervised with X" — i.e.
+//     Stefano holds a formal co-supervisor role and someone else is the
+//     primary supervisor. Omit mainSupervisor when Stefano is the main.
+//   - if closeCollaboration: true is set on an entry, the label switches to
+//     "Advised by X" instead — Stefano works closely with this PhD but is
+//     not a formal (co-)supervisor.
+//   - mainSupervisorUrl is optional and turns the supervisor name into a link.
+//
+// In closeCollaborators: senior researchers Stefano collaborates with on a
+// regular basis. They don't carry a supervisor relationship, so cards show
+// only name, affiliation, and a link to their website.
 
 fetch('jsons/supervision.json')
   .then(response => {
@@ -22,12 +35,19 @@ fetch('jsons/supervision.json')
     renderPeople(
       document.getElementById('phd-students-container'),
       data.phdStudents || [],
-      'No PhD students listed yet.'
+      'No PhD students listed yet.',
+      'Co-supervised with'
+    );
+    renderPeople(
+      document.getElementById('close-collaborators-container'),
+      data.closeCollaborators || [],
+      'No close collaborators listed yet.',
+      null
     );
   })
   .catch(error => console.error('Error loading supervision data:', error));
 
-function renderPeople(container, people, emptyMessage) {
+function renderPeople(container, people, emptyMessage, defaultSupervisorLabel) {
   if (!container) return;
 
   if (people.length === 0) {
@@ -49,14 +69,16 @@ function renderPeople(container, people, emptyMessage) {
       ? `<h6 class="card-subtitle text-muted small mb-1">${affiliation}</h6>`
       : '';
 
-    // Main-supervisor line: shown only when Stefano is NOT the main supervisor.
-    // If a URL is provided, render the name as a link.
+    // Supervisor line: only rendered if both a main supervisor name and a
+    // section-level label are present. Per-entry closeCollaboration flag
+    // overrides the section default with "Advised by".
     let mainSupLine = '';
-    if (person.mainSupervisor) {
+    if (person.mainSupervisor && defaultSupervisorLabel) {
+      const label = person.closeCollaboration ? 'Advised by' : defaultSupervisorLabel;
       const mainSupName = person.mainSupervisorUrl
         ? `<a href="${person.mainSupervisorUrl}" target="_blank" rel="noopener">${person.mainSupervisor}</a>`
         : person.mainSupervisor;
-      mainSupLine = `<p class="card-text text-muted small fst-italic mb-0 mt-1">Co-supervised with ${mainSupName}</p>`;
+      mainSupLine = `<p class="card-text text-muted small fst-italic mb-0 mt-1">${label} ${mainSupName}</p>`;
     }
 
     // Website link rendered as a small globe icon, consistent with Experience cards.

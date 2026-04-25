@@ -18,6 +18,33 @@
       "website": "https://vbn.aau.dk/en/persons/thta/",
       "photo": "assets/images/supervision/theocharis-tavantzis.jpg",
       "mainSupervisor": "Daniel Russo"
+    },
+    {
+      "firstName": "Gianmario",
+      "lastName": "Voria",
+      "affiliation": "University of Salerno",
+      "thesis": "Fairness, trust, and quality in the next generation of intelligent software systems.",
+      "website": "https://gianwario.vercel.app",
+      "photo": "assets/images/supervision/gianmario-voria.jpg",
+      "mainSupervisor": "Fabio Palomba",
+      "mainSupervisorUrl": "https://fpalomba.github.io/",
+      "closeCollaboration": true
+    }
+  ],
+  "closeCollaborators": [
+    {
+      "firstName": "Fabio",
+      "lastName": "Palomba",
+      "affiliation": "Associate Professor, University of Salerno",
+      "website": "https://fpalomba.github.io/",
+      "photo": "assets/images/supervision/fabio-palomba.jpg"
+    },
+    {
+      "firstName": "Gemma",
+      "lastName": "Catolino",
+      "affiliation": "Assistant Professor, University of Salerno",
+      "website": "https://www.gemmacatolino.com/",
+      "photo": "assets/images/supervision/gemma-catolino.jpg"
     }
   ]
 }
