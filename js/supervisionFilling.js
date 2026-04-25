@@ -18,7 +18,10 @@
 //   - if closeCollaboration: true is set on an entry, the label switches to
 //     "Advised by X" instead — Stefano works closely with this PhD but is
 //     not a formal (co-)supervisor.
-//   - mainSupervisorUrl is optional and turns the supervisor name into a link.
+//   - mainSupervisor accepts either a string (single advisor — pair with
+//     optional mainSupervisorUrl) OR an array of { name, url? } objects
+//     (multiple advisors). The renderer joins multiple names with "and",
+//     using an Oxford comma for three or more.
 //
 // In closeCollaborators: senior researchers Stefano collaborates with on a
 // regular basis. They don't carry a supervisor relationship, so cards show
@@ -47,6 +50,20 @@ fetch('jsons/supervision.json')
   })
   .catch(error => console.error('Error loading supervision data:', error));
 
+// Returns the advisor list as a uniform array of { name, url? } objects,
+// regardless of whether the entry uses the simple string form
+// (mainSupervisor + mainSupervisorUrl) or the array form
+// (mainSupervisor: [{ name, url? }, …]).
+function normalizeAdvisors(person) {
+  if (Array.isArray(person.mainSupervisor)) {
+    return person.mainSupervisor.filter(a => a && a.name);
+  }
+  if (typeof person.mainSupervisor === 'string' && person.mainSupervisor) {
+    return [{ name: person.mainSupervisor, url: person.mainSupervisorUrl }];
+  }
+  return [];
+}
+
 function renderPeople(container, people, emptyMessage, defaultSupervisorLabel) {
   if (!container) return;
 
@@ -69,16 +86,26 @@ function renderPeople(container, people, emptyMessage, defaultSupervisorLabel) {
       ? `<h6 class="card-subtitle text-muted small mb-1">${affiliation}</h6>`
       : '';
 
-    // Supervisor line: only rendered if both a main supervisor name and a
-    // section-level label are present. Per-entry closeCollaboration flag
+    // Supervisor line: only rendered if a section-level label is set and the
+    // entry carries advisor information. Per-entry closeCollaboration flag
     // overrides the section default with "Advised by".
     let mainSupLine = '';
-    if (person.mainSupervisor && defaultSupervisorLabel) {
+    const advisors = normalizeAdvisors(person);
+    if (advisors.length > 0 && defaultSupervisorLabel) {
       const label = person.closeCollaboration ? 'Advised by' : defaultSupervisorLabel;
-      const mainSupName = person.mainSupervisorUrl
-        ? `<a href="${person.mainSupervisorUrl}" target="_blank" rel="noopener">${person.mainSupervisor}</a>`
-        : person.mainSupervisor;
-      mainSupLine = `<p class="card-text text-muted small fst-italic mb-0 mt-1">${label} ${mainSupName}</p>`;
+      const advisorHtml = advisors
+        .map(a => a.url
+          ? `<a href="${a.url}" target="_blank" rel="noopener">${a.name}</a>`
+          : a.name);
+      let joined;
+      if (advisorHtml.length === 1) {
+        joined = advisorHtml[0];
+      } else if (advisorHtml.length === 2) {
+        joined = `${advisorHtml[0]} and ${advisorHtml[1]}`;
+      } else {
+        joined = `${advisorHtml.slice(0, -1).join(', ')}, and ${advisorHtml[advisorHtml.length - 1]}`;
+      }
+      mainSupLine = `<p class="card-text text-muted small fst-italic mb-0 mt-1">${label} ${joined}</p>`;
     }
 
     // Website link rendered as a small globe icon, consistent with Experience cards.
