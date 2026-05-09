@@ -1,6 +1,6 @@
 {
   "_comment": "Baseline snapshot of approve/disapprove counts for Unsolicited Opinions. The live source of truth is Abacus (namespace 'stefanolambiase-unsolicited-opinions', keys '<opinion-id>-approve' / '<opinion-id>-disapprove'). The site reads from Abacus at runtime and falls back to the values in this file if Abacus is unreachable. Update this file occasionally by visiting https://abacus.jasoncameron.dev/get/stefanolambiase-unsolicited-opinions/<key> for each key, copying the value here, and committing. Also bump 'lastUpdated' when you do.",
-  "lastUpdated": "2026-04-19",
+  "lastUpdated": "2026-05-08",
   "namespace": "stefanolambiase-unsolicited-opinions-v2",
   "counts": {
     "em-dash": {
@@ -26,6 +26,10 @@
       "disapprove": 0
     },
     "titan": {
+      "approve": 0,
+      "disapprove": 0
+    },
+    "best-gamer-department": {
       "approve": 0,
       "disapprove": 0
     }
