@@ -368,6 +368,7 @@
           <a class="list-group-item small text-uppercase" id="list-thesis-ideas-list" data-toggle="list" href="#thesis-ideas" role="tab">Thesis Ideas</a>
           <a class="list-group-item small text-uppercase" id="list-collaborators-list" data-toggle="list" href="#collaborators" role="tab">Collaborators</a>
           <a class="list-group-item small text-uppercase informal-only" id="list-unsolicited-opinions-list" data-toggle="list" href="#unsolicited-opinions" role="tab">Unsolicited Opinions</a>
+          <a class="list-group-item small text-uppercase informal-only" id="list-gaming-list" data-toggle="list" href="#gaming" role="tab">Gaming CV</a>
           <a class="list-group-item small text-uppercase" id="list-contact-list" data-toggle="list" href="#contact" role="tab">Get in touch</a>
         </div>
       </div>
@@ -947,6 +948,44 @@
         </div>
         <!-- ./unsolicited-opinions-panel-->
 
+        <!-- ./gaming-panel-->
+        <div class="tab-pane fade show informal-only" id="gaming" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg-9">
+
+              <h3 class="text-inside-line text-center"><span>Gaming CV</span></h3>
+
+              <p class="text-center text-muted mb-2 mt-4">
+                A second r&eacute;sum&eacute;, for a second life&mdash;games I have actually sunk time into, by year. Hours are lifetime totals, replays included.
+              </p>
+              <p class="text-center text-muted small mb-4">
+                <strong>Finished</strong>: rolled credits &middot; <strong>Completionist</strong>: 100% / all achievements &middot; <strong>In progress</strong>: still playing &middot; <strong>Dropped</strong>: gave up.
+              </p>
+
+              <div class="mb-2 d-flex justify-content-center">
+                <input
+                  type="search"
+                  id="gaming-search"
+                  class="form-control"
+                  style="max-width: 420px;"
+                  placeholder="Filter by title, year, completion, or genre&hellip;"
+                  aria-label="Filter games"
+                />
+              </div>
+
+              <div id="gaming-container">
+                <!-- The table is populated by js/gamingFilling.js -->
+              </div>
+
+              <div id="gaming-no-results" class="text-center text-muted py-4" style="display: none;">
+                No games match your filter.
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- ./gaming-panel-->
+
         <!-- ./contact-panel-->
         <div class="tab-pane fade show" id="contact" role="tabpanel">
           <div class="row justify-content-lg-center">
@@ -1013,6 +1052,7 @@
     <script src="js/thesisIdeasFilling.js"></script>
     <script src="js/supervisionFilling.js"></script>
     <script src="js/unsolicitedOpinionsFilling.js"></script>
+    <script src="js/gamingFilling.js"></script>
     <!-- javascript for tooltips -->
     <script>
       // Select all elements with data-toggle="tooltips" in the document

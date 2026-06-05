@@ -1,0 +1,930 @@
+{
+  "_comment": "All Steam games >10h (year = last played; fix replays by hand). platform defaults to Steam. Completion to be filled during curation; score is paused. genres + platform power the search filter; platform shows as a column only once more than one platform exists.",
+  "games": [
+    {
+      "title": "Dota 2",
+      "year": 2018,
+      "platform": "Steam",
+      "hours": 2272.2,
+      "genres": [
+        "MOBA"
+      ]
+    },
+    {
+      "title": "Monster Hunter: World",
+      "year": 2021,
+      "platform": "Steam",
+      "hours": 1140.1,
+      "genres": [
+        "Action RPG",
+        "Hunting"
+      ]
+    },
+    {
+      "title": "DARK SOULS III",
+      "year": 2020,
+      "platform": "Steam",
+      "hours": 334.9,
+      "genres": [
+        "Soulslike",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "DARK SOULS: Prepare To Die Edition",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 246.1,
+      "genres": [
+        "Soulslike",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "The Binding of Isaac: Rebirth",
+      "year": 2024,
+      "platform": "Steam",
+      "hours": 228.7,
+      "genres": [
+        "Roguelike",
+        "Twin-stick shooter"
+      ]
+    },
+    {
+      "title": "ELDEN RING",
+      "year": 2025,
+      "platform": "Steam",
+      "hours": 215.5,
+      "genres": [
+        "Soulslike",
+        "Action RPG",
+        "Open world"
+      ]
+    },
+    {
+      "title": "Europa Universalis IV",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 214.2,
+      "genres": [
+        "Grand strategy"
+      ]
+    },
+    {
+      "title": "Monster Hunter Wilds",
+      "year": 2026,
+      "platform": "Steam",
+      "hours": 170.2,
+      "genres": [
+        "Action RPG",
+        "Hunting"
+      ]
+    },
+    {
+      "title": "DARK SOULS II: Scholar of the First Sin",
+      "year": 2020,
+      "platform": "Steam",
+      "hours": 166.1,
+      "genres": [
+        "Soulslike",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "Stellaris",
+      "year": 2021,
+      "platform": "Steam",
+      "hours": 123.0,
+      "genres": [
+        "Grand strategy",
+        "4X"
+      ]
+    },
+    {
+      "title": "Crusader Kings III",
+      "year": 2025,
+      "platform": "Steam",
+      "hours": 118.9,
+      "genres": [
+        "Grand strategy",
+        "RPG"
+      ]
+    },
+    {
+      "title": "Divinity: Original Sin Enhanced Edition",
+      "year": 2017,
+      "platform": "Steam",
+      "hours": 113.6,
+      "genres": [
+        "CRPG",
+        "Turn-based"
+      ]
+    },
+    {
+      "title": "Dragon's Dogma: Dark Arisen",
+      "year": 2017,
+      "platform": "Steam",
+      "hours": 113.4,
+      "genres": [
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "Divinity: Original Sin 2",
+      "year": 2020,
+      "platform": "Steam",
+      "hours": 109.1,
+      "genres": [
+        "CRPG",
+        "Turn-based"
+      ]
+    },
+    {
+      "title": "Sid Meier's Civilization VI",
+      "year": 2020,
+      "platform": "Steam",
+      "hours": 105.9,
+      "genres": [
+        "4X",
+        "Strategy"
+      ]
+    },
+    {
+      "title": "FINAL FANTASY XV WINDOWS EDITION",
+      "year": 2023,
+      "platform": "Steam",
+      "hours": 105.2,
+      "genres": [
+        "JRPG",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "Fallout 4",
+      "year": 2024,
+      "platform": "Steam",
+      "hours": 101.3,
+      "genres": [
+        "Action RPG",
+        "Open world"
+      ]
+    },
+    {
+      "title": "DEATH STRANDING",
+      "year": 2022,
+      "platform": "Steam",
+      "hours": 92.3,
+      "genres": [
+        "Action",
+        "Adventure"
+      ]
+    },
+    {
+      "title": "ARMORED CORE VI FIRES OF RUBICON",
+      "year": 2024,
+      "platform": "Steam",
+      "hours": 82.9,
+      "genres": [
+        "Mecha",
+        "Action"
+      ]
+    },
+    {
+      "title": "DARK SOULS II",
+      "year": 2015,
+      "platform": "Steam",
+      "hours": 77.5,
+      "genres": [
+        "Soulslike",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "Total War: WARHAMMER II",
+      "year": 2020,
+      "platform": "Steam",
+      "hours": 76.5,
+      "genres": [
+        "Strategy",
+        "RTS",
+        "Turn-based"
+      ]
+    },
+    {
+      "title": "METAL GEAR SOLID V: THE PHANTOM PAIN",
+      "year": 2018,
+      "platform": "Steam",
+      "hours": 72.7,
+      "genres": [
+        "Stealth",
+        "Action"
+      ]
+    },
+    {
+      "title": "Dishonored 2",
+      "year": 2024,
+      "platform": "Steam",
+      "hours": 70.2,
+      "genres": [
+        "Immersive sim",
+        "Stealth"
+      ]
+    },
+    {
+      "title": "Total War: WARHAMMER",
+      "year": 2018,
+      "platform": "Steam",
+      "hours": 69.7,
+      "genres": [
+        "Strategy",
+        "RTS",
+        "Turn-based"
+      ]
+    },
+    {
+      "title": "Granblue Fantasy: Relink",
+      "year": 2024,
+      "platform": "Steam",
+      "hours": 69.2,
+      "genres": [
+        "Action RPG",
+        "JRPG"
+      ]
+    },
+    {
+      "title": "Pillars of Eternity",
+      "year": 2020,
+      "platform": "Steam",
+      "hours": 68.5,
+      "genres": [
+        "CRPG"
+      ]
+    },
+    {
+      "title": "DARK SOULS: REMASTERED",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 68.0,
+      "genres": [
+        "Soulslike",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "RPG Maker XP",
+      "year": 2021,
+      "platform": "Steam",
+      "hours": 65.9,
+      "genres": [
+        "Game maker",
+        "Tool"
+      ]
+    },
+    {
+      "title": "Devil May Cry 5",
+      "year": 2020,
+      "platform": "Steam",
+      "hours": 64.5,
+      "genres": [
+        "Hack and slash",
+        "Action"
+      ]
+    },
+    {
+      "title": "Sekiro: Shadows Die Twice",
+      "year": 2020,
+      "platform": "Steam",
+      "hours": 62.9,
+      "genres": [
+        "Soulslike",
+        "Action"
+      ]
+    },
+    {
+      "title": "Kingdom Come: Deliverance",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 60.3,
+      "genres": [
+        "Action RPG",
+        "Open world"
+      ]
+    },
+    {
+      "title": "Baldur's Gate 3",
+      "year": 2024,
+      "platform": "Steam",
+      "hours": 57.8,
+      "genres": [
+        "CRPG",
+        "Turn-based"
+      ]
+    },
+    {
+      "title": "Wuthering Waves",
+      "year": 2026,
+      "platform": "Steam",
+      "hours": 55.5,
+      "genres": [
+        "Action RPG",
+        "Gacha"
+      ]
+    },
+    {
+      "title": "HELLDIVERS 2",
+      "year": 2025,
+      "platform": "Steam",
+      "hours": 53.4,
+      "genres": [
+        "Co-op",
+        "Shooter"
+      ]
+    },
+    {
+      "title": "PUBG: BATTLEGROUNDS",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 52.7,
+      "genres": [
+        "Battle royale",
+        "Shooter"
+      ]
+    },
+    {
+      "title": "War Thunder",
+      "year": 2016,
+      "platform": "Steam",
+      "hours": 52.3,
+      "genres": [
+        "Vehicular combat",
+        "Simulation"
+      ]
+    },
+    {
+      "title": "Grand Theft Auto V Legacy",
+      "year": 2017,
+      "platform": "Steam",
+      "hours": 49.8,
+      "genres": [
+        "Action",
+        "Open world"
+      ]
+    },
+    {
+      "title": "Remnant II",
+      "year": 2025,
+      "platform": "Steam",
+      "hours": 49.3,
+      "genres": [
+        "Soulslike",
+        "Co-op shooter"
+      ]
+    },
+    {
+      "title": "Darkest Dungeon",
+      "year": 2018,
+      "platform": "Steam",
+      "hours": 47.2,
+      "genres": [
+        "Roguelike",
+        "RPG",
+        "Turn-based"
+      ]
+    },
+    {
+      "title": "Surviving Mars",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 47.1,
+      "genres": [
+        "City builder",
+        "Survival"
+      ]
+    },
+    {
+      "title": "NieR:Automata",
+      "year": 2020,
+      "platform": "Steam",
+      "hours": 46.6,
+      "genres": [
+        "Action RPG",
+        "Hack and slash"
+      ]
+    },
+    {
+      "title": "Dragon Age: Origins",
+      "year": 2014,
+      "platform": "Steam",
+      "hours": 44.7,
+      "genres": [
+        "CRPG"
+      ]
+    },
+    {
+      "title": "Warframe",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 43.1,
+      "genres": [
+        "Action",
+        "Looter shooter"
+      ]
+    },
+    {
+      "title": "CODE VEIN",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 42.9,
+      "genres": [
+        "Soulslike",
+        "Action RPG",
+        "Anime"
+      ]
+    },
+    {
+      "title": "Wolcen: Lords of Mayhem",
+      "year": 2020,
+      "platform": "Steam",
+      "hours": 42.5,
+      "genres": [
+        "ARPG",
+        "Hack and slash"
+      ]
+    },
+    {
+      "title": "Total War: ROME II - Emperor Edition",
+      "year": 2018,
+      "platform": "Steam",
+      "hours": 42.2,
+      "genres": [
+        "Strategy",
+        "RTS",
+        "Turn-based"
+      ]
+    },
+    {
+      "title": "Warhammer 40,000: Rogue Trader",
+      "year": 2025,
+      "platform": "Steam",
+      "hours": 41.7,
+      "genres": [
+        "CRPG",
+        "Turn-based"
+      ]
+    },
+    {
+      "title": "Company of Heroes",
+      "year": 2016,
+      "platform": "Steam",
+      "hours": 41.0,
+      "genres": [
+        "RTS"
+      ]
+    },
+    {
+      "title": "Hollow Knight",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 40.0,
+      "genres": [
+        "Metroidvania"
+      ]
+    },
+    {
+      "title": "Fallout: New Vegas",
+      "year": 2015,
+      "platform": "Steam",
+      "hours": 37.5,
+      "genres": [
+        "Action RPG",
+        "Open world"
+      ]
+    },
+    {
+      "title": "Warhammer 40,000: Space Marine 2",
+      "year": 2024,
+      "platform": "Steam",
+      "hours": 35.5,
+      "genres": [
+        "Action",
+        "Shooter"
+      ]
+    },
+    {
+      "title": "ENDLESS Legend",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 35.0,
+      "genres": [
+        "4X",
+        "Strategy"
+      ]
+    },
+    {
+      "title": "The Witcher 2: Assassins of Kings Enhanced Edition",
+      "year": 2015,
+      "platform": "Steam",
+      "hours": 34.9,
+      "genres": [
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "Salt and Sanctuary",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 33.0,
+      "genres": [
+        "Soulslike",
+        "Metroidvania"
+      ]
+    },
+    {
+      "title": "XCOM: Enemy Unknown",
+      "year": 2016,
+      "platform": "Steam",
+      "hours": 31.4,
+      "genres": [
+        "Turn-based tactics",
+        "Strategy"
+      ]
+    },
+    {
+      "title": "Cities: Skylines II",
+      "year": 2023,
+      "platform": "Steam",
+      "hours": 31.3,
+      "genres": [
+        "City builder"
+      ]
+    },
+    {
+      "title": "Vampyr",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 30.7,
+      "genres": [
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "Grim Dawn",
+      "year": 2018,
+      "platform": "Steam",
+      "hours": 30.6,
+      "genres": [
+        "ARPG",
+        "Hack and slash"
+      ]
+    },
+    {
+      "title": "Frostpunk",
+      "year": 2024,
+      "platform": "Steam",
+      "hours": 29.2,
+      "genres": [
+        "City builder",
+        "Survival"
+      ]
+    },
+    {
+      "title": "Slay the Spire 2",
+      "year": 2026,
+      "platform": "Steam",
+      "hours": 28.0,
+      "genres": [
+        "Roguelike",
+        "Deckbuilder"
+      ]
+    },
+    {
+      "title": "Lords Of The Fallen",
+      "year": 2016,
+      "platform": "Steam",
+      "hours": 27.2,
+      "genres": [
+        "Soulslike",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "Path of Exile 2",
+      "year": 2024,
+      "platform": "Steam",
+      "hours": 27.2,
+      "genres": [
+        "ARPG",
+        "Hack and slash"
+      ]
+    },
+    {
+      "title": "Middle-earth: Shadow of Mordor",
+      "year": 2017,
+      "platform": "Steam",
+      "hours": 25.8,
+      "genres": [
+        "Action",
+        "Open world"
+      ]
+    },
+    {
+      "title": "NARUTO SHIPPUDEN: Ultimate Ninja STORM Revolution",
+      "year": 2016,
+      "platform": "Steam",
+      "hours": 25.3,
+      "genres": [
+        "Fighting",
+        "Anime"
+      ]
+    },
+    {
+      "title": "Hearts of Iron IV",
+      "year": 2025,
+      "platform": "Steam",
+      "hours": 24.1,
+      "genres": [
+        "Grand strategy",
+        "Wargame"
+      ]
+    },
+    {
+      "title": "STAR WARS Jedi: Fallen Order",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 23.6,
+      "genres": [
+        "Action adventure",
+        "Soulslike"
+      ]
+    },
+    {
+      "title": "Nioh 2 – The Complete Edition",
+      "year": 2021,
+      "platform": "Steam",
+      "hours": 23.5,
+      "genres": [
+        "Soulslike",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "Prison Architect",
+      "year": 2018,
+      "platform": "Steam",
+      "hours": 21.2,
+      "genres": [
+        "Management",
+        "Simulation"
+      ]
+    },
+    {
+      "title": "Cities: Skylines",
+      "year": 2018,
+      "platform": "Steam",
+      "hours": 21.1,
+      "genres": [
+        "City builder"
+      ]
+    },
+    {
+      "title": "Dead Island",
+      "year": 2017,
+      "platform": "Steam",
+      "hours": 19.6,
+      "genres": [
+        "Action RPG",
+        "Survival horror"
+      ]
+    },
+    {
+      "title": "Outer Wilds",
+      "year": 2024,
+      "platform": "Steam",
+      "hours": 19.2,
+      "genres": [
+        "Adventure",
+        "Exploration",
+        "Puzzle"
+      ]
+    },
+    {
+      "title": "Hades II",
+      "year": 2026,
+      "platform": "Steam",
+      "hours": 17.4,
+      "genres": [
+        "Roguelike",
+        "Action"
+      ]
+    },
+    {
+      "title": "Metaphor: ReFantazio",
+      "year": 2025,
+      "platform": "Steam",
+      "hours": 16.8,
+      "genres": [
+        "JRPG",
+        "Turn-based"
+      ]
+    },
+    {
+      "title": "Wolfenstein: The New Order",
+      "year": 2015,
+      "platform": "Steam",
+      "hours": 16.4,
+      "genres": [
+        "FPS",
+        "Shooter"
+      ]
+    },
+    {
+      "title": "Darksiders Warmastered Edition",
+      "year": 2018,
+      "platform": "Steam",
+      "hours": 16.4,
+      "genres": [
+        "Action adventure",
+        "Hack and slash"
+      ]
+    },
+    {
+      "title": "DRAGON BALL Z: KAKAROT",
+      "year": 2024,
+      "platform": "Steam",
+      "hours": 16.3,
+      "genres": [
+        "Action RPG",
+        "Anime"
+      ]
+    },
+    {
+      "title": "Sid Meier's Civilization V",
+      "year": 2015,
+      "platform": "Steam",
+      "hours": 15.4,
+      "genres": [
+        "4X",
+        "Strategy"
+      ]
+    },
+    {
+      "title": "Life is Strange",
+      "year": 2017,
+      "platform": "Steam",
+      "hours": 14.9,
+      "genres": [
+        "Narrative adventure"
+      ]
+    },
+    {
+      "title": "The Surge",
+      "year": 2018,
+      "platform": "Steam",
+      "hours": 13.9,
+      "genres": [
+        "Soulslike",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "The First Berserker: Khazan",
+      "year": 2025,
+      "platform": "Steam",
+      "hours": 13.7,
+      "genres": [
+        "Soulslike",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "Darksiders Genesis",
+      "year": 2020,
+      "platform": "Steam",
+      "hours": 13.6,
+      "genres": [
+        "ARPG",
+        "Hack and slash"
+      ]
+    },
+    {
+      "title": "Titan Quest Anniversary Edition",
+      "year": 2018,
+      "platform": "Steam",
+      "hours": 13.5,
+      "genres": [
+        "ARPG",
+        "Hack and slash"
+      ]
+    },
+    {
+      "title": "Stronghold HD",
+      "year": 2016,
+      "platform": "Steam",
+      "hours": 13.0,
+      "genres": [
+        "RTS",
+        "City builder"
+      ]
+    },
+    {
+      "title": "Space Engineers",
+      "year": 2017,
+      "platform": "Steam",
+      "hours": 12.7,
+      "genres": [
+        "Sandbox",
+        "Simulation"
+      ]
+    },
+    {
+      "title": "Deep Rock Galactic",
+      "year": 2025,
+      "platform": "Steam",
+      "hours": 12.4,
+      "genres": [
+        "Co-op",
+        "Shooter"
+      ]
+    },
+    {
+      "title": "Transformers: Fall of Cybertron",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 12.2,
+      "genres": [
+        "Action",
+        "Shooter"
+      ]
+    },
+    {
+      "title": "Split Fiction",
+      "year": 2025,
+      "platform": "Steam",
+      "hours": 11.9,
+      "genres": [
+        "Co-op",
+        "Action adventure"
+      ]
+    },
+    {
+      "title": "Trine 2",
+      "year": 2019,
+      "platform": "Steam",
+      "hours": 11.5,
+      "genres": [
+        "Puzzle platformer",
+        "Co-op"
+      ]
+    },
+    {
+      "title": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4",
+      "year": 2018,
+      "platform": "Steam",
+      "hours": 11.2,
+      "genres": [
+        "Fighting",
+        "Anime"
+      ]
+    },
+    {
+      "title": "Fallout 76",
+      "year": 2024,
+      "platform": "Steam",
+      "hours": 11.2,
+      "genres": [
+        "Action RPG",
+        "Survival",
+        "Online"
+      ]
+    },
+    {
+      "title": "Transformers: War for Cybertron",
+      "year": 2017,
+      "platform": "Steam",
+      "hours": 11.1,
+      "genres": [
+        "Action",
+        "Shooter"
+      ]
+    },
+    {
+      "title": "Wasteland 2: Director's Cut",
+      "year": 2018,
+      "platform": "Steam",
+      "hours": 10.9,
+      "genres": [
+        "CRPG",
+        "Turn-based"
+      ]
+    },
+    {
+      "title": "ARC Raiders",
+      "year": 2025,
+      "platform": "Steam",
+      "hours": 10.8,
+      "genres": [
+        "Extraction shooter"
+      ]
+    }
+  ]
+}
