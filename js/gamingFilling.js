@@ -12,8 +12,8 @@
 // The section is informal-only and is hidden in formal mode (see switchBio.js).
 
 (function () {
-  // Score column is paused for now. Flip to true to bring it back.
-  const SHOW_SCORE = false;
+  // Personal 1-7 score column.
+  const SHOW_SCORE = true;
 
   // Inject self-contained styles once so the script stays portable.
   if (!document.getElementById('gaming-cv-styles')) {
@@ -40,6 +40,7 @@
       .gaming-table .gaming-center { text-align: center; white-space: nowrap; }
       .gaming-note { display: block; font-size: 0.78rem; opacity: 0.55; font-weight: 400; }
       .gaming-score { font-variant-numeric: tabular-nums; }
+      .gaming-fav { color: #e8a51c; font-size: 0.8em; margin-left: 0.35rem; }
       @media (max-width: 575px) {
         .gaming-table th.gaming-hide-sm, .gaming-table td.gaming-hide-sm,
         .gaming-table col.gaming-hide-sm { display: none; }
@@ -58,7 +59,7 @@
   // Build the searchable haystack for one game (includes hidden genres + platform).
   const haystack = function (g) {
     const genres = Array.isArray(g.genres) ? g.genres.join(' ') : g.genres || '';
-    return [g.title, g.completion, g.year, g.platform, genres]
+    return [g.title, g.completion, g.year, g.platform, genres, g.favorite ? 'favorite' : '']
       .filter(Boolean)
       .join(' ')
       .toLowerCase();
@@ -81,6 +82,9 @@
           const note = g.note || g.challenge;
           return (
             esc(g.title) +
+            (g.favorite
+              ? ' <em class="fa fa-star gaming-fav" title="All-time favorite"></em>'
+              : '') +
             (note ? '<span class="gaming-note">' + esc(note) + '</span>' : '')
           );
         }
