@@ -7,6 +7,22 @@
   "note": "Includes journal articles (j) and conference/workshop papers (c). Preprints (CoRR) excluded. DOIs cross-checked against DBLP and Crossref on 2026-04-24.",
   "publications": [
     {
+      "dblp_key": null,
+      "type": "conference",
+      "year": 2026,
+      "title": "\"We Must Be Better\": A Critical Vision for the Convergence of Software Engineering and Human-Computer Interaction in Generative AI-Driven Video Game Development.",
+      "authors": [
+        "Stefano Lambiase"
+      ],
+      "venue": "CoG 2026 (Vision Paper)",
+      "doi": null,
+      "dblp_url": null,
+      "downloadLink": "/assets/papers/CoG_2026_WeMustBeBetter.pdf",
+      "note": "Accepted; to appear in the Proceedings of the IEEE Conference on Games (CoG) 2026. Accepted-version preprint; DOI to be added upon publication.",
+      "featured": true,
+      "featuredNote": "My first vision paper—and my first critical review. It's an honor to share it, because this is the direction I want to devote myself to, fully in line with my mission: bringing software engineering, human-computer interaction, and game design together for video games."
+    },
+    {
       "dblp_key": "journals/tosem/LambiaseCPFR26",
       "type": "journal",
       "year": 2026,
