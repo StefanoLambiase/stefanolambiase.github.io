@@ -16,8 +16,16 @@ fetch('jsons/papersNEW.json')
     const paperLabels = new Map();
     const journalsByYear = papers.filter(p => p.type === 'journal').sort((a, b) => a.year - b.year);
     const conferencesByYear = papers.filter(p => p.type === 'conference').sort((a, b) => a.year - b.year);
+    const preprintsByYear = papers.filter(p => p.type === 'preprint').sort((a, b) => a.year - b.year);
     journalsByYear.forEach((p, i) => paperLabels.set(p, `J${i + 1}`));
     conferencesByYear.forEach((p, i) => paperLabels.set(p, `C${i + 1}`));
+    preprintsByYear.forEach((p, i) => paperLabels.set(p, `P${i + 1}`));
+
+    // Badge colour by publication type
+    const typeBadgeClass = (type) =>
+      type === 'journal' ? 'bg-success'
+      : type === 'preprint' ? 'bg-warning text-dark'
+      : 'bg-info';
 
     // Sort papers for display: by year descending, mixing journals and conferences
     // Within the same year, sort by label number descending (highest first)
@@ -25,8 +33,8 @@ fetch('jsons/papersNEW.json')
     allPapers.sort((a, b) => {
       if (a.year !== b.year) return b.year - a.year;
       // Within same year, sort by label number descending
-      const numA = parseInt(paperLabels.get(a).slice(1));
-      const numB = parseInt(paperLabels.get(b).slice(1));
+      const numA = parseInt((paperLabels.get(a) || 'X0').slice(1));
+      const numB = parseInt((paperLabels.get(b) || 'X0').slice(1));
       return numB - numA;
     });
     const sortedPapers = allPapers;
@@ -98,8 +106,8 @@ fetch('jsons/papersNEW.json')
           <div class="card h-100">
             <div class="card-body d-flex flex-column">
               <div class="mb-2">
-                <span class="badge ${paper.type === 'journal' ? 'bg-success' : 'bg-info'}">${paper.type}</span>
-                <span class="badge ${paper.type === 'journal' ? 'bg-success' : 'bg-info'}">${paperLabels.get(paper)}</span>
+                <span class="badge ${typeBadgeClass(paper.type)}">${paper.type}</span>
+                <span class="badge ${typeBadgeClass(paper.type)}">${paperLabels.get(paper)}</span>
                 <span class="badge bg-secondary">${paper.year}</span>
               </div>
               <h6 class="card-title"><strong>${paper.title}</strong></h6>
@@ -201,8 +209,8 @@ fetch('jsons/papersNEW.json')
             <div class="card-body d-flex flex-column">
               <div class="mb-2 d-flex justify-content-between align-items-start flex-wrap gap-1">
                 <div>
-                  <span class="badge ${paper.type === 'journal' ? 'bg-success' : 'bg-info'}">${paper.type}</span>
-                  <span class="badge ${paper.type === 'journal' ? 'bg-success' : 'bg-info'}">${paperLabels.get(paper)}</span>
+                  <span class="badge ${typeBadgeClass(paper.type)}">${paper.type}</span>
+                  <span class="badge ${typeBadgeClass(paper.type)}">${paperLabels.get(paper)}</span>
                   <span class="badge bg-secondary">${paper.year}</span>
                 </div>
                 <span class="badge paper-featured-badge">Featured</span>

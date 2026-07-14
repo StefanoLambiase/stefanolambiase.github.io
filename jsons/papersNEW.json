@@ -3,8 +3,8 @@
   "orcid": "0000-0002-9933-6203",
   "dblp": "https://dblp.org/pid/274/3963",
   "google_scholar": "https://scholar.google.com/citations?user=2fHPEdkAAAAJ",
-  "source": "DBLP (https://dblp.org/pid/274/3963), retrieved 2026-04-24",
-  "note": "Includes journal articles (j) and conference/workshop papers (c). Preprints (CoRR) excluded. DOIs cross-checked against DBLP and Crossref on 2026-04-24.",
+  "source": "DBLP (https://dblp.org/pid/274/3963), retrieved 2026-04-24; refreshed 2026-07-07",
+  "note": "Includes journal articles (j), conference/workshop papers (c), and selected arXiv preprints (p). DOIs cross-checked against DBLP and Crossref. Last refresh 2026-07-07.",
   "publications": [
     {
       "dblp_key": null,
@@ -57,6 +57,65 @@
       "pages": "69",
       "doi": "10.1007/s10664-026-10805-7",
       "dblp_url": "https://dblp.org/rec/journals/ese/LambiaseL26",
+      "downloadLink": null
+    },
+    {
+      "dblp_key": "conf/saner/PortaVASLCP26",
+      "type": "conference",
+      "year": 2026,
+      "title": "Toward Measuring Prompt Quality: A Preliminary Investigation on Prompt Smells.",
+      "authors": [
+        "Antonio Della Porta",
+        "Gianmario Voria",
+        "Andrea Abbate",
+        "Raffaele Sulipano",
+        "Stefano Lambiase",
+        "Gemma Catolino",
+        "Fabio Palomba"
+      ],
+      "venue": "SANER 2026 Companion",
+      "pages": "293-300",
+      "doi": "10.1109/SANER-C67878.2026.00046",
+      "dblp_url": "https://dblp.org/rec/conf/saner/PortaVASLCP26",
+      "downloadLink": null
+    },
+    {
+      "dblp_key": "journals/corr/abs-2508-15503",
+      "type": "preprint",
+      "year": 2025,
+      "title": "Guidelines for Empirical Studies in Software Engineering involving Large Language Models.",
+      "authors": [
+        "Sebastian Baltes",
+        "Florian Angermeir",
+        "Chetan Arora",
+        "...",
+        "Stefano Lambiase",
+        "Daniel Russo",
+        "...",
+        "Stefan Wagner"
+      ],
+      "note": "22 co-authors—see arXiv for the full list. Preprint (also on the AIware 2025 arXiv track); under submission to Empirical Software Engineering.",
+      "venue": "arXiv preprint arXiv:2508.15503",
+      "doi": "10.48550/arXiv.2508.15503",
+      "dblp_url": "https://dblp.org/rec/journals/corr/abs-2508-15503",
+      "downloadLink": null
+    },
+    {
+      "dblp_key": "journals/corr/abs-2504-02553",
+      "type": "preprint",
+      "year": 2025,
+      "title": "Exploring Individual Factors in the Adoption of LLMs for Specific Software Engineering Tasks.",
+      "authors": [
+        "Stefano Lambiase",
+        "Gemma Catolino",
+        "Fabio Palomba",
+        "Filomena Ferrucci",
+        "Daniel Russo"
+      ],
+      "note": "Preprint; not yet published in a peer-reviewed venue as of 2026-07.",
+      "venue": "arXiv preprint arXiv:2504.02553",
+      "doi": "10.48550/arXiv.2504.02553",
+      "dblp_url": "https://dblp.org/rec/journals/corr/abs-2504-02553",
       "downloadLink": null
     },
     {
