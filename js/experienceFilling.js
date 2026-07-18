@@ -16,6 +16,11 @@ fetch('jsons/experiences.json') // Cambia il nome del file se necessario
     const div = document.createElement('div');
     div.classList.add('timeline-block');
 
+    // Optional image shown inside the timeline card
+    const imageHTML = experience.image
+      ? `<img src="${experience.image}" alt="${experience.imageAlt || experience.title}" class="timeline-image" loading="lazy">`
+      : '';
+
     if (experiences.indexOf(experience) % 2 === 0) {
       div.classList.add('timeline-block-left');
 
@@ -25,6 +30,7 @@ fetch('jsons/experiences.json') // Cambia il nome del file se necessario
           <span class="timeline-span">${experience.location}</span>
           <p class="text-muted small mb-3">${experience.date}</p>
           <p class="timeline-p text-justify">${experience.description}</p>
+          ${imageHTML}
         </div>
         <div class="marker"></div>
       `;
@@ -37,6 +43,7 @@ fetch('jsons/experiences.json') // Cambia il nome del file se necessario
           <span class="timeline-span">${experience.location}</span>
           <p class="text-muted small mb-3">${experience.date}</p>
           <p class="timeline-p text-justify">${experience.description}</p>
+          ${imageHTML}
         </div>
       `;
     }

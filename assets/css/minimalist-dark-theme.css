@@ -260,6 +260,15 @@ a:hover {
   color: white;
 }
 
+.timeline-content .timeline-image {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
 /* Mission quote */
 .mission-quote {
   border-left: 4px solid #c0392b;
