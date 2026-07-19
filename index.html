@@ -369,8 +369,7 @@
           <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#projects" role="tab">Projects</a>
           <a class="list-group-item small text-uppercase" id="list-thesis-ideas-list" data-toggle="list" href="#thesis-ideas" role="tab">Thesis Ideas</a>
           <a class="list-group-item small text-uppercase" id="list-collaborators-list" data-toggle="list" href="#collaborators" role="tab">Collaborators</a>
-          <a class="list-group-item small text-uppercase informal-only" id="list-unsolicited-opinions-list" data-toggle="list" href="#unsolicited-opinions" role="tab">Unsolicited Opinions</a>
-          <a class="list-group-item small text-uppercase informal-only" id="list-gaming-list" data-toggle="list" href="#gaming" role="tab">Gaming CV</a>
+          <a class="list-group-item small text-uppercase informal-only" id="list-beyond-work-list" data-toggle="list" href="#beyond-work" role="tab">Beyond Work</a>
           <a class="list-group-item small text-uppercase" id="list-contact-list" data-toggle="list" href="#contact" role="tab">Get in touch</a>
         </div>
       </div>
@@ -917,43 +916,32 @@
         </div>
         <!-- ./collaborators-panel-->
 
-        <!-- ./unsolicited-opinions-panel-->
-        <div class="tab-pane fade show informal-only" id="unsolicited-opinions" role="tabpanel">
+        <!-- ./beyond-work-panel-->
+        <div class="tab-pane fade show informal-only" id="beyond-work" role="tabpanel">
+
+          <!-- Life Moments subsection -->
           <div class="row justify-content-lg-center">
-            <div class="col-lg-10">
+            <div class="col-lg">
 
-              <h3 class="text-inside-line text-center"><span>Unsolicited Opinions</span></h3>
+              <h3 class="text-inside-line text-center"><span>Life Moments</span></h3>
 
-              <p class="text-center text-muted unsolicited-intro mb-4 mt-4">
-                A small, ever-growing collection of hills I'm willing to die on&mdash;mostly typographic, occasionally useful, never sponsored. Click a card for the full rant.
+              <p class="text-center text-muted mb-2 mt-4">
+                Photos and moments that do not fit a CV&mdash;travels, friends, and other small adventures worth remembering.
               </p>
 
-              <div class="mb-4 d-flex justify-content-center">
-                <input
-                  type="search"
-                  id="unsolicited-opinions-search"
-                  class="form-control unsolicited-search"
-                  placeholder="Filter by topic, word, or tag&hellip;"
-                  aria-label="Filter unsolicited opinions"
-                />
-              </div>
+              <!-- Timeline -->
+              <div id="beyond-work-container" class="timeline-container">
 
-              <div class="row" id="unsolicited-opinions-container">
-                <!-- Cards are injected here by js/unsolicitedOpinionsFilling.js -->
-              </div>
+                <!-- The panel is populated using a JSON -->
 
-              <div id="unsolicited-opinions-no-results" class="text-center text-muted py-4" style="display: none;">
-                No opinions match your filter.
               </div>
+              <!-- ./timeline -->
 
             </div>
           </div>
-        </div>
-        <!-- ./unsolicited-opinions-panel-->
 
-        <!-- ./gaming-panel-->
-        <div class="tab-pane fade show informal-only" id="gaming" role="tabpanel">
-          <div class="row justify-content-lg-center">
+          <!-- Gaming CV subsection -->
+          <div class="row justify-content-lg-center" style="margin-top: 40px;">
             <div class="col-lg-9">
 
               <h3 class="text-inside-line text-center"><span>Gaming CV</span></h3>
@@ -986,8 +974,40 @@
 
             </div>
           </div>
+
+          <!-- Unsolicited Opinions subsection -->
+          <div class="row justify-content-lg-center" style="margin-top: 40px;">
+            <div class="col-lg-10">
+
+              <h3 class="text-inside-line text-center"><span>Unsolicited Opinions</span></h3>
+
+              <p class="text-center text-muted unsolicited-intro mb-4 mt-4">
+                A small, ever-growing collection of hills I'm willing to die on&mdash;mostly typographic, occasionally useful, never sponsored. Click a card for the full rant.
+              </p>
+
+              <div class="mb-4 d-flex justify-content-center">
+                <input
+                  type="search"
+                  id="unsolicited-opinions-search"
+                  class="form-control unsolicited-search"
+                  placeholder="Filter by topic, word, or tag&hellip;"
+                  aria-label="Filter unsolicited opinions"
+                />
+              </div>
+
+              <div class="row" id="unsolicited-opinions-container">
+                <!-- Cards are injected here by js/unsolicitedOpinionsFilling.js -->
+              </div>
+
+              <div id="unsolicited-opinions-no-results" class="text-center text-muted py-4" style="display: none;">
+                No opinions match your filter.
+              </div>
+
+            </div>
+          </div>
+
         </div>
-        <!-- ./gaming-panel-->
+        <!-- ./beyond-work-panel-->
 
         <!-- ./contact-panel-->
         <div class="tab-pane fade show" id="contact" role="tabpanel">
@@ -1055,6 +1075,7 @@
     <script src="js/thesisIdeasFilling.js"></script>
     <script src="js/supervisionFilling.js"></script>
     <script src="js/unsolicitedOpinionsFilling.js"></script>
+    <script src="js/beyondWorkFilling.js"></script>
     <script src="js/gamingFilling.js?v=2"></script>
     <!-- javascript for tooltips -->
     <script>

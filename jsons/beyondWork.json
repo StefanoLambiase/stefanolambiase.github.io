@@ -1,0 +1,12 @@
+{
+  "moments": [
+    {
+      "title": "Sample Moment—Replace Me",
+      "location": "Somewhere Nice",
+      "date": "July, 2026",
+      "description": "This is a sample entry showing how the Life Moments timeline works. Put your photos in <code>assets/images/beyond-work/</code> and add one object per moment in <code>jsons/beyondWork.json</code>—the <code>image</code>, <code>imageAlt</code>, and <code>link</code> fields are optional.",
+      "image": "assets/images/cat.jpg",
+      "imageAlt": "Sample photo"
+    }
+  ]
+}

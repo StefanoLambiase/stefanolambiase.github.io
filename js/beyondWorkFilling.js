@@ -1,7 +1,8 @@
-// script.js
+// beyondWorkFilling.js
+// Populates the "Life Moments" timeline in the Beyond Work tab.
+// Same structure as the Experience timeline, with optional images.
 
-// Funzione per leggere il file JSON e generare i div delle esperienze
-fetch('jsons/experiences.json') // Cambia il nome del file se necessario
+fetch('jsons/beyondWork.json')
 .then(response => {
   if (!response.ok) {
     throw new Error('Network response was not ok');
@@ -9,48 +10,39 @@ fetch('jsons/experiences.json') // Cambia il nome del file se necessario
   return response.json();
 })
 .then(data => {
-  const experienceContainer = document.getElementById('experience-container');
-  const experiences = data.experiences;
+  const container = document.getElementById('beyond-work-container');
+  const moments = data.moments;
 
-  experiences.forEach(experience => {
+  moments.forEach((moment, index) => {
     const div = document.createElement('div');
     div.classList.add('timeline-block');
 
     // Optional image shown inside the timeline card
-    const imageHTML = experience.image
-      ? `<img src="${experience.image}" alt="${experience.imageAlt || experience.title}" class="timeline-image" loading="lazy">`
+    const imageHTML = moment.image
+      ? `<img src="${moment.image}" alt="${moment.imageAlt || moment.title}" class="timeline-image" loading="lazy">`
       : '';
 
-    if (experiences.indexOf(experience) % 2 === 0) {
-      div.classList.add('timeline-block-left');
+    const contentHTML = `
+      <div class="timeline-content">
+        <h3 class="timeline-h3">${moment.title}</h3>
+        <span class="timeline-span">${moment.location}</span>
+        <p class="text-muted small mb-3">${moment.date}</p>
+        <p class="timeline-p text-justify">${moment.description}</p>
+        ${imageHTML}
+      </div>
+    `;
 
-      div.innerHTML = `
-        <div class="timeline-content">
-          <h3 class="timeline-h3">${experience.title}</h3>
-          <span class="timeline-span">${experience.location}</span>
-          <p class="text-muted small mb-3">${experience.date}</p>
-          <p class="timeline-p text-justify">${experience.description}</p>
-          ${imageHTML}
-        </div>
-        <div class="marker"></div>
-      `;
+    if (index % 2 === 0) {
+      div.classList.add('timeline-block-left');
+      div.innerHTML = `${contentHTML}<div class="marker"></div>`;
     } else {
       div.classList.add('timeline-block-right');
-      div.innerHTML = `
-        <div class="marker"></div>
-        <div class="timeline-content">
-          <h3 class="timeline-h3">${experience.title}</h3>
-          <span class="timeline-span">${experience.location}</span>
-          <p class="text-muted small mb-3">${experience.date}</p>
-          <p class="timeline-p text-justify">${experience.description}</p>
-          ${imageHTML}
-        </div>
-      `;
+      div.innerHTML = `<div class="marker"></div>${contentHTML}`;
     }
 
-    if (experience.link) {
+    if (moment.link) {
       const link = document.createElement('a');
-      link.href = experience.link;
+      link.href = moment.link;
       link.target = '_blank';
       link.innerHTML = '<em class="fa fa-globe"></em>';
       const socialIcons = document.createElement('ul');
@@ -59,12 +51,12 @@ fetch('jsons/experiences.json') // Cambia il nome del file se necessario
       div.querySelector('.timeline-content').appendChild(socialIcons);
     }
 
-    experienceContainer.appendChild(div);
+    container.appendChild(div);
   })
 
   // Collapse the tail of the timeline behind a "show more" button.
   const VISIBLE_COUNT = 8;
-  const blocks = Array.from(experienceContainer.querySelectorAll('.timeline-block'));
+  const blocks = Array.from(container.querySelectorAll('.timeline-block'));
   if (blocks.length > VISIBLE_COUNT) {
     const hiddenBlocks = blocks.slice(VISIBLE_COUNT);
     hiddenBlocks.forEach(block => { block.style.display = 'none'; });
@@ -90,12 +82,12 @@ fetch('jsons/experiences.json') // Cambia il nome del file se necessario
       setLabel();
       // When collapsing, bring the top of the timeline back into view.
       if (!expanded) {
-        experienceContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        container.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
 
     wrapper.appendChild(btn);
-    experienceContainer.after(wrapper);
+    container.after(wrapper);
   }
 })
 .catch(error => console.error(error));
