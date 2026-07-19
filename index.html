@@ -919,11 +919,23 @@
         <!-- ./beyond-work-panel-->
         <div class="tab-pane fade show informal-only" id="beyond-work" role="tabpanel">
 
+          <!-- Sub-navigation, mirrors the main tab bar -->
+          <div class="row justify-content-center" style="margin-bottom: 30px;">
+            <div class="col-auto">
+              <div class="list-group list-group-horizontal-md" id="beyond-work-tabs" role="tablist">
+                <a class="list-group-item small text-uppercase" id="list-life-moments-list" data-toggle="list" href="#life-moments" role="tab">Life Moments</a>
+                <a class="list-group-item small text-uppercase" id="list-gaming-list" data-toggle="list" href="#gaming" role="tab">Gaming CV</a>
+                <a class="list-group-item small text-uppercase active" id="list-unsolicited-opinions-list" data-toggle="list" href="#unsolicited-opinions" role="tab">Unsolicited Opinions</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content">
+
           <!-- Life Moments subsection -->
+          <div class="tab-pane fade show" id="life-moments" role="tabpanel">
           <div class="row justify-content-lg-center">
             <div class="col-lg">
-
-              <h3 class="text-inside-line text-center"><span>Life Moments</span></h3>
 
               <p class="text-center text-muted mb-2 mt-4">
                 Photos and moments that do not fit a CV&mdash;travels, friends, and other small adventures worth remembering.
@@ -939,12 +951,13 @@
 
             </div>
           </div>
+          </div>
+          <!-- ./life-moments -->
 
           <!-- Gaming CV subsection -->
-          <div class="row justify-content-lg-center" style="margin-top: 40px;">
+          <div class="tab-pane fade show" id="gaming" role="tabpanel">
+          <div class="row justify-content-lg-center">
             <div class="col-lg-9">
-
-              <h3 class="text-inside-line text-center"><span>Gaming CV</span></h3>
 
               <p class="text-center text-muted mb-2 mt-4">
                 A second r&eacute;sum&eacute;, for a second life&mdash;games I have actually sunk time into, by year. Hours are lifetime totals, replays included; the score is a strictly personal 1&ndash;7.
@@ -974,12 +987,13 @@
 
             </div>
           </div>
+          </div>
+          <!-- ./gaming -->
 
           <!-- Unsolicited Opinions subsection -->
-          <div class="row justify-content-lg-center" style="margin-top: 40px;">
+          <div class="tab-pane fade show active" id="unsolicited-opinions" role="tabpanel">
+          <div class="row justify-content-lg-center">
             <div class="col-lg-10">
-
-              <h3 class="text-inside-line text-center"><span>Unsolicited Opinions</span></h3>
 
               <p class="text-center text-muted unsolicited-intro mb-4 mt-4">
                 A small, ever-growing collection of hills I'm willing to die on&mdash;mostly typographic, occasionally useful, never sponsored. Click a card for the full rant.
@@ -1005,6 +1019,11 @@
 
             </div>
           </div>
+          </div>
+          <!-- ./unsolicited-opinions -->
+
+          </div>
+          <!-- ./beyond-work tab-content -->
 
         </div>
         <!-- ./beyond-work-panel-->
