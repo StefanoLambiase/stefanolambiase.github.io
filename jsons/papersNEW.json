@@ -23,6 +23,24 @@
       "featuredNote": "My first vision paper—and my first critical review. It's an honor to share it, because this is the direction I want to devote myself to, fully in line with my mission: bringing software engineering, human-computer interaction, and game design together for video games."
     },
     {
+      "dblp_key": null,
+      "type": "conference",
+      "year": 2026,
+      "title": "Q-Spire: Quantum Code Smell Detection and LLM-Assisted Remediation in VS Code.",
+      "authors": [
+        "Riccardo Alfieri",
+        "Francesco Paolo D'Antuono",
+        "Stefano Lambiase",
+        "Andrea De Lucia",
+        "Fabio Palomba"
+      ],
+      "venue": "ICSME 2026 (Tool Demo)",
+      "doi": null,
+      "dblp_url": null,
+      "downloadLink": "/assets/papers/ICSME_2026_ToolDemo_QSpire.pdf",
+      "note": "Accepted; to appear in the Proceedings of the IEEE International Conference on Software Maintenance and Evolution (ICSME) 2026. Accepted-version preprint; DOI to be added upon publication."
+    },
+    {
       "dblp_key": "journals/tosem/LambiaseCPFR26",
       "type": "journal",
       "year": 2026,
