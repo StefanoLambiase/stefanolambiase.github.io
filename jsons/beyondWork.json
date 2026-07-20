@@ -1,12 +1,12 @@
 {
   "moments": [
     {
-      "title": "Sample Moment—Replace Me",
-      "location": "Somewhere Nice",
+      "title": "I Cugini Invade My Home (Without Me)",
+      "location": "Salerno, Italy—attendance via Copenhagen, Denmark",
       "date": "July, 2026",
-      "description": "This is a sample entry showing how the Life Moments timeline works. Put your photos in <code>assets/images/beyond-work/</code> and add one object per moment in <code>jsons/beyondWork.json</code>—the <code>image</code>, <code>imageAlt</code>, and <code>link</code> fields are optional.",
-      "image": "assets/images/cat.jpg",
-      "imageAlt": "Sample photo"
+      "description": "My friends—we call ourselves <strong>I Cugini</strong> (\"The Cousins\", a name the family tree only partially supports)—missed me so much that they invaded my home in Salerno for a movie night. Minor logistical detail: I live in <strong>Copenhagen</strong>. So they watched <em>The Godfather</em> on my couch, in my living room, while I attended my own house via video call. That's me on the phone. I have never felt so loved and so burgled at the same time.",
+      "image": "assets/images/beyond-work/cugini-invasion-2026.jpg",
+      "imageAlt": "The Cugini gathered in Stefano's living room in Salerno with The Godfather on TV, holding up a phone with Stefano joining by video call from Copenhagen"
     }
   ]
 }
