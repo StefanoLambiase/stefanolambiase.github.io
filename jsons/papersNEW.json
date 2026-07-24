@@ -98,6 +98,22 @@
       "downloadLink": null
     },
     {
+      "dblp_key": null,
+      "type": "conference",
+      "year": 2026,
+      "title": "Out of Place in My Own Work: How Generative AI Displaces Software Engineers.",
+      "authors": [
+        "Theocharis Tavantzis",
+        "Stefano Lambiase",
+        "Daniel Russo"
+      ],
+      "venue": "ESEM 2026",
+      "doi": null,
+      "dblp_url": null,
+      "downloadLink": "/assets/papers/ESEM_2026_AI_Induced_Displacement.pdf",
+      "note": "Accepted; to appear in the Proceedings of the 20th International Symposium on Empirical Software Engineering and Measurement (ESEM) 2026. Accepted-version preprint; DOI to be added upon publication."
+    },
+    {
       "dblp_key": "journals/corr/abs-2508-15503",
       "type": "preprint",
       "year": 2025,
