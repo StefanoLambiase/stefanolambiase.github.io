@@ -1,0 +1,13 @@
+{
+  "note": "Temp news strip shown just above the main tab menu. Edit 'items' to change the news; set 'show' to false to hide the whole strip. Each item: 'text' (required), 'icon' (Font Awesome classes, optional), 'label' (short uppercase prefix, optional), 'link' (optional URL, makes the pill clickable), 'informalOnly' (true to hide the item when Formal Bio is on).",
+  "show": true,
+  "items": [
+    {
+      "icon": "fa-solid fa-gamepad",
+      "label": "Now playing",
+      "text": "Assassin's Creed Black Flag Resynced & Forza Horizon 6",
+      "link": null,
+      "informalOnly": true
+    }
+  ]
+}

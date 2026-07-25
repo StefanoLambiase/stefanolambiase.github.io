@@ -288,6 +288,45 @@
         padding-left: 0.6rem;
         margin-top: 0.35rem;
       }
+
+      /* Temp news strip above the tab menu. Content lives in
+         jsons/tempNews.json and is injected by js/tempNewsFilling.js.
+         Deliberately sober: small text, one pill per item, and the same
+         red accent dot used by the featured papers. */
+      #temp-news {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        padding: 0 1rem;
+        margin-bottom: 0.75rem;
+      }
+      .temp-news-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45em;
+        font-size: 0.78rem;
+        padding: 0.3em 0.9em;
+        border: 1px solid rgba(128, 128, 128, 0.35);
+        border-radius: 999px;
+        color: inherit;
+        text-decoration: none;
+      }
+      a.temp-news-item:hover {
+        border-color: #c0392b;
+        color: inherit;
+      }
+      .temp-news-dot {
+        width: 0.45em;
+        height: 0.45em;
+        border-radius: 50%;
+        background-color: #c0392b;
+        flex-shrink: 0;
+      }
+      .temp-news-label {
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.85em;
+        color: #888;
+      }
     </style>
 
   </head>
@@ -358,6 +397,10 @@
     </header>
     <!-- Content -->
     <section>
+      <!-- Temp news strip (content in jsons/tempNews.json, injected by
+           js/tempNewsFilling.js; hidden until at least one item renders) -->
+      <div class="d-flex justify-content-center" id="temp-news" style="display: none;"></div>
+
       <!-- ./content-switch -->
       <div class="d-flex justify-content-center">
         <div class="list-group list-group-horizontal-md" id="content-tabs" role="tablist">
@@ -1104,6 +1147,7 @@
     <script src="js/unsolicitedOpinionsFilling.js"></script>
     <script src="js/beyondWorkFilling.js"></script>
     <script src="js/gamingFilling.js?v=2"></script>
+    <script src="js/tempNewsFilling.js"></script>
     <!-- javascript for tooltips -->
     <script>
       // Select all elements with data-toggle="tooltips" in the document
