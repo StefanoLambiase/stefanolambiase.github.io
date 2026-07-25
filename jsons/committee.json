@@ -1,9 +1,17 @@
 {
   "committees": [
     {
+      "year": "2027",
+      "conferences": [
+        { "name": "SANER 2027", "role": "Student Volunteer Co-Chair" }
+      ]
+    },
+    {
       "year": "2026",
       "conferences": [
         { "name": "E-QSE 2026", "role": "Organizer" },
+        { "name": "SANER 2026" },
+        { "name": "ASE-TRUST 2026" },
         { "name": "MSR-RR 2026" },
         { "name": "ICSE-SEET 2026" },
         { "name": "ICPC 2026" },
@@ -26,7 +34,8 @@
         { "name": "SCAM-NIER 2024" },
         { "name": "ICSME-NIER 2024" },
         { "name": "ICSE-SEET 2024" },
-        { "name": "SANER 2024" }
+        { "name": "SANER 2024" },
+        { "name": "EASE 2024", "role": "Local Arrangements" }
       ]
     },
     {

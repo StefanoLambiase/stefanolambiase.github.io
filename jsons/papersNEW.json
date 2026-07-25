@@ -41,6 +41,62 @@
       "note": "Accepted; to appear in the Proceedings of the IEEE International Conference on Software Maintenance and Evolution (ICSME) 2026. Accepted-version preprint; DOI to be added upon publication."
     },
     {
+      "dblp_key": null,
+      "type": "conference",
+      "year": 2026,
+      "title": "The Language of Security: How Prompt Syntax Shapes Secure Code Generation in Open LLMs.",
+      "authors": [
+        "Matteo Cicalese",
+        "Antonio Della Porta",
+        "Stefano Lambiase",
+        "Emanuele Iannone",
+        "Torge Hinrichs",
+        "Riccardo Scandariato",
+        "Fabio Palomba"
+      ],
+      "venue": "ICSME 2026",
+      "doi": null,
+      "dblp_url": null,
+      "downloadLink": null,
+      "note": "Accepted; to appear in the Proceedings of the IEEE International Conference on Software Maintenance and Evolution (ICSME) 2026, Research Papers Track. DOI to be added upon publication."
+    },
+    {
+      "dblp_key": null,
+      "type": "conference",
+      "year": 2026,
+      "title": "TARS: A Theory-of-Mind Agent for Personalized In-IDE Code Comprehension.",
+      "authors": [
+        "Leopoldo Todisco",
+        "Antonio Della Porta",
+        "Stefano Lambiase",
+        "Fabio Palomba"
+      ],
+      "venue": "ICSME 2026 (Tool Demo)",
+      "doi": null,
+      "dblp_url": null,
+      "downloadLink": null,
+      "note": "Accepted; to appear in the Proceedings of the IEEE International Conference on Software Maintenance and Evolution (ICSME) 2026. DOI to be added upon publication."
+    },
+    {
+      "dblp_key": null,
+      "type": "conference",
+      "year": 2026,
+      "title": "Ask, Then Think: Enhancing LLM Performance with Socratic Reasoning.",
+      "authors": [
+        "Antonio Della Porta",
+        "Jonan Richards",
+        "Lucageneroso Cammarota",
+        "Stefano Lambiase",
+        "Fabio Palomba",
+        "Mairieli Wessel"
+      ],
+      "venue": "MSR 2026 (Registered Report)",
+      "doi": null,
+      "dblp_url": null,
+      "downloadLink": null,
+      "note": "Accepted registered report; to appear at the International Conference on Mining Software Repositories (MSR) 2026. DOI to be added upon publication."
+    },
+    {
       "dblp_key": "journals/tosem/LambiaseCPFR26",
       "type": "journal",
       "year": 2026,
@@ -151,6 +207,25 @@
       "doi": "10.48550/arXiv.2504.02553",
       "dblp_url": "https://dblp.org/rec/journals/corr/abs-2504-02553",
       "downloadLink": null
+    },
+    {
+      "dblp_key": null,
+      "type": "conference",
+      "year": 2025,
+      "title": "From Expectation to Habit: Why Do Software Practitioners Adopt Fairness Toolkits?",
+      "authors": [
+        "Gianmario Voria",
+        "Stefano Lambiase",
+        "Maria Concetta Schiavone",
+        "Gemma Catolino",
+        "Fabio Palomba"
+      ],
+      "venue": "ICSE-SEIS 2025",
+      "pages": "94-105",
+      "doi": "10.1109/ICSE-SEIS66351.2025.00015",
+      "dblp_url": null,
+      "downloadLink": null,
+      "note": "Not yet linked on my DBLP profile as of 2026-07; DOI cross-checked against Crossref."
     },
     {
       "dblp_key": "journals/smr/PortaLCFP25",
