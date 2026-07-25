@@ -297,7 +297,12 @@
         gap: 0.5rem;
         flex-wrap: wrap;
         padding: 0 1rem;
-        margin-bottom: 0.75rem;
+        /* The theme gives every section 5rem of top padding; pull the strip
+           up into it and hand part of that space back below, so the pill sits
+           roughly midway between the header and the tab menu. When the strip
+           is hidden the margins vanish and the tabs get the full 5rem back. */
+        margin-top: -3rem;
+        margin-bottom: 2.5rem;
       }
       .temp-news-item {
         display: inline-flex;
