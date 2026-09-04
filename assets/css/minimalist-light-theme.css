@@ -204,6 +204,69 @@ a:hover {
   margin-bottom: 10px;
 }
 
+/* Collapsible timeline entries (Experience): title row with a small chevron
+   button; description, image and link sit in .timeline-details, which is
+   collapsed by default and animated with the grid-rows trick. */
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.timeline-block-left .timeline-header {
+  flex-direction: row-reverse;
+}
+
+.timeline-header .timeline-h3 {
+  min-width: 0;
+}
+
+.timeline-toggle {
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid #999;
+  background: transparent;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  line-height: 1;
+  transition: background-color .2s ease;
+}
+
+.timeline-toggle:hover,
+.timeline-toggle:focus-visible {
+  background: rgba(0, 0, 0, .06);
+  outline: none;
+}
+
+.timeline-toggle .fa {
+  transition: transform .25s ease;
+}
+
+.timeline-toggle[aria-expanded="true"] .fa {
+  transform: rotate(180deg);
+}
+
+.timeline-details {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .3s ease;
+}
+
+.timeline-details.is-open {
+  grid-template-rows: 1fr;
+}
+
+.timeline-details > .timeline-details-inner {
+  overflow: hidden;
+}
+
 /* Alert (e.g. the Scholar heads-up banner on the Papers tab) */
 .alert-info {
   color: #333;
@@ -291,5 +354,11 @@ a.download-pub:visited {
  
  .timeline-block-left .marker {
    order: 1;
+ }
+
+ /* Collapsible entries: on narrow screens every card is left-aligned, so the
+    chevron goes back to the right of the title. */
+ .timeline-block-left .timeline-header {
+   flex-direction: row;
  }
 }
