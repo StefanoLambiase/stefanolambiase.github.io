@@ -7,6 +7,15 @@
       "description": "Assistant Professor at Aalborg University's Copenhagen campus. My research and teaching activities focus on software engineering and the human aspects of software development."
     },
     {
+      "title": "Vision Paper Presentation—IEEE Conference on Games (CoG) 2026",
+      "location": "Complutense University of Madrid, Spain",
+      "date": "1 September, 2026",
+      "description": "Presented my vision paper <strong>&ldquo;We Must Be Better&rdquo;: A Critical Vision for the Convergence of Software Engineering and Human-Computer Interaction in Generative AI-Driven Video Game Development</strong> at the IEEE Conference on Games (<a href='https://cog2026.org/'>CoG 2026</a>), a venue that was new to me and turned out to be an amazing and welcoming community. The paper proposes a set of paths that we, as a research community, can follow now that generative AI is making its way into the video game industry, so that software engineering, human-computer interaction, and game design can collaborate toward a better work environment and higher product quality. Photo by Fabio Petrillo—first author of the 2009 survey on problems in game development that is on screen in the picture.",
+      "image": "assets/images/cog-2026-presentation.jpg",
+      "imageAlt": "Stefano Lambiase presenting his vision paper at the IEEE Conference on Games 2026 in Madrid, with a slide about software engineering research on games on screen",
+      "link": "/assets/papers/CoG_2026_WeMustBeBetter.pdf"
+    },
+    {
       "title": "EMBO Lab Leadership Course for Group Leaders",
       "location": "Leimen, Germany",
       "date": "7-10 July, 2026",
