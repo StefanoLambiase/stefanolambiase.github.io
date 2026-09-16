@@ -1057,6 +1057,59 @@
       "genres": [
         "Extraction shooter"
       ]
+    },
+    {
+      "title": "Assassin's Creed IV: Black Flag Resynced",
+      "year": 2026,
+      "platform": "PS5",
+      "hours": 12,
+      "completion": "Dropped",
+      "score": 5,
+      "genres": [
+        "Action adventure",
+        "Open world",
+        "Stealth"
+      ]
+    },
+    {
+      "title": "Forza Horizon 6",
+      "year": 2026,
+      "platform": "Steam",
+      "hours": 100,
+      "completion": "Paused",
+      "score": 7,
+      "genres": [
+        "Open world"
+      ]
+    },
+    {
+      "title": "LEGO Batman: Legacy of the Dark Knight",
+      "year": 2026,
+      "completion": "In progress",
+      "genres": [
+        "Action adventure",
+        "Open world",
+        "Co-op"
+      ]
+    },
+    {
+      "title": "The First Berserker: Khazan",
+      "year": 2026,
+      "completion": "In progress",
+      "genres": [
+        "Action RPG",
+        "Soulslike"
+      ]
+    },
+    {
+      "title": "Final Fantasy VII Rebirth",
+      "year": 2026,
+      "completion": "In progress",
+      "genres": [
+        "Action RPG",
+        "JRPG",
+        "Open world"
+      ]
     }
   ]
 }
