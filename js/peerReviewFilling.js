@@ -44,8 +44,13 @@ fetch('jsons/peerReview.json')
 
     sorted.forEach(entry => {
       const row = document.createElement('tr');
+      // Optional "role" held at the journal (e.g. "Distinguished Reviewer"),
+      // shown as a small accent badge next to the journal name.
+      const roleHtml = entry.role
+        ? ` <span class="badge peer-review-role-badge">${entry.role}</span>`
+        : '';
       row.innerHTML = `
-        <td>${entry.journal}</td>
+        <td>${entry.journal}${roleHtml}</td>
         <td class="text-center"><span class="badge bg-secondary">${entry.count}</span></td>
       `;
       tbody.appendChild(row);

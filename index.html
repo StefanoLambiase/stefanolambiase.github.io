@@ -289,6 +289,21 @@
         margin-top: 0.35rem;
       }
 
+      /* Role badge in the Peer Review table (Academic Service tab), e.g.
+         "Distinguished Reviewer" next to a journal. Set through the optional
+         "role" field in jsons/peerReview.json. Same red accent as the
+         featured-paper badge, so it reads the same in both themes. */
+      .peer-review-role-badge {
+        background-color: #c0392b;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.65rem;
+        padding: 0.28em 0.55em;
+        margin-left: 0.4rem;
+        vertical-align: middle;
+      }
+
       /* Temp news strip above the tab menu. Content lives in
          jsons/tempNews.json and is injected by js/tempNewsFilling.js.
          Deliberately sober: small text, one pill per item, and the same
