@@ -1,0 +1,9 @@
+# macOS Finder metadata
+.DS_Store
+
+# Holding folder for files waiting to be deleted by hand
+/_to_delete/
+
+# LibreOffice lock files and temporary files
+.~lock.*#
+*.tmp
