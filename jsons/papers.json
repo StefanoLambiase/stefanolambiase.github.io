@@ -140,7 +140,7 @@
     "year": "2023",
     "abstract": "Nowadays, machine learning is being used to address multiple problems in various research fields, with software engineering researchers being among the most active users of machine learning mechanisms. Recent advances revolve around the use of quantum machine learning, which promises to revolutionize program computation and boost software systems’ problem-solving capabilities. However, using quantum computing technologies is not trivial and requires interdisciplinary skills and expertise. For such a reason, we propose QuantuMoonLight, a community-based low-code platform that allows researchers and practitioners to configure and experiment with quantum machine learning pipelines, compare them with classic machine learning algorithms, and share lessons learned and experience reports. We showcase the architecture and main features of QuantuMoonLight, other than discussing its envisioned impact on research and practice.",
     "topic_list": "Quantum | Machine Learning | Web Application",
-    "downloadLink": "/assets/papers/SofwareX_QuantuMoonLight_2022_Definitivo.pdf"
+    "downloadLink": "/assets/papers/SoftwareX_QuantuMoonLight_2022_Definitivo.pdf"
   },
   {
     "title": "Community Smell Detection and Refactoring in SLACK: The CADOCS Project",
