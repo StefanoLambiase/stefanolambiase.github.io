@@ -167,6 +167,8 @@
       "doi": null,
       "dblp_url": null,
       "downloadLink": "/assets/papers/ESEM_2026_AI_Induced_Displacement.pdf",
+      "award": "Best Technical Paper Award",
+      "awardNote": "Category: Timely and Significant Contribution",
       "note": "Accepted; to appear in the Proceedings of the 20th International Symposium on Empirical Software Engineering and Measurement (ESEM) 2026. Accepted-version preprint; DOI to be added upon publication."
     },
     {
@@ -629,6 +631,7 @@
         "Filomena Ferrucci"
       ],
       "venue": "SEAA 2022",
+      "award": "Best Paper Award",
       "pages": "177-184",
       "doi": "10.1109/SEAA56994.2022.00035",
       "dblp_url": "https://dblp.org/rec/conf/euromicro/LambiaseCPTPHF22",

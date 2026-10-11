@@ -27,6 +27,17 @@ fetch('jsons/papersNEW.json')
       : type === 'preprint' ? 'bg-warning text-dark'
       : 'bg-info';
 
+    // Optional award line under the venue, set through the `award` field in
+    // the JSON (e.g. "Best Paper Award"), with an optional `awardNote` shown
+    // next to the badge (e.g. the award category).
+    const awardHtml = (paper) => {
+      if (!paper.award) return '';
+      const note = paper.awardNote
+        ? ` <span class="text-muted">${paper.awardNote}</span>`
+        : '';
+      return `<p class="card-text small mb-1 text-start"><span class="badge paper-award-badge"><em class="fa-solid fa-trophy" aria-hidden="true"></em> ${paper.award}</span>${note}</p>`;
+    };
+
     // Sort papers for display: by year descending, mixing journals and conferences
     // Within the same year, sort by label number descending (highest first)
     const allPapers = [...papers];
@@ -112,6 +123,7 @@ fetch('jsons/papersNEW.json')
               </div>
               <h6 class="card-title"><strong>${paper.title}</strong></h6>
               <p class="card-text text-muted small mb-1">${paper.venue}</p>
+              ${awardHtml(paper)}
               <p class="card-text small mt-auto pt-2">${authorsFormatted}</p>
               <hr class="my-2">
               <div class="d-flex justify-content-end gap-2">
@@ -133,12 +145,13 @@ fetch('jsons/papersNEW.json')
       const typeFilter = document.getElementById('filter-type').value;
 
       const filtered = sortedPapers.filter(paper => {
-        // Text filter: search in title, venue, and authors
+        // Text filter: search in title, venue, authors, and award
         if (textQuery) {
           const searchable = [
             paper.title,
             paper.venue,
-            paper.authors.join(' ')
+            paper.authors.join(' '),
+            paper.award || ''
           ].join(' ').toLowerCase();
           if (!searchable.includes(textQuery)) return false;
         }
@@ -217,6 +230,7 @@ fetch('jsons/papersNEW.json')
               </div>
               <h6 class="card-title"><strong>${paper.title}</strong></h6>
               <p class="card-text text-muted small mb-1">${paper.venue}</p>
+              ${awardHtml(paper)}
               <p class="card-text small mb-1">${authorsFormatted}</p>
               ${featuredNoteHtml}
               <hr class="my-2">

@@ -7,6 +7,13 @@
       "description": "Assistant Professor at Aalborg University's Copenhagen campus. My research and teaching activities focus on software engineering and the human aspects of software development."
     },
     {
+      "title": "Best Technical Paper Award—ESEM 2026",
+      "location": "Munich, Germany",
+      "date": "8-9 October, 2026",
+      "description": "Our paper <strong>&ldquo;Out of Place in My Own Work: How Generative AI Displaces Software Engineers&rdquo;</strong>, written with Theocharis Tavantzis and Daniel Russo, received the <strong>Best Technical Paper Award</strong> in the category &ldquo;Timely and Significant Contribution&rdquo; at the 20th International Symposium on Empirical Software Engineering and Measurement (<a href='https://conf.researchr.org/home/eseiw-2026'>ESEM 2026</a>). The paper introduces <em>AI-induced displacement</em>—the multi-dimensional way in which generative AI tools unsettle engineers&rsquo; sense of craft, identity, and professional belonging—and describes six dimensions of it, based on interviews with 21 software engineers.",
+      "link": "/assets/papers/ESEM_2026_AI_Induced_Displacement.pdf"
+    },
+    {
       "title": "Distinguished Reviewer—IEEE&nbsp;TSE",
       "location": "IEEE Transactions on Software Engineering",
       "date": "2026 - Present",
