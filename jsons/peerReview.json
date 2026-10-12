@@ -1,14 +1,18 @@
 {
-  "totalReviews": 63,
-  "totalPublications": 8,
+  "totalReviews": 92,
+  "totalPublications": 12,
   "reviews": [
     {
       "journal": "ACM Transactions on Software Engineering and Methodology",
       "count": 10
     },
     {
+      "journal": "Computers in Human Behavior Reports",
+      "count": 1
+    },
+    {
       "journal": "Empirical Software Engineering",
-      "count": 2
+      "count": 8
     },
     {
       "journal": "IEEE Transactions on Software Engineering",
@@ -17,15 +21,27 @@
     },
     {
       "journal": "Information and Software Technology",
-      "count": 10
+      "count": 17
     },
     {
-      "journal": "Journal of Software",
+      "journal": "Intelligent Systems with Applications",
+      "count": 1
+    },
+    {
+      "journal": "Journal of Computer Languages",
+      "count": 1
+    },
+    {
+      "journal": "Journal of Software: Evolution and Process",
       "count": 3
     },
     {
       "journal": "Science of Computer Programming",
-      "count": 14
+      "count": 19
+    },
+    {
+      "journal": "Software Quality Journal",
+      "count": 1
     },
     {
       "journal": "SoftwareX",
@@ -33,7 +49,7 @@
     },
     {
       "journal": "The Journal of Systems and Software",
-      "count": 10
+      "count": 17
     }
   ]
 }
