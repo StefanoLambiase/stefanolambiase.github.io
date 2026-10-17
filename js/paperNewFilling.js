@@ -175,6 +175,20 @@ fetch('jsons/papersNEW.json')
     // Initial render with all papers
     renderPapers(sortedPapers);
 
+    // Deep link: ?q=<keyword> opens the Papers tab with the search already
+    // applied, e.g. https://stefanolambiase.github.io/?q=quantum (used in
+    // QR codes on slides).
+    const deepLinkQuery = new URLSearchParams(window.location.search).get('q');
+    if (deepLinkQuery) {
+      document.getElementById('filter-text').value = deepLinkQuery;
+      applyFilters();
+      const papersTab = document.getElementById('list-publications-wip-list');
+      if (papersTab) papersTab.click();
+      // Jump past "Selected Work" straight to the search bar and its results
+      const filterInput = document.getElementById('filter-text');
+      setTimeout(() => filterInput.scrollIntoView({ behavior: 'smooth', block: 'start' }), 200);
+    }
+
     // Selected Work / Featured papers — hand-picked via `featured: true` in
     // the JSON. They render above the filters, keep the regular card
     // structure but with a red accent border, a FEATURED badge, and an
