@@ -191,10 +191,10 @@
       "title": "FINAL FANTASY XV WINDOWS EDITION",
       "year": 2023,
       "platform": "Steam / PS4",
-      "hours": 205,
+      "hours": 214,
       "completion": "Finished",
       "score": 6,
-      "note": "Includes ~100h on PS4",
+      "note": "Includes ~109h on PS4",
       "genres": [
         "JRPG",
         "Action RPG"
@@ -895,10 +895,10 @@
     },
     {
       "title": "The First Berserker: Khazan",
-      "year": 2025,
+      "year": 2026,
       "platform": "Steam",
-      "hours": 13.7,
-      "completion": "Dropped",
+      "hours": 83,
+      "completion": "Finished",
       "score": 5,
       "genres": [
         "Soulslike",
@@ -1062,7 +1062,7 @@
       "title": "Assassin's Creed IV: Black Flag Resynced",
       "year": 2026,
       "platform": "PS5",
-      "hours": 12,
+      "hours": 19.7,
       "completion": "Dropped",
       "score": 5,
       "genres": [
@@ -1085,6 +1085,8 @@
     {
       "title": "LEGO Batman: Legacy of the Dark Knight",
       "year": 2026,
+      "platform": "Steam",
+      "hours": 15,
       "completion": "In progress",
       "genres": [
         "Action adventure",
@@ -1093,22 +1095,299 @@
       ]
     },
     {
-      "title": "The First Berserker: Khazan",
-      "year": 2026,
-      "completion": "In progress",
-      "genres": [
-        "Action RPG",
-        "Soulslike"
-      ]
-    },
-    {
       "title": "Final Fantasy VII Rebirth",
       "year": 2026,
+      "platform": "PS5",
+      "hours": 56.8,
       "completion": "In progress",
       "genres": [
         "Action RPG",
         "JRPG",
         "Open world"
+      ]
+    },
+    {
+      "title": "Marvel's Spider-Man 2",
+      "year": 2026,
+      "platform": "PS5",
+      "hours": 49.4,
+      "genres": [
+        "Action adventure",
+        "Open world"
+      ]
+    },
+    {
+      "title": "Saros",
+      "year": 2026,
+      "platform": "PS5",
+      "hours": 70.6,
+      "genres": [
+        "Roguelike",
+        "Shooter"
+      ]
+    },
+    {
+      "title": "007 First Light",
+      "year": 2026,
+      "platform": "PS5",
+      "hours": 38.3,
+      "genres": [
+        "Action adventure",
+        "Stealth"
+      ]
+    },
+    {
+      "title": "Diablo IV",
+      "year": 2026,
+      "platform": "PS5",
+      "hours": 88.8,
+      "genres": [
+        "ARPG",
+        "Hack and slash"
+      ]
+    },
+    {
+      "title": "Pragmata",
+      "year": 2026,
+      "platform": "PS5",
+      "hours": 37.0,
+      "genres": [
+        "Action adventure",
+        "Shooter"
+      ]
+    },
+    {
+      "title": "Clair Obscur: Expedition 33",
+      "year": 2026,
+      "platform": "PS5",
+      "hours": 69.7,
+      "genres": [
+        "RPG",
+        "Turn-based"
+      ]
+    },
+    {
+      "title": "Tales of Arise",
+      "year": 2026,
+      "platform": "PS5",
+      "hours": 52.4,
+      "genres": [
+        "JRPG",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "Death Stranding 2: On the Beach",
+      "year": 2025,
+      "platform": "PS5",
+      "hours": 15.8,
+      "genres": [
+        "Action",
+        "Adventure"
+      ]
+    },
+    {
+      "title": "Kingdom Come: Deliverance II",
+      "year": 2025,
+      "platform": "PS5",
+      "hours": 118.6,
+      "genres": [
+        "Action RPG",
+        "Open world"
+      ]
+    },
+    {
+      "title": "Lies of P",
+      "year": 2025,
+      "platform": "PS5",
+      "hours": 27.5,
+      "genres": [
+        "Soulslike",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "Batman: The Telltale Series",
+      "year": 2025,
+      "platform": "PS4",
+      "hours": 14.0,
+      "genres": [
+        "Narrative adventure"
+      ]
+    },
+    {
+      "title": "Final Fantasy XVI",
+      "year": 2025,
+      "platform": "PS5",
+      "hours": 126.6,
+      "genres": [
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "The Wolf Among Us",
+      "year": 2024,
+      "platform": "PS4",
+      "hours": 10.6,
+      "genres": [
+        "Narrative adventure"
+      ]
+    },
+    {
+      "title": "Detroit: Become Human",
+      "year": 2024,
+      "platform": "PS4",
+      "hours": 17.0,
+      "genres": [
+        "Narrative adventure"
+      ]
+    },
+    {
+      "title": "Final Fantasy VII Remake",
+      "year": 2024,
+      "platform": "PS5",
+      "hours": 67.1,
+      "genres": [
+        "Action RPG",
+        "JRPG"
+      ]
+    },
+    {
+      "title": "God of War Ragnarök",
+      "year": 2023,
+      "platform": "PS5",
+      "hours": 85.0,
+      "genres": [
+        "Action adventure"
+      ]
+    },
+    {
+      "title": "Stray",
+      "year": 2023,
+      "platform": "PS5",
+      "hours": 17.0,
+      "genres": [
+        "Adventure"
+      ]
+    },
+    {
+      "title": "Horizon Forbidden West",
+      "year": 2023,
+      "platform": "PS5",
+      "hours": 197.1,
+      "genres": [
+        "Action RPG",
+        "Open world"
+      ]
+    },
+    {
+      "title": "Genshin Impact",
+      "year": 2023,
+      "platform": "PS5",
+      "hours": 14.8,
+      "genres": [
+        "Action RPG",
+        "Gacha",
+        "Open world"
+      ]
+    },
+    {
+      "title": "Ratchet & Clank: Rift Apart",
+      "year": 2022,
+      "platform": "PS5",
+      "hours": 25.5,
+      "genres": [
+        "Platformer",
+        "Shooter"
+      ]
+    },
+    {
+      "title": "Horizon Zero Dawn",
+      "year": 2021,
+      "platform": "PS4",
+      "hours": 69.7,
+      "genres": [
+        "Action RPG",
+        "Open world"
+      ]
+    },
+    {
+      "title": "The Last of Us Remastered",
+      "year": 2020,
+      "platform": "PS4",
+      "hours": 22.4,
+      "genres": [
+        "Action adventure",
+        "Survival horror"
+      ]
+    },
+    {
+      "title": "God of War",
+      "year": 2019,
+      "platform": "PS4",
+      "hours": 62.7,
+      "genres": [
+        "Action adventure"
+      ]
+    },
+    {
+      "title": "Kingdom Hearts Final Mix",
+      "year": 2019,
+      "platform": "PS4",
+      "hours": 19.4,
+      "genres": [
+        "Action RPG",
+        "JRPG"
+      ]
+    },
+    {
+      "title": "Batman: Arkham Knight",
+      "year": 2018,
+      "platform": "PS4",
+      "hours": 100.2,
+      "genres": [
+        "Action adventure",
+        "Open world"
+      ]
+    },
+    {
+      "title": "Ratchet & Clank",
+      "year": 2018,
+      "platform": "PS4",
+      "hours": 15.1,
+      "genres": [
+        "Platformer",
+        "Shooter"
+      ]
+    },
+    {
+      "title": "Nioh",
+      "year": 2017,
+      "platform": "PS4",
+      "hours": 101.4,
+      "genres": [
+        "Soulslike",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "inFAMOUS Second Son",
+      "year": 2016,
+      "platform": "PS4",
+      "hours": 23.7,
+      "genres": [
+        "Action adventure",
+        "Open world"
+      ]
+    },
+    {
+      "title": "Destiny",
+      "year": 2015,
+      "platform": "PS4",
+      "hours": 153.3,
+      "genres": [
+        "FPS",
+        "Looter shooter"
       ]
     }
   ]
