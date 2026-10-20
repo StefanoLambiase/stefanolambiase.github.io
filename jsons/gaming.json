@@ -68,7 +68,7 @@
       "title": "ELDEN RING",
       "year": 2025,
       "platform": "Steam",
-      "hours": 215.5,
+      "hours": 220.0,
       "completion": "Finished",
       "score": 6,
       "note": "DLC still pending",
@@ -191,7 +191,7 @@
       "title": "FINAL FANTASY XV WINDOWS EDITION",
       "year": 2023,
       "platform": "Steam / PS4",
-      "hours": 214,
+      "hours": 214.5,
       "completion": "Finished",
       "score": 6,
       "note": "Includes ~109h on PS4",
@@ -314,7 +314,7 @@
       "title": "Devil May Cry 5",
       "year": 2020,
       "platform": "Steam",
-      "hours": 64.5,
+      "hours": 65.3,
       "completion": "Finished",
       "score": 7,
       "favorite": true,
@@ -666,7 +666,7 @@
       "title": "Slay the Spire 2",
       "year": 2026,
       "platform": "Steam",
-      "hours": 28.0,
+      "hours": 40.6,
       "completion": "In progress",
       "score": 4,
       "note": "Still in early access",
@@ -804,10 +804,10 @@
       "title": "Hades II",
       "year": 2026,
       "platform": "Steam / Switch 2",
-      "hours": 77,
+      "hours": 84.0,
       "completion": "In progress",
       "score": 6,
-      "note": "Includes ~60h on Switch 2",
+      "note": "Includes ~66h on Switch 2",
       "genres": [
         "Roguelike",
         "Action"
@@ -897,7 +897,7 @@
       "title": "The First Berserker: Khazan",
       "year": 2026,
       "platform": "Steam",
-      "hours": 83,
+      "hours": 83.2,
       "completion": "Finished",
       "score": 5,
       "genres": [
@@ -1159,8 +1159,9 @@
     {
       "title": "Clair Obscur: Expedition 33",
       "year": 2026,
-      "platform": "PS5",
-      "hours": 69.7,
+      "platform": "PS5 / Steam",
+      "hours": 74.6,
+      "note": "Includes ~5h on Steam",
       "genres": [
         "RPG",
         "Turn-based"
@@ -1388,6 +1389,163 @@
       "genres": [
         "FPS",
         "Looter shooter"
+      ]
+    },
+    {
+      "title": "Pokémon Pokopia",
+      "year": 2026,
+      "platform": "Switch 2",
+      "hours": 12.5,
+      "genres": [
+        "Simulation",
+        "Sandbox"
+      ]
+    },
+    {
+      "title": "Super Mario Bros. Wonder",
+      "year": 2025,
+      "platform": "Switch 2",
+      "hours": 15.5,
+      "genres": [
+        "Platformer"
+      ]
+    },
+    {
+      "title": "Donkey Kong Bananza",
+      "year": 2025,
+      "platform": "Switch 2",
+      "hours": 44.3,
+      "genres": [
+        "Platformer",
+        "Action adventure"
+      ]
+    },
+    {
+      "title": "Unicorn Overlord",
+      "year": 2025,
+      "platform": "Switch",
+      "hours": 73.6,
+      "genres": [
+        "Strategy",
+        "JRPG"
+      ]
+    },
+    {
+      "title": "Mario Kart 8 Deluxe",
+      "year": 2025,
+      "platform": "Switch",
+      "hours": 20.0,
+      "genres": [
+        "Racing"
+      ]
+    },
+    {
+      "title": "Undertale",
+      "year": 2025,
+      "platform": "Switch",
+      "hours": 13.4,
+      "genres": [
+        "RPG"
+      ]
+    },
+    {
+      "title": "Bloodborne",
+      "year": 2025,
+      "platform": "PS4",
+      "hours": 243.4,
+      "genres": [
+        "Soulslike",
+        "Action RPG"
+      ]
+    },
+    {
+      "title": "Until Dawn",
+      "year": 2016,
+      "platform": "PS4",
+      "hours": 14.0,
+      "genres": [
+        "Survival horror",
+        "Narrative adventure"
+      ]
+    },
+    {
+      "title": "The Alters",
+      "year": 2026,
+      "platform": "Steam",
+      "hours": 10.2,
+      "genres": [
+        "Survival",
+        "Management"
+      ]
+    },
+    {
+      "title": "Sea of Thieves",
+      "year": 2025,
+      "platform": "Xbox",
+      "hours": 116.6,
+      "genres": [
+        "Co-op",
+        "Adventure"
+      ]
+    },
+    {
+      "title": "Immortals Fenyx Rising",
+      "year": 2021,
+      "platform": "Ubisoft Connect",
+      "hours": 14.7,
+      "genres": [
+        "Action adventure",
+        "Open world"
+      ]
+    },
+    {
+      "title": "Assassin's Creed Valhalla",
+      "year": 2020,
+      "platform": "Ubisoft Connect",
+      "hours": 26.7,
+      "genres": [
+        "Action RPG",
+        "Open world"
+      ]
+    },
+    {
+      "title": "The Witcher 3: Wild Hunt",
+      "year": 2018,
+      "platform": "GOG",
+      "hours": 117.9,
+      "genres": [
+        "Action RPG",
+        "Open world"
+      ]
+    },
+    {
+      "title": "GWENT: The Witcher Card Game",
+      "year": 2022,
+      "platform": "GOG",
+      "hours": 112.0,
+      "genres": [
+        "Card game",
+        "Online"
+      ]
+    },
+    {
+      "title": "Cyberpunk 2077",
+      "year": 2023,
+      "platform": "GOG",
+      "hours": 89.3,
+      "genres": [
+        "Action RPG",
+        "Open world"
+      ]
+    },
+    {
+      "title": "Thronebreaker: The Witcher Tales",
+      "year": 2019,
+      "platform": "GOG",
+      "hours": 26.9,
+      "genres": [
+        "RPG",
+        "Card game"
       ]
     }
   ]
