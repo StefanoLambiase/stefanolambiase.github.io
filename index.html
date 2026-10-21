@@ -368,14 +368,14 @@
         position: fixed;
         right: 1.25rem;
         bottom: 1.25rem;
-        z-index: 1050;
+        z-index: 10000; /* above the timeline markers (z-index 9999 in the themes) */
         width: 22rem;
         max-width: calc(100vw - 2rem);
         max-height: min(70vh, 32rem);
         overflow-y: auto;
         padding: 0.9rem 1.1rem 1.1rem;
         border: 1px solid var(--news-overlay-border, rgba(0, 0, 0, 0.12));
-        border-left: 3px solid #c0392b;
+        border-left: 6px solid #c0392b;
         border-radius: 0.6rem;
         background-color: var(--news-overlay-bg, #fff);
         color: var(--news-overlay-text, #212529);
@@ -463,23 +463,24 @@
         position: fixed;
         right: 1.25rem;
         bottom: 1.25rem;
-        z-index: 1050;
+        z-index: 10000; /* above the timeline markers (z-index 9999 in the themes) */
         display: inline-flex;
         align-items: center;
         justify-content: center;
         width: 46px;
         height: 46px;
         padding: 0;
-        border: 1px solid var(--news-overlay-border, rgba(0, 0, 0, 0.12));
+        border: 1px solid #c0392b;
         border-radius: 50%;
-        background-color: var(--news-overlay-bg, #fff);
-        color: var(--news-overlay-text, #212529);
+        background-color: #c0392b;
+        color: #fff;
         box-shadow: var(--news-overlay-shadow, 0 10px 30px rgba(0, 0, 0, 0.15));
         font-size: 1rem;
         cursor: pointer;
       }
       .news-overlay-toggle:hover {
-        border-color: #c0392b;
+        border-color: #a93226;
+        background-color: #a93226;
       }
       .news-overlay-toggle-dot {
         position: absolute;
@@ -487,9 +488,9 @@
         right: 7px;
         width: 10px;
         height: 10px;
-        border: 2px solid var(--news-overlay-bg, #fff);
+        border: 2px solid #c0392b;
         border-radius: 50%;
-        background-color: #c0392b;
+        background-color: #fff;
       }
       .news-overlay[hidden],
       .news-overlay-toggle[hidden] {
