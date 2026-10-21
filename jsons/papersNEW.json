@@ -9,6 +9,28 @@
     {
       "dblp_key": null,
       "type": "conference",
+      "year": 2027,
+      "title": "Engineering Requirements for Generative AI Agents: The BARD Process Theory.",
+      "authors": [
+        "Alfonso Cannavale",
+        "Antonio Della Porta",
+        "Gianmario Voria",
+        "Gilberto Recupito",
+        "Maria Teresa Baldassarre",
+        "Gemma Catolino",
+        "Fabio Palomba",
+        "Andrea De Lucia",
+        "Stefano Lambiase"
+      ],
+      "venue": "ICSE 2027",
+      "doi": null,
+      "dblp_url": null,
+      "downloadLink": "/assets/papers/ICSE_2027_BARD_Process_Theory.pdf",
+      "note": "Accepted; to appear in the Proceedings of the IEEE/ACM International Conference on Software Engineering (ICSE) 2027, Research Track. Accepted-version preprint; DOI to be added upon publication."
+    },
+    {
+      "dblp_key": null,
+      "type": "conference",
       "year": 2026,
       "title": "\"We Must Be Better\": A Critical Vision for the Convergence of Software Engineering and Human-Computer Interaction in Generative AI-Driven Video Game Development.",
       "authors": [

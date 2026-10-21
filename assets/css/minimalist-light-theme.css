@@ -362,3 +362,13 @@ a.download-pub:visited {
    flex-direction: row;
  }
 }
+
+/* "Latest news" panel (js/newsOverlayFilling.js, layout in index.html):
+   colours for the light theme. */
+:root {
+  --news-overlay-bg: #ffffff;
+  --news-overlay-text: #212529;
+  --news-overlay-muted: #6c757d;
+  --news-overlay-border: rgba(0, 0, 0, 0.12);
+  --news-overlay-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}

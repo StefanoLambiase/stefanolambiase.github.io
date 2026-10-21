@@ -359,6 +359,174 @@
         font-size: 0.85em;
         color: #888;
       }
+
+      /* "Latest news" panel floating in the bottom-right corner. Content
+         lives in jsons/news.json and is built by js/newsOverlayFilling.js.
+         Colours come from the --news-overlay-* variables set in both theme
+         files; the red accent is the same as the temp news strip. */
+      .news-overlay {
+        position: fixed;
+        right: 1.25rem;
+        bottom: 1.25rem;
+        z-index: 1050;
+        width: 22rem;
+        max-width: calc(100vw - 2rem);
+        max-height: min(70vh, 32rem);
+        overflow-y: auto;
+        padding: 0.9rem 1.1rem 1.1rem;
+        border: 1px solid var(--news-overlay-border, rgba(0, 0, 0, 0.12));
+        border-left: 3px solid #c0392b;
+        border-radius: 0.6rem;
+        background-color: var(--news-overlay-bg, #fff);
+        color: var(--news-overlay-text, #212529);
+        box-shadow: var(--news-overlay-shadow, 0 10px 30px rgba(0, 0, 0, 0.15));
+        text-align: left;
+        opacity: 0;
+        transform: translateY(12px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+      }
+      .news-overlay.is-open {
+        opacity: 1;
+        transform: none;
+      }
+      .news-overlay-header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.6rem;
+      }
+      .news-overlay-title {
+        flex: 1;
+        margin: 0;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--news-overlay-muted, #6c757d);
+      }
+      .news-overlay-close {
+        flex: 0 0 auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background: transparent;
+        color: inherit;
+        cursor: pointer;
+      }
+      .news-overlay-close:hover {
+        background-color: rgba(128, 128, 128, 0.15);
+      }
+      .news-overlay-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .news-overlay-item + .news-overlay-item {
+        margin-top: 0.8rem;
+        padding-top: 0.8rem;
+        border-top: 1px solid var(--news-overlay-border, rgba(0, 0, 0, 0.12));
+      }
+      .news-overlay-date {
+        margin-bottom: 0.2rem;
+        font-size: 0.72rem;
+        color: var(--news-overlay-muted, #6c757d);
+      }
+      .news-overlay-text {
+        display: flex;
+        gap: 0.55rem;
+        font-size: 0.88rem;
+        line-height: 1.45;
+      }
+      .news-overlay-icon {
+        flex-shrink: 0;
+        margin-top: 0.2em;
+        color: #c0392b;
+      }
+      .news-overlay-link {
+        display: inline-block;
+        margin-top: 0.4rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #c0392b;
+        text-decoration: none;
+      }
+      .news-overlay-link:hover {
+        color: #c0392b;
+        text-decoration: underline;
+      }
+      .news-overlay-toggle {
+        position: fixed;
+        right: 1.25rem;
+        bottom: 1.25rem;
+        z-index: 1050;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 46px;
+        padding: 0;
+        border: 1px solid var(--news-overlay-border, rgba(0, 0, 0, 0.12));
+        border-radius: 50%;
+        background-color: var(--news-overlay-bg, #fff);
+        color: var(--news-overlay-text, #212529);
+        box-shadow: var(--news-overlay-shadow, 0 10px 30px rgba(0, 0, 0, 0.15));
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .news-overlay-toggle:hover {
+        border-color: #c0392b;
+      }
+      .news-overlay-toggle-dot {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        width: 10px;
+        height: 10px;
+        border: 2px solid var(--news-overlay-bg, #fff);
+        border-radius: 50%;
+        background-color: #c0392b;
+      }
+      .news-overlay[hidden],
+      .news-overlay-toggle[hidden] {
+        display: none;
+      }
+      .news-overlay-close:focus-visible,
+      .news-overlay-toggle:focus-visible,
+      .news-overlay-link:focus-visible {
+        outline: 2px solid #c0392b;
+        outline-offset: 2px;
+      }
+      @media (max-width: 575.98px) {
+        .news-overlay {
+          left: 1rem;
+          right: 1rem;
+          bottom: 1rem;
+          width: auto;
+          max-width: none;
+          max-height: 55vh;
+        }
+        .news-overlay-toggle {
+          right: 1rem;
+          bottom: 1rem;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .news-overlay {
+          transition: none;
+          transform: none;
+        }
+      }
+      @media print {
+        .news-overlay,
+        .news-overlay-toggle {
+          display: none !important;
+        }
+      }
     </style>
 
   </head>
@@ -1205,6 +1373,8 @@
     <script src="js/beyondWorkFilling.js"></script>
     <script src="js/gamingFilling.js?v=2"></script>
     <script src="js/tempNewsFilling.js"></script>
+    <!-- "Latest news" panel in the bottom-right corner (content in jsons/news.json) -->
+    <script src="js/newsOverlayFilling.js"></script>
     <!-- javascript for tooltips -->
     <script>
       // Select all elements with data-toggle="tooltips" in the document

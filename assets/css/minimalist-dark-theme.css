@@ -444,3 +444,13 @@ a.download-pub:visited {
    flex-direction: row;
  }
 }
+
+/* "Latest news" panel (js/newsOverlayFilling.js, layout in index.html):
+   colours for the dark theme, matching the cards. */
+:root {
+  --news-overlay-bg: #1e1e1e;
+  --news-overlay-text: #CCD1D9;
+  --news-overlay-muted: #a0a6b0;
+  --news-overlay-border: #333;
+  --news-overlay-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
