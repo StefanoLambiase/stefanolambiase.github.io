@@ -331,6 +331,12 @@
         margin-top: -3rem;
         margin-bottom: 2.5rem;
       }
+      /* With no pills (e.g. "show": false in tempNews.json) the strip must
+         disappear together with its margins; the d-flex class has
+         !important and would otherwise win over the inline display: none. */
+      #temp-news:empty {
+        display: none !important;
+      }
       .temp-news-item {
         display: inline-flex;
         align-items: center;
@@ -458,6 +464,19 @@
       .news-overlay-link:hover {
         color: #c0392b;
         text-decoration: underline;
+      }
+      /* "Now playing" block at the bottom of the panel (nowPlaying in news.json). */
+      .news-overlay-now-playing {
+        margin-top: 0.8rem;
+        padding-top: 0.8rem;
+        border-top: 1px solid var(--news-overlay-border, rgba(0, 0, 0, 0.12));
+      }
+      .news-overlay-now-playing-label {
+        margin-bottom: 0.2rem;
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--news-overlay-muted, #6c757d);
       }
       .news-overlay-toggle {
         position: fixed;
@@ -890,7 +909,7 @@
                   <h4 class="card-title">GAI MASTER</h4>
                   <h6 class="card-subtitle mb-2 text-muted">Generative AI in MAthematics and Software Teaching, Education and Research</h6>
                   <p class="card-text">
-                    Project supporting Aalborg University's strategy for generative AI (GAI) in education. It develops discipline-specific GAI competences in teaching and learning across the Departments of Mathematical Sciences and Computer Science, and examines how GAI is initially understood, applied, and embedded within disciplinary problem-based learning (PBL) contexts, with the aim of strengthening students' academic and professional competences. The project runs from August to December 2026 and is funded by the Department of Mathematical Sciences at Aalborg University.
+                    The project supports the strategy of Aalborg University for generative AI (GAI) in education. Specifically, it develops discipline-specific GAI competences for teaching and learning in the Departments of Mathematical Sciences and Computer Science, and it investigates how GAI is first understood, used, and embedded in the problem-based learning (PBL) of each discipline. The aim is to strengthen the academic and professional competences of students. The project runs from August to December 2026 and is funded by the Department of Mathematical Sciences at Aalborg University.
                   </p>
                   <p class="card-text">
                     <small class="text-muted"><em>My role:</em> co-investigator. The project is led by Gertrud Lynge Esbensen as principal investigator.</small>
@@ -1210,7 +1229,7 @@
             <div class="col-lg">
 
               <p class="text-center text-muted mb-2 mt-4">
-                Photos and moments that do not fit a CV&mdash;travels, friends, and other small adventures worth remembering.
+                Photos and moments that do not fit in a CV&mdash;e.g., travels, friends, and other small adventures worth remembering.
               </p>
 
               <!-- Timeline -->
@@ -1232,10 +1251,10 @@
             <div class="col-lg-9">
 
               <p class="text-center text-muted mb-2 mt-4">
-                A second r&eacute;sum&eacute;, for a second life&mdash;games I have actually sunk time into, by year. Hours are lifetime totals, replays included; the score is a strictly personal 1&ndash;7.
+                A second r&eacute;sum&eacute; for a second life&mdash;i.e., the games I have actually spent time on, grouped by year. Hours are lifetime totals, replays included, and the score is a strictly personal 1&ndash;7.
               </p>
               <p class="text-center text-muted small mb-2">
-                <strong>Finished</strong>: rolled credits &middot; <strong>Completionist</strong>: 100% / all achievements &middot; <strong>In progress</strong>: still playing &middot; <strong>Paused</strong>: on hold &middot; <strong>Dropped</strong>: gave up &middot; <em class="fa fa-star gaming-fav"></em>: all-time favorite.
+                <strong>Finished</strong>: rolled credits, <strong>Completionist</strong>: 100% / all achievements, <strong>In progress</strong>: still playing, <strong>Paused</strong>: on hold, <strong>Dropped</strong>: gave up, <em class="fa fa-star gaming-fav"></em>: all-time favorite.
               </p>
               <div class="text-center mb-4">
                 <a href="https://www.exophase.com/user/KopakaDragun/" target="_blank" rel="noopener" title="Steam and PlayStation profile on Exophase">

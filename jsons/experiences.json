@@ -10,20 +10,20 @@
       "title": "Best Technical Paper Award—ESEM 2026",
       "location": "Munich, Germany",
       "date": "8-9 October, 2026",
-      "description": "Our paper <strong>&ldquo;Out of Place in My Own Work: How Generative AI Displaces Software Engineers&rdquo;</strong>, written with Theocharis Tavantzis and Daniel Russo, received the <strong>Best Technical Paper Award</strong> in the category &ldquo;Timely and Significant Contribution&rdquo; at the 20th International Symposium on Empirical Software Engineering and Measurement (<a href='https://conf.researchr.org/home/eseiw-2026'>ESEM 2026</a>). The paper introduces <em>AI-induced displacement</em>—the multi-dimensional way in which generative AI tools unsettle engineers&rsquo; sense of craft, identity, and professional belonging—and describes six dimensions of it, based on interviews with 21 software engineers.",
+      "description": "Theocharis Tavantzis, Daniel Russo, and I won the <strong>Best Technical Paper Award</strong> in the category &ldquo;Timely and Significant Contribution&rdquo; at the 20th International Symposium on Empirical Software Engineering and Measurement (<a href='https://conf.researchr.org/home/eseiw-2026'>ESEM 2026</a>) with the paper <strong>&ldquo;Out of Place in My Own Work: How Generative AI Displaces Software Engineers&rdquo;</strong>. In the paper, we introduce <em>AI-induced displacement</em>—i.e., the way in which generative AI tools unsettle the sense of craft, identity, and professional belonging of engineers—and describe six dimensions of such a phenomenon, elicited from interviews with 21 software engineers.",
       "link": "/assets/papers/ESEM_2026_AI_Induced_Displacement.pdf"
     },
     {
       "title": "Distinguished Reviewer—IEEE&nbsp;TSE",
       "location": "IEEE Transactions on Software Engineering",
       "date": "2026 - Present",
-      "description": "In 2026, the Editor-in-Chief of <strong>IEEE Transactions on Software Engineering</strong> (TSE) invited me to serve as a <strong>Distinguished Reviewer</strong> of the journal. The board of distinguished reviewers acknowledges thorough and timely reviewing, and its members are asked to be available for at least six reviews per year."
+      "description": "I was invited by the Editor-in-Chief of <strong>IEEE Transactions on Software Engineering</strong> (TSE) to serve as a <strong>Distinguished Reviewer</strong> of the journal. Distinguished reviewers are recognized for thorough and timely reviews and, in turn, are asked to be available for at least six reviews per year."
     },
     {
       "title": "Vision Paper Presentation—IEEE Conference on Games (CoG) 2026",
       "location": "Complutense University of Madrid, Spain",
       "date": "1 September, 2026",
-      "description": "Presented my vision paper <strong>&ldquo;We Must Be Better&rdquo;: A Critical Vision for the Convergence of Software Engineering and Human-Computer Interaction in Generative AI-Driven Video Game Development</strong> at the IEEE Conference on Games (<a href='https://cog2026.org/'>CoG 2026</a>), a venue that was new to me and turned out to be an amazing and welcoming community. The paper proposes a set of paths that we, as a research community, can follow now that generative AI is making its way into the video game industry, so that software engineering, human-computer interaction, and game design can collaborate toward a better work environment and higher product quality. Photo by Fabio Petrillo—first author of the 2009 survey on problems in game development that is on screen in the picture.",
+      "description": "Presented my vision paper <strong>&ldquo;We Must Be Better&rdquo;: A Critical Vision for the Convergence of Software Engineering and Human-Computer Interaction in Generative AI-Driven Video Game Development</strong> at the IEEE Conference on Games (<a href='https://cog2026.org/'>CoG 2026</a>)—a venue that was new to me and turned out to be an amazing and welcoming community. In the paper, I propose a set of paths that we, as a research community, can follow now that generative AI is entering the video game industry. The aim of such paths is to let software engineering, human-computer interaction, and game design collaborate toward a better work environment and higher product quality. Photo by Fabio Petrillo—first author of the 2009 survey on problems in game development shown on screen in the picture.",
       "image": "assets/images/cog-2026-presentation.jpg",
       "imageAlt": "Stefano Lambiase presenting his vision paper at the IEEE Conference on Games 2026 in Madrid, with a slide about software engineering research on games on screen",
       "link": "/assets/papers/CoG_2026_WeMustBeBetter.pdf"
@@ -32,7 +32,7 @@
       "title": "EMBO Lab Leadership Course for Group Leaders",
       "location": "Leimen, Germany",
       "date": "7-10 July, 2026",
-      "description": "Attended the <strong>&ldquo;EMBO Lab Leadership for Group Leaders&rdquo;</strong> course—a four-day intensive training on how to lead a research group, covering leadership styles, communication, feedback, delegation, and team development. Guided by C&eacute;line Carret and David Lescheid.",
+      "description": "Attended the <strong>&ldquo;EMBO Lab Leadership for Group Leaders&rdquo;</strong> course—i.e., a four-day intensive training on how to lead a research group—guided by C&eacute;line Carret and David Lescheid. The course covers leadership styles, communication, feedback, delegation, and team development.",
       "image": "assets/images/embo-lab-leadership-2026.jpg",
       "imageAlt": "Group photo of the EMBO Lab Leadership course participants in Leimen, July 2026",
       "link": "https://www.embolableadership.org/course/embolableadership-group-leaders/"

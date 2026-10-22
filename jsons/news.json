@@ -1,5 +1,5 @@
 {
-  "note": "Latest-news panel that floats in the bottom-right corner of the page, built by js/newsOverlayFilling.js. Newest item first. Each item: 'id' (required and unique; when the first item's id changes, the panel opens again for visitors who had closed it), 'date' (optional), 'icon' (Font Awesome classes, optional), 'text' (required, HTML allowed), 'link' and 'linkText' (optional). Set 'show' to false to remove the panel and its button.",
+  "note": "Latest-news panel that floats in the bottom-right corner of the page, built by js/newsOverlayFilling.js. Newest item first. Each item: 'id' (required and unique; when the first item's id changes, the panel opens again for visitors who had closed it), 'date' (optional), 'icon' (Font Awesome classes, optional), 'text' (required, HTML allowed), 'link' and 'linkText' (optional). Set 'show' to false to remove the panel and its button. Optional 'nowPlaying' object ('label', 'icon', 'text', 'link', 'linkText', 'informalOnly'): shown at the bottom of the panel, below the news; changing it does not open the panel again. 'informalOnly' true hides it when Formal Bio is on. The panel needs at least one item in 'items'.",
   "show": true,
   "title": "Latest news",
   "items": [
@@ -7,7 +7,7 @@
       "id": "2026-10-icse2027-bard",
       "date": "20 October, 2026",
       "icon": "fa-solid fa-file-lines",
-      "text": "Our paper &ldquo;Engineering Requirements for Generative AI Agents: The BARD Process Theory&rdquo; has been accepted at the ICSE 2027 Research Track.",
+      "text": "Our paper &ldquo;Engineering Requirements for Generative AI Agents: The BARD Process Theory&rdquo; has been accepted at the Research Track of ICSE 2027.",
       "link": "/assets/papers/ICSE_2027_BARD_Process_Theory.pdf",
       "linkText": "Read the preprint"
     },
@@ -15,9 +15,16 @@
       "id": "2026-10-esem2026-award",
       "date": "8-9 October, 2026",
       "icon": "fa-solid fa-trophy",
-      "text": "Best Technical Paper Award at ESEM 2026, category &ldquo;Timely and Significant Contribution&rdquo;, for &ldquo;Out of Place in My Own Work: How Generative AI Displaces Software Engineers&rdquo;, with Theocharis Tavantzis and Daniel Russo.",
+      "text": "Our paper &ldquo;Out of Place in My Own Work: How Generative AI Displaces Software Engineers&rdquo;, written with Theocharis Tavantzis and Daniel Russo, won the Best Technical Paper Award at ESEM 2026 (category &ldquo;Timely and Significant Contribution&rdquo;).",
       "link": "/assets/papers/ESEM_2026_AI_Induced_Displacement.pdf",
       "linkText": "Read the paper"
     }
-  ]
+  ],
+  "nowPlaying": {
+    "label": "Now playing",
+    "icon": "fa-solid fa-gamepad",
+    "text": "LEGO Batman: Legacy of the Dark Knight, The First Berserker: Khazan & Final Fantasy VII Rebirth",
+    "link": null,
+    "informalOnly": true
+  }
 }

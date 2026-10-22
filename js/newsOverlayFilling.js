@@ -6,6 +6,9 @@
 // the small round button that stays in the corner. The closed state is saved
 // in this browser only, together with the id of the newest item: when a new
 // item is added at the top of the JSON, the panel opens again by itself.
+// The optional "nowPlaying" block (the games I am playing) is shown at the
+// bottom of the panel and is not part of the news list, so changing it does
+// not open the panel again.
 (function () {
   const STORAGE_KEY = 'newsOverlayClosedFor';
 
@@ -69,6 +72,19 @@
         return `<li class="news-overlay-item">${dateHtml}<div class="news-overlay-text">${iconHtml}<span>${item.text}</span></div>${linkHtml}</li>`;
       }).join('');
 
+      const np = data.nowPlaying;
+      let nowPlayingHtml = '';
+      if (np && np.text) {
+        const npIcon = np.icon
+          ? `<em class="${np.icon} news-overlay-icon" aria-hidden="true"></em>`
+          : '';
+        const npLink = np.link
+          ? `<a class="news-overlay-link" href="${np.link}" target="_blank" rel="noopener noreferrer">${np.linkText || 'Read more'} <em class="fa-solid fa-arrow-right" aria-hidden="true"></em></a>`
+          : '';
+        const npClass = np.informalOnly ? ' informal-only' : '';
+        nowPlayingHtml = `<div class="news-overlay-now-playing${npClass}"><div class="news-overlay-now-playing-label">${np.label || 'Now playing'}</div><div class="news-overlay-text">${npIcon}<span>${np.text}</span></div>${npLink}</div>`;
+      }
+
       panel.innerHTML = `
         <div class="news-overlay-header">
           <span class="temp-news-dot" aria-hidden="true"></span>
@@ -77,7 +93,7 @@
             <em class="fa-solid fa-xmark" aria-hidden="true"></em>
           </button>
         </div>
-        <ul class="news-overlay-list">${listHtml}</ul>`;
+        <ul class="news-overlay-list">${listHtml}</ul>${nowPlayingHtml}`;
 
       // The round button that reopens the panel.
       const toggle = document.createElement('button');
@@ -92,6 +108,16 @@
 
       document.body.appendChild(panel);
       document.body.appendChild(toggle);
+
+      // Respect the Formal Bio switch if it is already on: switchBio.js
+      // applies the mode to .informal-only elements only on load and on
+      // toggle, and this fetch resolves after load.
+      const bioSwitch = document.querySelector('.switch-bio');
+      if (bioSwitch && bioSwitch.checked) {
+        panel.querySelectorAll('.informal-only').forEach(el => {
+          el.style.display = 'none';
+        });
+      }
 
       const closeBtn = panel.querySelector('.news-overlay-close');
       let hideTimer = null;
