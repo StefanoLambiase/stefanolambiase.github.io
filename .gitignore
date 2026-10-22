@@ -7,3 +7,6 @@
 # LibreOffice lock files and temporary files
 .~lock.*#
 *.tmp
+
+# Shared notes for the AI agents that edit the site (local only)
+/CLAUDE.md
