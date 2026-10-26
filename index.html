@@ -288,6 +288,24 @@
         padding-left: 0.6rem;
         margin-top: 0.35rem;
       }
+      /* PlumX Plum Print in the footer of the paper cards (paperNewFilling.js).
+         The slot is as tall as the small buttons, so the footers of cards with
+         and without metrics have the same height. */
+      .paper-plumx {
+        display: flex;
+        align-items: center;
+        height: 31px;
+      }
+      .paper-plumx plumx-widget button {
+        padding: 0;
+        vertical-align: top;
+      }
+      /* Dark theme: the dark purple of the print disappears on the dark card,
+         so the print gets a light round background */
+      .card.text-white .paper-plumx plumx-widget button {
+        background-color: #f8f9fa;
+        border-radius: 50%;
+      }
       /* Award badge on a paper card, set through the optional "award" field
          in jsons/papersNEW.json. Same red accent as the featured badge. */
       .paper-award-badge {
@@ -1395,6 +1413,9 @@
     <script src="js/tempNewsFilling.js"></script>
     <!-- "Latest news" panel in the bottom-right corner (content in jsons/news.json) -->
     <script src="js/newsOverlayFilling.js"></script>
+    <!-- PlumX metrics on the paper cards: defines the <plumx-widget> element
+         that paperNewFilling.js puts in each card with a DOI -->
+    <script src="https://plumx.elsevier.com/widget/plumx-widget.js" defer></script>
     <!-- javascript for tooltips -->
     <script>
       // Select all elements with data-toggle="tooltips" in the document

@@ -4,7 +4,7 @@
   "dblp": "https://dblp.org/pid/274/3963",
   "google_scholar": "https://scholar.google.com/citations?user=2fHPEdkAAAAJ",
   "source": "DBLP (https://dblp.org/pid/274/3963), retrieved 2026-04-24; refreshed 2026-07-07",
-  "note": "Includes journal articles (j), conference/workshop papers (c), and selected arXiv preprints (p). DOIs cross-checked against DBLP and Crossref. Last refresh 2026-07-07.",
+  "note": "Includes journal articles (j), conference/workshop papers (c), and selected arXiv preprints (p). DOIs cross-checked against DBLP and Crossref. Last refresh 2026-07-07. Preprints and to-appear entries checked against Crossref, DataCite and arXiv on 2026-10-26; six 2026 papers added from Crossref on the same day.",
   "publications": [
     {
       "dblp_key": null,
@@ -27,6 +27,26 @@
       "dblp_url": null,
       "downloadLink": "/assets/papers/ICSE_2027_BARD_Process_Theory.pdf",
       "note": "Accepted; to appear in the Proceedings of the IEEE/ACM International Conference on Software Engineering (ICSE) 2027, Research Track. Accepted-version preprint; DOI to be added upon publication."
+    },
+    {
+      "dblp_key": null,
+      "type": "journal",
+      "year": 2027,
+      "title": "From challenge to change: Design principles for AI transformations.",
+      "authors": [
+        "Theocharis Tavantzis",
+        "Stefano Lambiase",
+        "Daniel Russo",
+        "Robert Feldt"
+      ],
+      "venue": "Journal of Systems and Software",
+      "volume": "243",
+      "number": null,
+      "pages": "113063",
+      "doi": "10.1016/j.jss.2026.113063",
+      "dblp_url": null,
+      "downloadLink": null,
+      "note": "Metadata from Crossref (2026-10-26). Volume 243, January 2027."
     },
     {
       "dblp_key": null,
@@ -156,6 +176,114 @@
       "downloadLink": null
     },
     {
+      "dblp_key": null,
+      "type": "journal",
+      "year": 2026,
+      "title": "Sustainability of Machine Learning-Enabled Systems: The Machine Learning Practitioner's Perspective.",
+      "authors": [
+        "Vincenzo De Martino",
+        "Stefano Lambiase",
+        "Fabiano Pecorelli",
+        "Willem-Jan van den Heuvel",
+        "Filomena Ferrucci",
+        "Fabio Palomba"
+      ],
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "volume": "35",
+      "number": "7",
+      "pages": "1-41",
+      "doi": "10.1145/3777553",
+      "dblp_url": null,
+      "downloadLink": null,
+      "note": "Metadata from Crossref (2026-10-26)."
+    },
+    {
+      "dblp_key": null,
+      "type": "journal",
+      "year": 2026,
+      "title": "From values to adoption: on the role of individual cultural values on fairness toolkit adoption in software development.",
+      "authors": [
+        "Stefano Lambiase",
+        "Gianmario Voria",
+        "Maria Concetta Schiavone",
+        "Gemma Catolino",
+        "Fabio Palomba"
+      ],
+      "venue": "Empirical Software Engineering",
+      "volume": "31",
+      "number": "6",
+      "pages": "182",
+      "doi": "10.1007/s10664-026-10902-7",
+      "dblp_url": null,
+      "downloadLink": null,
+      "note": "Metadata from Crossref (2026-10-26)."
+    },
+    {
+      "dblp_key": null,
+      "type": "journal",
+      "year": 2026,
+      "title": "Towards AI-powered automatic 3D scene generation for the metaverse: a comparative analysis of manual and photogrammetry techniques.",
+      "authors": [
+        "Viviana Pentangelo",
+        "Dario Di Dario",
+        "Vincenzo De Martino",
+        "Marco Dello Buono",
+        "Stefano Lambiase"
+      ],
+      "venue": "Cluster Computing",
+      "volume": "29",
+      "number": "12",
+      "pages": "715",
+      "doi": "10.1007/s10586-026-06530-x",
+      "dblp_url": null,
+      "downloadLink": null,
+      "note": "Metadata from Crossref (2026-10-26)."
+    },
+    {
+      "dblp_key": null,
+      "type": "journal",
+      "year": 2026,
+      "title": "Exploring individual factors in the adoption of LLMs for specific software engineering purposes.",
+      "authors": [
+        "Stefano Lambiase",
+        "Gemma Catolino",
+        "Fabio Palomba",
+        "Filomena Ferrucci",
+        "Daniel Russo"
+      ],
+      "venue": "Information and Software Technology",
+      "volume": "200",
+      "number": null,
+      "pages": "108295",
+      "doi": "10.1016/j.infsof.2026.108295",
+      "dblp_url": null,
+      "downloadLink": null,
+      "note": "Published version of the arXiv preprint 2504.02553 (first titled \"Exploring Individual Factors in the Adoption of LLMs for Specific Software Engineering Tasks\"). Volume 200, December 2026."
+    },
+    {
+      "dblp_key": null,
+      "type": "journal",
+      "year": 2026,
+      "title": "Understanding Prompt Quality and Its Relation to LLM-based Code Generation.",
+      "authors": [
+        "Antonio Della Porta",
+        "Stefano Lambiase",
+        "Valeria Pontillo",
+        "Joao F. Ferreira",
+        "Akond A. Rahman",
+        "Chaiyong Ragkhitwetsagul",
+        "Fabio Palomba"
+      ],
+      "venue": "IEEE Transactions on Software Engineering",
+      "volume": null,
+      "number": null,
+      "pages": null,
+      "doi": "10.1109/TSE.2026.3719766",
+      "dblp_url": null,
+      "downloadLink": null,
+      "note": "Metadata from Crossref (2026-10-26). Early access; volume, issue and pages to be added."
+    },
+    {
       "dblp_key": "conf/saner/PortaVASLCP26",
       "type": "conference",
       "year": 2026,
@@ -186,12 +314,32 @@
         "Daniel Russo"
       ],
       "venue": "ESEM 2026",
-      "doi": null,
+      "doi": "10.4230/LIPIcs.ESEM.2026.9",
       "dblp_url": null,
       "downloadLink": "/assets/papers/ESEM_2026_AI_Induced_Displacement.pdf",
       "award": "Best Technical Paper Award",
       "awardNote": "Category: Timely and Significant Contribution",
-      "note": "Accepted; to appear in the Proceedings of the 20th International Symposium on Empirical Software Engineering and Measurement (ESEM) 2026. Accepted-version preprint; DOI to be added upon publication."
+      "note": "Published in the Proceedings of the 20th International Symposium on Empirical Software Engineering and Measurement (ESEM 2026), LIPIcs, Volume 394, Paper 9, pp. 9:1-9:20. The download link is the accepted-version preprint."
+    },
+    {
+      "dblp_key": null,
+      "type": "conference",
+      "year": 2026,
+      "title": "\"Fright Not and Be Dispersed!\" Investigating the Influence of Cultural Dimensions on Communication and Collaboration in Software Development.",
+      "authors": [
+        "Stefano Lambiase",
+        "Gemma Catolino",
+        "Mario Torre",
+        "Damian A. Tamburri",
+        "Fabio Palomba",
+        "Filomena Ferrucci"
+      ],
+      "venue": "SEAA 2026",
+      "pages": "101-117",
+      "doi": "10.1007/978-3-032-36587-3_8",
+      "dblp_url": null,
+      "downloadLink": null,
+      "note": "Metadata from Crossref (2026-10-26). Software Engineering and Advanced Applications (SEAA 2026), Lecture Notes in Computer Science."
     },
     {
       "dblp_key": "journals/corr/abs-2508-15503",
@@ -208,28 +356,10 @@
         "...",
         "Stefan Wagner"
       ],
-      "note": "22 co-authors—see arXiv for the full list. Preprint (also on the AIware 2025 arXiv track); under submission to Empirical Software Engineering.",
+      "note": "22 co-authors—see arXiv for the full list. Preprint (also on the AIware 2025 arXiv track); accepted in Empirical Software Engineering (arXiv v8, September 2026); published version not yet available on 2026-10-26.",
       "venue": "arXiv preprint arXiv:2508.15503",
       "doi": "10.48550/arXiv.2508.15503",
       "dblp_url": "https://dblp.org/rec/journals/corr/abs-2508-15503",
-      "downloadLink": null
-    },
-    {
-      "dblp_key": "journals/corr/abs-2504-02553",
-      "type": "preprint",
-      "year": 2025,
-      "title": "Exploring Individual Factors in the Adoption of LLMs for Specific Software Engineering Tasks.",
-      "authors": [
-        "Stefano Lambiase",
-        "Gemma Catolino",
-        "Fabio Palomba",
-        "Filomena Ferrucci",
-        "Daniel Russo"
-      ],
-      "note": "Preprint; not yet published in a peer-reviewed venue as of 2026-07.",
-      "venue": "arXiv preprint arXiv:2504.02553",
-      "doi": "10.48550/arXiv.2504.02553",
-      "dblp_url": "https://dblp.org/rec/journals/corr/abs-2504-02553",
       "downloadLink": null
     },
     {

@@ -38,6 +38,21 @@ fetch('jsons/papersNEW.json')
       return `<p class="card-text small mb-1 text-start"><span class="badge paper-award-badge"><em class="fa-solid fa-trophy" aria-hidden="true"></em> ${paper.award}</span>${note}</p>`;
     };
 
+    // PlumX metrics (the Plum Print) on the left of the buttons, for every
+    // paper with a DOI. The <plumx-widget> element comes from the PlumX
+    // script at the end of index.html and asks PlumX for the numbers at every
+    // visit, so they are always up to date. Papers that PlumX does not track
+    // yet (e.g. arXiv preprints) show nothing, thanks to hideWhenEmpty.
+    const plumxConfig = JSON.stringify({
+      hideWhenEmpty: true,
+      printSize: 'small',
+      popupDirection: 'right'
+    });
+    const plumxHtml = (paper) => {
+      if (!paper.doi) return '';
+      return `<plumx-widget type="artifact" identifier-type="doi" identifier="${paper.doi}" display="plumprint" config='${plumxConfig}'></plumx-widget>`;
+    };
+
     // Sort papers for display: by year descending, mixing journals and conferences
     // Within the same year, sort by label number descending (highest first)
     const allPapers = [...papers];
@@ -126,10 +141,13 @@ fetch('jsons/papersNEW.json')
               ${awardHtml(paper)}
               <p class="card-text small mt-auto pt-2">${authorsFormatted}</p>
               <hr class="my-2">
-              <div class="d-flex justify-content-end gap-2">
-                ${doiBtn}
-                ${scholarBtn}
-                ${downloadBtn}
+              <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div class="paper-plumx">${plumxHtml(paper)}</div>
+                <div class="d-flex gap-2 ms-auto">
+                  ${doiBtn}
+                  ${scholarBtn}
+                  ${downloadBtn}
+                </div>
               </div>
             </div>
           </div>
@@ -248,10 +266,13 @@ fetch('jsons/papersNEW.json')
               <p class="card-text small mb-1">${authorsFormatted}</p>
               ${featuredNoteHtml}
               <hr class="my-2">
-              <div class="d-flex justify-content-end gap-2">
-                ${doiBtn}
-                ${scholarBtn}
-                ${downloadBtn}
+              <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div class="paper-plumx">${plumxHtml(paper)}</div>
+                <div class="d-flex gap-2 ms-auto">
+                  ${doiBtn}
+                  ${scholarBtn}
+                  ${downloadBtn}
+                </div>
               </div>
             </div>
           </div>
