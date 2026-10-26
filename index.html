@@ -294,7 +294,16 @@
       .paper-plumx {
         display: flex;
         align-items: center;
+        gap: 0.5rem;
         height: 31px;
+      }
+      /* "Cited by N" next to the print, counts from Dimensions */
+      .paper-cited-by {
+        white-space: nowrap;
+        text-decoration: none;
+      }
+      .paper-cited-by:hover {
+        text-decoration: underline;
       }
       .paper-plumx plumx-widget button {
         padding: 0;

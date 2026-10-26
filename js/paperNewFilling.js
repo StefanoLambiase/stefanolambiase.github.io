@@ -53,6 +53,38 @@ fetch('jsons/papersNEW.json')
       return `<plumx-widget type="artifact" identifier-type="doi" identifier="${paper.doi}" display="plumprint" config='${plumxConfig}'></plumx-widget>`;
     };
 
+    // "Cited by N" next to the Plum Print, for every paper with a DOI. The
+    // counts come from the free Dimensions Metrics API (one small request per
+    // DOI, at every visit) and link to the Dimensions details page. Papers
+    // with zero or unknown citations show nothing.
+    const citationHtml = (paper) => {
+      if (!paper.doi) return '';
+      return `<a class="paper-cited-by small text-muted" data-doi="${paper.doi.toLowerCase()}" href="https://badge.dimensions.ai/details/doi/${paper.doi}" target="_blank" rel="noopener noreferrer" title="Citations counted by Dimensions" hidden></a>`;
+    };
+    let citationCounts = null;
+    const fillCitations = () => {
+      if (!citationCounts) return;
+      document.querySelectorAll('.paper-cited-by').forEach(link => {
+        const n = citationCounts.get(link.dataset.doi);
+        if (n > 0) {
+          link.innerHTML = `<em class="fa-solid fa-quote-right" aria-hidden="true"></em> Cited by ${n}`;
+          link.hidden = false;
+        }
+      });
+    };
+    const loadCitations = () => {
+      const dois = [...new Set(papers.filter(p => p.doi).map(p => p.doi.toLowerCase()))];
+      Promise.all(dois.map(doi =>
+        fetch('https://metrics-api.dimensions.ai/doi/' + doi)
+          .then(r => r.ok ? r.json() : null)
+          .then(j => [doi, j ? j.times_cited : null])
+          .catch(() => [doi, null])
+      )).then(pairs => {
+        citationCounts = new Map(pairs);
+        fillCitations();
+      });
+    };
+
     // Sort papers for display: by year descending, mixing journals and conferences
     // Within the same year, sort by label number descending (highest first)
     const allPapers = [...papers];
@@ -142,7 +174,7 @@ fetch('jsons/papersNEW.json')
               <p class="card-text small mt-auto pt-2">${authorsFormatted}</p>
               <hr class="my-2">
               <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
-                <div class="paper-plumx">${plumxHtml(paper)}</div>
+                <div class="paper-plumx">${plumxHtml(paper)}${citationHtml(paper)}</div>
                 <div class="d-flex gap-2 ms-auto">
                   ${doiBtn}
                   ${scholarBtn}
@@ -155,6 +187,7 @@ fetch('jsons/papersNEW.json')
 
         container.appendChild(col);
       });
+      fillCitations();
     }
 
     // Filter logic
@@ -192,6 +225,7 @@ fetch('jsons/papersNEW.json')
 
     // Initial render with all papers
     renderPapers(sortedPapers);
+    loadCitations();
 
     // Deep link: ?q=<keyword> opens the Papers tab with the search already
     // applied, e.g. https://stefanolambiase.github.io/?q=quantum (used in
@@ -267,7 +301,7 @@ fetch('jsons/papersNEW.json')
               ${featuredNoteHtml}
               <hr class="my-2">
               <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
-                <div class="paper-plumx">${plumxHtml(paper)}</div>
+                <div class="paper-plumx">${plumxHtml(paper)}${citationHtml(paper)}</div>
                 <div class="d-flex gap-2 ms-auto">
                   ${doiBtn}
                   ${scholarBtn}
@@ -279,6 +313,7 @@ fetch('jsons/papersNEW.json')
         `;
         featuredContainer.appendChild(col);
       });
+      fillCitations();
     }
   })
   .catch(error => console.error(error));
