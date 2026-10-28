@@ -38,11 +38,11 @@ fetch('jsons/tempNews.json')
 
     if (rendered === 0) return;
 
-    // Respect the Formal Bio switch if it is already on when the strip is
-    // injected (switchBio.js applies the mode to .informal-only elements
-    // only on load and on toggle, and this fetch resolves after load).
+    // Hide informal-only pills unless the Informal Bio switch is on when the
+    // strip is injected (switchBio.js applies the mode to .informal-only
+    // elements only on load and on toggle, and this fetch resolves after load).
     const bioSwitch = document.querySelector('.switch-bio');
-    if (bioSwitch && bioSwitch.checked) {
+    if (bioSwitch && !bioSwitch.checked) {
       strip.querySelectorAll('.informal-only').forEach(el => {
         el.style.display = 'none';
       });

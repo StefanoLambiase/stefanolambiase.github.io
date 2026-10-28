@@ -47,13 +47,14 @@ function switchBioFunction () {
         }
     };
 
-    // Initial pass in case the switch is pre-checked (e.g. after a reload
-    // where the browser restored the checkbox state).
-    applyMode(btn.checked);
+    // The Formal Bio is the default: the switch, when checked, turns on the
+    // Informal Bio. Initial pass in case the switch is pre-checked (e.g. after
+    // a reload where the browser restored the checkbox state).
+    applyMode(!btn.checked);
 
     // Listen for a change on the switch.
     btn.addEventListener("change", function () {
-        applyMode(btn.checked);
+        applyMode(!btn.checked);
     });
 }
 

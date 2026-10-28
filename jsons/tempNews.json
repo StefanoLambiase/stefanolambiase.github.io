@@ -1,5 +1,5 @@
 {
-  "note": "Temp news strip shown just above the main tab menu. Edit 'items' to change the news; set 'show' to false to hide the whole strip. Each item: 'text' (required), 'icon' (Font Awesome classes, optional), 'label' (short uppercase prefix, optional), 'link' (optional URL, makes the pill clickable), 'informalOnly' (true to hide the item when Formal Bio is on).",
+  "note": "Temp news strip shown just above the main tab menu. Edit 'items' to change the news; set 'show' to false to hide the whole strip. Each item: 'text' (required), 'icon' (Font Awesome classes, optional), 'label' (short uppercase prefix, optional), 'link' (optional URL, makes the pill clickable), 'informalOnly' (true to show the item only when the Informal Bio switch is on).",
   "show": false,
   "items": []
 }

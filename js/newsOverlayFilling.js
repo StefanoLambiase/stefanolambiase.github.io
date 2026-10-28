@@ -109,11 +109,11 @@
       document.body.appendChild(panel);
       document.body.appendChild(toggle);
 
-      // Respect the Formal Bio switch if it is already on: switchBio.js
-      // applies the mode to .informal-only elements only on load and on
-      // toggle, and this fetch resolves after load.
+      // Hide informal-only blocks unless the Informal Bio switch is on:
+      // switchBio.js applies the mode to .informal-only elements only on load
+      // and on toggle, and this fetch resolves after load.
       const bioSwitch = document.querySelector('.switch-bio');
-      if (bioSwitch && bioSwitch.checked) {
+      if (bioSwitch && !bioSwitch.checked) {
         panel.querySelectorAll('.informal-only').forEach(el => {
           el.style.display = 'none';
         });
