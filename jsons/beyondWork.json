@@ -15,6 +15,15 @@
       "description": "For my birthday, <strong>I Cugini</strong> came from Italy to celebrate with me in <strong>Prague</strong>. I like this photo very much: all of us around the same table, having dinner in a medieval-style tavern. It was also the only time my cousin managed to manipulate me—and it was amazing.",
       "image": "assets/images/beyond-work/prague-friends-2026.jpg",
       "imageAlt": "Stefano and I Cugini having dinner around a long wooden table in a candle-lit, medieval-style tavern in Prague"
+    },
+    {
+      "title": "Me, but Older",
+      "location": "Clair Obscur: Expedition 33",
+      "date": "Winter, 2026",
+      "description": "In the winter of 2026, I played <strong>Clair Obscur: Expedition 33</strong> for more than 70 hours (it is in my Gaming CV). At some point, <strong>Renoir Dessendre</strong> appeared on my screen, and there was no doubt: it is literally me, just older. For such a reason, I now have a preview of my future self.",
+      "image": "assets/images/beyond-work/clair-obscur-older-me-2026.jpg",
+      "imageAlt": "Renoir Dessendre, a character from Clair Obscur: Expedition 33, a gray-haired and bearded man in a brown waistcoat, who looks like an older version of Stefano",
+      "imageMaxWidth": 225
     }
   ]
 }

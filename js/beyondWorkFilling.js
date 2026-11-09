@@ -1,5 +1,5 @@
 // beyondWorkFilling.js
-// Populates the "Life Moments" timeline in the Beyond Work tab.
+// Populates the "Life Moments & Funny Things" timeline in the Beyond Work tab.
 // Same structure as the Experience timeline, with optional images.
 
 fetch('jsons/beyondWork.json')
@@ -17,9 +17,13 @@ fetch('jsons/beyondWork.json')
     const div = document.createElement('div');
     div.classList.add('timeline-block');
 
-    // Optional image shown inside the timeline card
+    // Optional image shown inside the timeline card;
+    // optional imageMaxWidth (px) keeps small images from being stretched.
+    const imageStyle = moment.imageMaxWidth
+      ? ` style="max-width: ${moment.imageMaxWidth}px;"`
+      : '';
     const imageHTML = moment.image
-      ? `<img src="${moment.image}" alt="${moment.imageAlt || moment.title}" class="timeline-image" loading="lazy">`
+      ? `<img src="${moment.image}" alt="${moment.imageAlt || moment.title}" class="timeline-image" loading="lazy"${imageStyle}>`
       : '';
 
     const contentHTML = `
